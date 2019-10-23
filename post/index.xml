@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts on Irelia的博客</title>
-    <link>http://example.org/post/</link>
+    <link>https://mambaneverout.github.io/post/</link>
     <description>Recent content in Posts on Irelia的博客</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-Hans</language>
     <lastBuildDate>Tue, 22 Oct 2019 14:47:50 +0800</lastBuildDate>
     
-	<atom:link href="http://example.org/post/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://mambaneverout.github.io/post/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>如何用hugo搭建个人博客</title>
-      <link>http://example.org/post/%E5%A6%82%E4%BD%95%E7%94%A8hugo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/</link>
+      <link>https://mambaneverout.github.io/post/%E5%A6%82%E4%BD%95%E7%94%A8hugo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/</link>
       <pubDate>Tue, 22 Oct 2019 14:47:50 +0800</pubDate>
       
-      <guid>http://example.org/post/%E5%A6%82%E4%BD%95%E7%94%A8hugo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/</guid>
+      <guid>https://mambaneverout.github.io/post/%E5%A6%82%E4%BD%95%E7%94%A8hugo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/</guid>
       <description>大家好啊，第一篇博客就来介绍一下如何用hugo搭建一个简单的个人博客。  安装Hugo,下载链接：https://github.com/gohugoio/hugo/releases。
 hugo version  下载完成后可以通过下面的指令检测是否下载成功。
  建立新网站
@@ -32,10 +32,10 @@ hugo server -D  默认在 http://localhost:1313 中显示。
     
     <item>
       <title>开博</title>
-      <link>http://example.org/post/%E5%BC%80%E5%8D%9A/</link>
+      <link>https://mambaneverout.github.io/post/%E5%BC%80%E5%8D%9A/</link>
       <pubDate>Mon, 21 Oct 2019 15:53:29 +0800</pubDate>
       
-      <guid>http://example.org/post/%E5%BC%80%E5%8D%9A/</guid>
+      <guid>https://mambaneverout.github.io/post/%E5%BC%80%E5%8D%9A/</guid>
       <description> 大家好，我的博客开通了。 </description>
     </item>
     
