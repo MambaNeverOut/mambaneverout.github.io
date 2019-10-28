@@ -6,10 +6,28 @@
     <description>Recent content on Irelia的博客</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-Hans</language>
-    <lastBuildDate>Wed, 23 Oct 2019 15:57:32 +0800</lastBuildDate>
+    <lastBuildDate>Sun, 27 Oct 2019 14:15:01 +0800</lastBuildDate>
     
 	<atom:link href="https://mambaneverout.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>CSS知识总结</title>
+      <link>https://mambaneverout.github.io/post/css%E7%9F%A5%E8%AF%86%E6%80%BB%E7%BB%93/</link>
+      <pubDate>Sun, 27 Oct 2019 14:15:01 +0800</pubDate>
+      
+      <guid>https://mambaneverout.github.io/post/css%E7%9F%A5%E8%AF%86%E6%80%BB%E7%BB%93/</guid>
+      <description>一、 浏览器渲染原理
+ 根据 HTML 构建 HTML 树（DOM） 根据 CSS 构建 CSS 树（CSSOM） 将两棵树合并成一颗渲染树（render tree) Layout 布局 （文档流、盒模型、计算大小和位置） Paint 绘制（把边框颜色、文字颜色、阴影等画出来） Composite 合成（根据层叠关系展示画面）  二、 CSS 动画 transition
+ transform
+ 语法：
+transform:translate(-50%, -50%)  组合使用
+transform: scale(0.5) translate(-100%,-100%)   transform: none; 取消所有效果  translate（位移）
+ translateX() translateY() translate() translateZ() translate3d()  scale（缩放）
+ scaleX() scaleY() scale()  rotate（旋转）
+ rotate() rotateZ() rotateX() rotateY() rotate3d()  skew（倾斜）
+ skewX() skewY() skew()  注意：inline 元素不支持 transform</description>
+    </item>
     
     <item>
       <title>HTML常用标签</title>

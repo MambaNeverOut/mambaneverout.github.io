@@ -35,7 +35,7 @@
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://mambaneverout.github.io/" />
 
-<meta property="og:updated_time" content="2019-10-23T15:57:32+08:00" />
+<meta property="og:updated_time" content="2019-10-27T14:15:01+08:00" />
 <meta itemprop="name" content="Irelia的博客">
 <meta itemprop="description" content="">
 
@@ -122,6 +122,39 @@
       
       <div class="blah w-100">
         <h1 class="f3 fw1 athelas mt0 lh-title">
+          <a href="/post/css%E7%9F%A5%E8%AF%86%E6%80%BB%E7%BB%93/" class="color-inherit dim link">
+            CSS知识总结
+            </a>
+        </h1>
+        <div class="f6 f5-l lh-copy nested-copy-line-height nested-links">
+          一、 浏览器渲染原理
+ 根据 HTML 构建 HTML 树（DOM） 根据 CSS 构建 CSS 树（CSSOM） 将两棵树合并成一颗渲染树（render tree) Layout 布局 （文档流、盒模型、计算大小和位置） Paint 绘制（把边框颜色、文字颜色、阴影等画出来） Composite 合成（根据层叠关系展示画面）  二、 CSS 动画 transition
+ transform
+ 语法：
+transform:translate(-50%, -50%)  组合使用
+transform: scale(0.5) translate(-100%,-100%)   transform: none; 取消所有效果  translate（位移）
+ translateX() translateY() translate() translateZ() translate3d()  scale（缩放）
+ scaleX() scaleY() scale()  rotate（旋转）
+ rotate() rotateZ() rotateX() rotateY() rotate3d()  skew（倾斜）
+ skewX() skewY() skew()  注意：inline 元素不支持 transform
+        </div>
+          <a href="/post/css%E7%9F%A5%E8%AF%86%E6%80%BB%E7%BB%93/" class="ba b--moon-gray bg-light-gray br2 color-inherit dib f7 hover-bg-moon-gray link mt2 ph2 pv1">read more</a>
+        
+      </div>
+    </div>
+  </div>
+</article>
+
+          </div>
+        
+          <div class="relative w-100 mb4">
+            
+<article class="bb b--black-10">
+  <div class="db pv4 ph3 ph0-l no-underline dark-gray">
+    <div class="flex flex-column flex-row-ns">
+      
+      <div class="blah w-100">
+        <h1 class="f3 fw1 athelas mt0 lh-title">
           <a href="/post/html%E5%B8%B8%E7%94%A8%E6%A0%87%E7%AD%BE/" class="color-inherit dim link">
             HTML常用标签
             </a>
@@ -180,46 +213,18 @@
 
           </div>
         
-          <div class="relative w-100 mb4">
-            
-<article class="bb b--black-10">
-  <div class="db pv4 ph3 ph0-l no-underline dark-gray">
-    <div class="flex flex-column flex-row-ns">
-      
-      <div class="blah w-100">
-        <h1 class="f3 fw1 athelas mt0 lh-title">
-          <a href="/post/%E5%A6%82%E4%BD%95%E7%94%A8hugo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/" class="color-inherit dim link">
-            如何用hugo搭建个人博客
-            </a>
-        </h1>
-        <div class="f6 f5-l lh-copy nested-copy-line-height nested-links">
-          大家好啊，第一篇博客就来介绍一下如何用hugo搭建一个简单的个人博客。  安装Hugo,下载链接：https://github.com/gohugoio/hugo/releases。
-hugo version  下载完成后可以通过下面的指令检测是否下载成功。
- 建立新网站
-hugo new site blog  上面的代码将在名为的文件夹中创建一个新的Hugo网站blog。
- 添加主题(默认主题为Ananke主题)
-cd blog git init git submodule add https://github.com/budparr/gohugo-theme-ananke.git themes/ananke echo 'theme = &quot;ananke&quot;' &gt;&gt; config.toml  创建新的博客
-hugo new post/开博.md  可以编辑新创建的文件内容，它将从以下内容开始：
---- title: &quot;开博&quot; date: 2019-10-22T08:47:11+01:00 draft: true ---  注意：draft 是指草稿的意思，默认是true（不显示），写完博客记得修改为false，然后才会在你的博客中显示。
- 启动Hugo服务器
-hugo server -D  默认在 http://localhost:1313 中显示。
-  一个简单的hugo博客就搭建完成了，可以开始写自己的博客啦！
-        </div>
-          <a href="/post/%E5%A6%82%E4%BD%95%E7%94%A8hugo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/" class="ba b--moon-gray bg-light-gray br2 color-inherit dib f7 hover-bg-moon-gray link mt2 ph2 pv1">read more</a>
-        
-      </div>
-    </div>
-  </div>
-</article>
-
-          </div>
-        
       </section>
 
       
       <section class="w-100">
         <h1 class="f3">More</h1>
         
+        
+          <h2 class="f5 fw4 mb4 dib mr3">
+            <a href="/post/%E5%A6%82%E4%BD%95%E7%94%A8hugo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/" class="link black dim">
+              如何用hugo搭建个人博客
+            </a>
+          </h2>
         
           <h2 class="f5 fw4 mb4 dib mr3">
             <a href="/post/%E5%BC%80%E5%8D%9A/" class="link black dim">

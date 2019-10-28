@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    
+    <title>Irelia的博客  | CSS知识总结</title>
+    <meta name="viewport" content="width=device-width,minimum-scale=1">
+    <meta name="generator" content="Hugo 0.58.3" />
+    
+    
+      <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
+    
+
+    
+    
+      <link href="/dist/css/app.d98f2eb6bcd1eaedb7edf166bd16af26.css" rel="stylesheet">
+    
+
+    
+
+    
+      
+    
+
+    
+    
+    <meta property="og:title" content="CSS知识总结" />
+<meta property="og:description" content="一、 浏览器渲染原理
+ 根据 HTML 构建 HTML 树（DOM） 根据 CSS 构建 CSS 树（CSSOM） 将两棵树合并成一颗渲染树（render tree) Layout 布局 （文档流、盒模型、计算大小和位置） Paint 绘制（把边框颜色、文字颜色、阴影等画出来） Composite 合成（根据层叠关系展示画面）  二、 CSS 动画 transition
+ transform
+ 语法：
+transform:translate(-50%, -50%)  组合使用
+transform: scale(0.5) translate(-100%,-100%)   transform: none; 取消所有效果  translate（位移）
+ translateX() translateY() translate() translateZ() translate3d()  scale（缩放）
+ scaleX() scaleY() scale()  rotate（旋转）
+ rotate() rotateZ() rotateX() rotateY() rotate3d()  skew（倾斜）
+ skewX() skewY() skew()  注意：inline 元素不支持 transform" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://mambaneverout.github.io/post/css%E7%9F%A5%E8%AF%86%E6%80%BB%E7%BB%93/" />
+<meta property="article:published_time" content="2019-10-27T14:15:01+08:00" />
+<meta property="article:modified_time" content="2019-10-27T14:15:01+08:00" />
+<meta itemprop="name" content="CSS知识总结">
+<meta itemprop="description" content="一、 浏览器渲染原理
+ 根据 HTML 构建 HTML 树（DOM） 根据 CSS 构建 CSS 树（CSSOM） 将两棵树合并成一颗渲染树（render tree) Layout 布局 （文档流、盒模型、计算大小和位置） Paint 绘制（把边框颜色、文字颜色、阴影等画出来） Composite 合成（根据层叠关系展示画面）  二、 CSS 动画 transition
+ transform
+ 语法：
+transform:translate(-50%, -50%)  组合使用
+transform: scale(0.5) translate(-100%,-100%)   transform: none; 取消所有效果  translate（位移）
+ translateX() translateY() translate() translateZ() translate3d()  scale（缩放）
+ scaleX() scaleY() scale()  rotate（旋转）
+ rotate() rotateZ() rotateX() rotateY() rotate3d()  skew（倾斜）
+ skewX() skewY() skew()  注意：inline 元素不支持 transform">
+
+
+<meta itemprop="datePublished" content="2019-10-27T14:15:01&#43;08:00" />
+<meta itemprop="dateModified" content="2019-10-27T14:15:01&#43;08:00" />
+<meta itemprop="wordCount" content="195">
+
+
+
+<meta itemprop="keywords" content="" />
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="CSS知识总结"/>
+<meta name="twitter:description" content="一、 浏览器渲染原理
+ 根据 HTML 构建 HTML 树（DOM） 根据 CSS 构建 CSS 树（CSSOM） 将两棵树合并成一颗渲染树（render tree) Layout 布局 （文档流、盒模型、计算大小和位置） Paint 绘制（把边框颜色、文字颜色、阴影等画出来） Composite 合成（根据层叠关系展示画面）  二、 CSS 动画 transition
+ transform
+ 语法：
+transform:translate(-50%, -50%)  组合使用
+transform: scale(0.5) translate(-100%,-100%)   transform: none; 取消所有效果  translate（位移）
+ translateX() translateY() translate() translateZ() translate3d()  scale（缩放）
+ scaleX() scaleY() scale()  rotate（旋转）
+ rotate() rotateZ() rotateX() rotateY() rotate3d()  skew（倾斜）
+ skewX() skewY() skew()  注意：inline 元素不支持 transform"/>
+
+  </head>
+
+  <body class="ma0 avenir bg-near-white">
+
+    
+   
+  
+
+  <header>
+    <div class="bg-black">
+      <nav class="pv3 ph3 ph4-ns" role="navigation">
+  <div class="flex-l justify-between items-center center">
+    <a href="https://mambaneverout.github.io/" class="f3 fw2 hover-white no-underline white-90 dib">
+      Irelia的博客
+    </a>
+    <div class="flex-l items-center">
+      
+
+      
+      
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+  </div>
+</nav>
+
+    </div>
+  </header>
+
+
+
+    <main class="pb7" role="main">
+      
+  
+  <article class="flex-l flex-wrap justify-between mw8 center ph3">
+
+    <header class="mt4 w-100">
+      <p class="f6 b helvetica tracked">
+          
+        POSTS
+      </p>
+      <h1 class="f1 athelas mb1">CSS知识总结</h1>
+      
+      
+      <time class="f6 mv4 dib tracked" datetime="2019-10-27T14:15:01&#43;08:00">October 27, 2019</time>
+      
+      
+    </header>
+
+    <section class="nested-copy-line-height lh-copy serif f4 nested-links nested-img mid-gray pr4-l w-two-thirds-l"><p>一、 浏览器渲染原理</p>
+
+<ol>
+<li>根据 HTML 构建 HTML 树（DOM）</li>
+<li>根据 CSS 构建 CSS 树（CSSOM）</li>
+<li>将两棵树合并成一颗渲染树（render tree)</li>
+<li>Layout 布局 （文档流、盒模型、计算大小和位置）</li>
+<li>Paint 绘制（把边框颜色、文字颜色、阴影等画出来）</li>
+<li>Composite 合成（根据层叠关系展示画面）</li>
+</ol>
+
+<p>二、 CSS 动画 transition</p>
+
+<ol>
+<li><p>transform</p>
+
+<ul>
+<li><p>语法：</p>
+
+<pre><code>transform:translate(-50%, -50%)
+</code></pre></li>
+
+<li><p>组合使用</p>
+
+<pre><code>transform: scale(0.5) translate(-100%,-100%)
+</code></pre>
+
+<ul>
+<li>transform: none; 取消所有效果</li>
+</ul></li>
+
+<li><p>translate（位移）</p>
+
+<ul>
+<li>translateX()</li>
+<li>translateY()</li>
+<li>translate()</li>
+<li>translateZ()</li>
+<li>translate3d()</li>
+</ul></li>
+
+<li><p>scale（缩放）</p>
+
+<ul>
+<li>scaleX()</li>
+<li>scaleY()</li>
+<li>scale()</li>
+</ul></li>
+
+<li><p>rotate（旋转）</p>
+
+<ul>
+<li>rotate()</li>
+<li>rotateZ()</li>
+<li>rotateX()</li>
+<li>rotateY()</li>
+<li>rotate3d()</li>
+</ul></li>
+
+<li><p>skew（倾斜）</p>
+
+<ul>
+<li>skewX()</li>
+<li>skewY()</li>
+<li>skew()</li>
+</ul></li>
+
+<li><p><strong>注意</strong>：inline 元素不支持 transform</p></li>
+</ul></li>
+
+<li><p>transition</p>
+
+<ul>
+<li><p>语法：transition: 属性名 时长 过渡方式 延迟</p>
+
+<pre><code>transition: left 200ms linear;
+</code></pre></li>
+
+<li><p>可以用逗号分隔两个不同的属性</p>
+
+<pre><code>transition: left 200ms, top 300ms;
+</code></pre></li>
+
+<li><p>可以用 all 代表所有属性</p></li>
+
+<li><p>过渡方式：</p>
+
+<ul>
+<li>linear 线性</li>
+<li>ease</li>
+<li>ease-in 淡入</li>
+<li>ease-out 淡出</li>
+<li>ease-in-out 淡入淡出</li>
+<li>cubic-bezier</li>
+<li>step-start</li>
+<li>step-end</li>
+<li>steps</li>
+</ul></li>
+
+<li><p><strong>注意</strong>：并不是所有属性都能过渡</p>
+
+<ul>
+<li><p>display:none =&gt; block 无法过渡</p></li>
+
+<li><p>使用 visibility:hidden =&gt; visible 代替 display:none =&gt; block 的过渡</p></li>
+
+<li><p>background 颜色可以过渡</p></li>
+
+<li><p>opacity 透明度可以过渡</p></li>
+</ul></li>
+</ul></li>
+</ol>
+
+<ul>
+<li>红心实例：<a href="http://js.jirengu.com/hoqog/2/edit">http://js.jirengu.com/hoqog/2/edit</a></li>
+</ul>
+
+<p>三、 CSS 动画 animation</p>
+
+<ul>
+<li><p>语法： animation: 时长 | 过渡方式 | 延迟 | 次数 | 方向 | 填充模式 | 是否暂停 | 动画名;</p></li>
+
+<li><p>属性：</p>
+
+<ul>
+<li>时长：1s 或者 1000ms</li>
+<li>过渡方式：跟 transition 取值一样，如 linear</li>
+<li>次数：3 或者 2.4 或者 infinite</li>
+<li>方向：reverse | alternate |alternate-reverse</li>
+<li>填充模式：none | forwards |backwards | both</li>
+
+<li><p>是否暂停：paused | running</p></li>
+
+<li><p>红心实例：<a href="http://js.jirengu.com/pepok/1/edit?html,css,output">http://js.jirengu.com/pepok/1/edit?html,css,output</a></p></li>
+</ul></li>
+</ul>
+
+<p>四、@keyframes</p>
+
+<ul>
+<li><p>语法：</p>
+
+<pre><code>@keyframes slidein {
+from { transform: translateX(0%);}
+to {transform: translateX(100%);}
+}
+</code></pre>
+
+<pre><code>@keyframes indentifier {
+0% { top: 0; left:0;}
+30% { top: 50px;}
+68% 72% { left:50%;}
+100% { top: 100px; left: 100%;}
+}
+</code></pre></li>
+</ul>
+<ul class="pa0">
+  
+</ul>
+<div class="mt6">
+      
+      
+      </div>
+    </section>
+
+    <aside class="w-30-l mt6-l">
+
+
+
+
+</aside>
+
+  </article>
+
+    </main>
+    <footer class="bg-black bottom-0 w-100 pa3" role="contentinfo">
+  <div class="flex justify-between">
+  <a class="f4 fw4 hover-white no-underline white-70 dn dib-ns pv2 ph3" href="https://mambaneverout.github.io/" >
+    &copy; 2019 Irelia的博客
+  </a>
+    <div>
+
+
+
+
+
+
+
+
+
+
+</div>
+  </div>
+</footer>
+
+    
+
+  <script src="/dist/js/app.3fc0f988d21662902933.js"></script>
+
+
+  </body>
+</html>
