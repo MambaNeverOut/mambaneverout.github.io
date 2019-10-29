@@ -6,10 +6,25 @@
     <description>Recent content in Posts on Irelia的博客</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-Hans</language>
-    <lastBuildDate>Sun, 27 Oct 2019 14:15:01 +0800</lastBuildDate>
+    <lastBuildDate>Tue, 29 Oct 2019 12:53:44 +0800</lastBuildDate>
     
 	<atom:link href="https://mambaneverout.github.io/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>浅析URL</title>
+      <link>https://mambaneverout.github.io/post/%E6%B5%85%E6%9E%90url/</link>
+      <pubDate>Tue, 29 Oct 2019 12:53:44 +0800</pubDate>
+      
+      <guid>https://mambaneverout.github.io/post/%E6%B5%85%E6%9E%90url/</guid>
+      <description>URL
+ URL 的内容：协议 + 域名或 IP + 端口号 + 路径 + 查询参数字符串 + 锚点 https + www.baidu.com + /s + ?wd=hello&amp;amp;rsv_spt=1 + #5  协议：使用 http 还是 https 域名：baidu.com 端口号：默认不写（http 为 80，https 为 443) 路径：请求不同的页面 查询参数字符串：查询的内容 锚点：访问不同位置的内容（不支持中文，不会传给服务器）   DNS ，nslookup 命令
+ 域名系统（Domain Name System）是将域名和 IP 地址相互映射的一个分布式数据库。
+ DNS 的作用是让域名和 IP 对应起来
+ nslookup baidu.com
+  IP ，ping 命令
+ Internet Protocal  如何让定位一台设备 如何封装数据报文，以跟其他设备交流  内网 IP(路由器) 外网 IP(ipconfig) 特殊的 IP  127.</description>
+    </item>
     
     <item>
       <title>CSS知识总结</title>
