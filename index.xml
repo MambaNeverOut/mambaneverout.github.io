@@ -6,10 +6,23 @@
     <description>Recent content on Irelia的博客</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-Hans</language>
-    <lastBuildDate>Tue, 29 Oct 2019 12:53:44 +0800</lastBuildDate>
+    <lastBuildDate>Mon, 04 Nov 2019 23:38:03 +0800</lastBuildDate>
     
 	<atom:link href="https://mambaneverout.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>JavaScript的诞生</title>
+      <link>https://mambaneverout.github.io/post/javascript%E7%9A%84%E8%AF%9E%E7%94%9F/</link>
+      <pubDate>Mon, 04 Nov 2019 23:38:03 +0800</pubDate>
+      
+      <guid>https://mambaneverout.github.io/post/javascript%E7%9A%84%E8%AF%9E%E7%94%9F/</guid>
+      <description>JavaScript 发展重要时间点：
+ 1994 年，网景公司发布了 Navigator 浏览器 0.9 版。这是历史上第一个比较成熟的网络浏览器。但是，这个浏览器只能用来浏览，不具备与访问者互动的能力 1995 年 5 月，网景公司决定创造一门网页脚本语言，随后布兰登只用 10 天时间就设计出来了 Javascript 2004 年 4 月 1 日，谷歌发布 Gmail 在线网页 2005 年，Jesse 将谷歌用到的技术命名为 AJAX，前端技术正式出现 2006 年，jQuery 发布，并且在之后的十年里占据了前端技术的主要地位 2009 年，Ryan 基于 V8 创建了 Node.js 2010 年，Isaac 基于 Node.js 写出来 npm 2010 年，TJ 发布了 Express.js  ECMAScript 标准的制定
+ 1997 年 6 月，第一版 ECMAScript 发布
+ 1999 年 12 月，ES3 发布，这是目前使用最广泛的版本
+ 2009 年 12 月，ES5 发布，增加了一些功能</description>
+    </item>
     
     <item>
       <title>浅析URL</title>
