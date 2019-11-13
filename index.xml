@@ -6,10 +6,22 @@
     <description>Recent content on Irelia的博客</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-Hans</language>
-    <lastBuildDate>Mon, 04 Nov 2019 23:38:03 +0800</lastBuildDate>
+    <lastBuildDate>Tue, 12 Nov 2019 12:54:20 +0800</lastBuildDate>
     
 	<atom:link href="https://mambaneverout.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>JS基本语法</title>
+      <link>https://mambaneverout.github.io/post/js%E5%9F%BA%E6%9C%AC%E8%AF%AD%E6%B3%95/</link>
+      <pubDate>Tue, 12 Nov 2019 12:54:20 +0800</pubDate>
+      
+      <guid>https://mambaneverout.github.io/post/js%E5%9F%BA%E6%9C%AC%E8%AF%AD%E6%B3%95/</guid>
+      <description>表达式和语句  表达式  1 + 2 表达式的值为 3 add(1,2) 表达式的值为函数的返回值 console.log 表达式的值为函数本身 console.log(3) 表达式的值为 undefined  语句  var a = 1 是一个语句  区别  表达式一般都有值，语句可以有也可以没有 语句一般是用来改变环境的（声明，赋值）  注意：return 后面不能加回车  标识符的规则  第一个字符可以是 Unicode 字母 或者 \$ 或者 _ 或者 中文 后面的字符包括上面的说有，还可以有数字 变量名是标识符，还有其他标识符  if else 语句 / switch 语句
+ if else 语句
+ 推荐写法：
+if (表达式) { 语句 } else if (表达式) { 语句 } else { 语句 }  可以省略{}，但是省略后 if else 语句只会默认把后面的第一句放入{}内</description>
+    </item>
     
     <item>
       <title>JavaScript的诞生</title>
