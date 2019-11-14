@@ -35,7 +35,7 @@
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://mambaneverout.github.io/" />
 
-<meta property="og:updated_time" content="2019-11-12T12:54:20+08:00" />
+<meta property="og:updated_time" content="2019-11-13T17:51:42+08:00" />
 <meta itemprop="name" content="Irelia的博客">
 <meta itemprop="description" content="">
 
@@ -122,6 +122,36 @@
       
       <div class="blah w-100">
         <h1 class="f3 fw1 athelas mt0 lh-title">
+          <a href="/post/js%E5%AF%B9%E8%B1%A1%E5%9F%BA%E6%9C%AC%E7%94%A8%E6%B3%95/" class="color-inherit dim link">
+            JS对象基本用法
+            </a>
+        </h1>
+        <div class="f6 f5-l lh-copy nested-copy-line-height nested-links">
+          对象基本知识
+ 声明对象的两种语法
+- let obj = { 'name':小明, 'age':18 } - let obj = new Object({ 'name':小明, 'age':18 })  注意：
+ 键名是字符串，引号省略也是字符串（symbol 也可以作为属性名） 引号可以省略，省略之后只能写标识符  变量作为属性名
+let a = 'mmp' let obj = {a: 'emm'} // obj.a let obj = {[a]: 'emm'} // obj[a]   如果使用 [ ] 语法，那么 JS 会先求 [ ] 中表达式的值，注意区分表达式是变量还是常量。 如果使用点语法，那么点后面一定是 string 常量。  对象的原型
+ 每个对象都有一个隐藏属性，保存着原型的地址 共有属性组成的对象叫原型   删除对象的属性
+- delete obj.
+        </div>
+          <a href="/post/js%E5%AF%B9%E8%B1%A1%E5%9F%BA%E6%9C%AC%E7%94%A8%E6%B3%95/" class="ba b--moon-gray bg-light-gray br2 color-inherit dib f7 hover-bg-moon-gray link mt2 ph2 pv1">read more</a>
+        
+      </div>
+    </div>
+  </div>
+</article>
+
+          </div>
+        
+          <div class="relative w-100 mb4">
+            
+<article class="bb b--black-10">
+  <div class="db pv4 ph3 ph0-l no-underline dark-gray">
+    <div class="flex flex-column flex-row-ns">
+      
+      <div class="blah w-100">
+        <h1 class="f3 fw1 athelas mt0 lh-title">
           <a href="/post/js%E5%9F%BA%E6%9C%AC%E8%AF%AD%E6%B3%95/" class="color-inherit dim link">
             JS基本语法
             </a>
@@ -169,42 +199,18 @@ if (表达式) { 语句 } else if (表达式) { 语句 } else { 语句 }  可以
 
           </div>
         
-          <div class="relative w-100 mb4">
-            
-<article class="bb b--black-10">
-  <div class="db pv4 ph3 ph0-l no-underline dark-gray">
-    <div class="flex flex-column flex-row-ns">
-      
-      <div class="blah w-100">
-        <h1 class="f3 fw1 athelas mt0 lh-title">
-          <a href="/post/%E6%B5%85%E6%9E%90url/" class="color-inherit dim link">
-            浅析URL
-            </a>
-        </h1>
-        <div class="f6 f5-l lh-copy nested-copy-line-height nested-links">
-          URL
- URL 的内容：协议 + 域名或 IP + 端口号 + 路径 + 查询参数字符串 + 锚点 https + www.baidu.com + /s + ?wd=hello&amp;rsv_spt=1 + #5  协议：使用 http 还是 https 域名：baidu.com 端口号：默认不写（http 为 80，https 为 443) 路径：请求不同的页面 查询参数字符串：查询的内容 锚点：访问不同位置的内容（不支持中文，不会传给服务器）   DNS ，nslookup 命令
- 域名系统（Domain Name System）是将域名和 IP 地址相互映射的一个分布式数据库。
- DNS 的作用是让域名和 IP 对应起来
- nslookup baidu.com
-  IP ，ping 命令
- Internet Protocal  如何让定位一台设备 如何封装数据报文，以跟其他设备交流  内网 IP(路由器) 外网 IP(ipconfig) 特殊的 IP  127.
-        </div>
-          <a href="/post/%E6%B5%85%E6%9E%90url/" class="ba b--moon-gray bg-light-gray br2 color-inherit dib f7 hover-bg-moon-gray link mt2 ph2 pv1">read more</a>
-        
-      </div>
-    </div>
-  </div>
-</article>
-
-          </div>
-        
       </section>
 
       
       <section class="w-100">
         <h1 class="f3">More</h1>
         
+        
+          <h2 class="f5 fw4 mb4 dib mr3">
+            <a href="/post/%E6%B5%85%E6%9E%90url/" class="link black dim">
+              浅析URL
+            </a>
+          </h2>
         
           <h2 class="f5 fw4 mb4 dib mr3">
             <a href="/post/css%E7%9F%A5%E8%AF%86%E6%80%BB%E7%BB%93/" class="link black dim">
@@ -221,12 +227,6 @@ if (表达式) { 语句 } else if (表达式) { 语句 } else { 语句 }  可以
           <h2 class="f5 fw4 mb4 dib mr3">
             <a href="/post/html%E5%85%A5%E9%97%A8%E7%AC%94%E8%AE%B01/" class="link black dim">
               HTML入门笔记1
-            </a>
-          </h2>
-        
-          <h2 class="f5 fw4 mb4 dib mr3">
-            <a href="/post/%E5%A6%82%E4%BD%95%E7%94%A8hugo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/" class="link black dim">
-              如何用hugo搭建个人博客
             </a>
           </h2>
         

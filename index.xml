@@ -6,10 +6,25 @@
     <description>Recent content on Irelia的博客</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-Hans</language>
-    <lastBuildDate>Tue, 12 Nov 2019 12:54:20 +0800</lastBuildDate>
+    <lastBuildDate>Wed, 13 Nov 2019 17:51:42 +0800</lastBuildDate>
     
 	<atom:link href="https://mambaneverout.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>JS对象基本用法</title>
+      <link>https://mambaneverout.github.io/post/js%E5%AF%B9%E8%B1%A1%E5%9F%BA%E6%9C%AC%E7%94%A8%E6%B3%95/</link>
+      <pubDate>Wed, 13 Nov 2019 17:51:42 +0800</pubDate>
+      
+      <guid>https://mambaneverout.github.io/post/js%E5%AF%B9%E8%B1%A1%E5%9F%BA%E6%9C%AC%E7%94%A8%E6%B3%95/</guid>
+      <description>对象基本知识
+ 声明对象的两种语法
+- let obj = { &#39;name&#39;:小明, &#39;age&#39;:18 } - let obj = new Object({ &#39;name&#39;:小明, &#39;age&#39;:18 })  注意：
+ 键名是字符串，引号省略也是字符串（symbol 也可以作为属性名） 引号可以省略，省略之后只能写标识符  变量作为属性名
+let a = &#39;mmp&#39; let obj = {a: &#39;emm&#39;} // obj.a let obj = {[a]: &#39;emm&#39;} // obj[a]   如果使用 [ ] 语法，那么 JS 会先求 [ ] 中表达式的值，注意区分表达式是变量还是常量。 如果使用点语法，那么点后面一定是 string 常量。  对象的原型
+ 每个对象都有一个隐藏属性，保存着原型的地址 共有属性组成的对象叫原型   删除对象的属性
+- delete obj.</description>
+    </item>
     
     <item>
       <title>JS基本语法</title>
