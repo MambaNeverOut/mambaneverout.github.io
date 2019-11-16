@@ -35,7 +35,7 @@
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://mambaneverout.github.io/" />
 
-<meta property="og:updated_time" content="2019-11-13T17:51:42+08:00" />
+<meta property="og:updated_time" content="2019-11-15T21:03:05+08:00" />
 <meta itemprop="name" content="Irelia的博客">
 <meta itemprop="description" content="">
 
@@ -122,6 +122,33 @@
       
       <div class="blah w-100">
         <h1 class="f3 fw1 athelas mt0 lh-title">
+          <a href="/post/js%E5%87%BD%E6%95%B0%E7%9A%84%E6%89%A7%E8%A1%8C%E6%97%B6%E6%9C%BA/" class="color-inherit dim link">
+            JS函数的执行时机
+            </a>
+        </h1>
+        <div class="f6 f5-l lh-copy nested-copy-line-height nested-links">
+           解释为什么如下代码会打印 6 个 6
+let i = 0 for(i = 0; i&lt;6; i++){ setTimeout(()=&gt;{ console.log(i) },0) }   for 循环遍历 6 次，会执行 6 次 console.log() 当执行第 6 次循环的时候，i 为 5，console.log(5)之后，执行 i++，i 的值变为 6 只有一个全局变量 i，在 for 循环结束后，i 的值为 6，console.log(i)就会打印出 6  写出让上面代码打印 0、1、2、3、4、5 的方法
+for(let i = 0; i&lt;6; i++){ setTimeout(()=&gt;{ console.log(i) },0) }  函数的要素
+ 调用时机 作用域 闭包 形参 返回值 调用栈 函数提升 arguments this   
+        </div>
+          <a href="/post/js%E5%87%BD%E6%95%B0%E7%9A%84%E6%89%A7%E8%A1%8C%E6%97%B6%E6%9C%BA/" class="ba b--moon-gray bg-light-gray br2 color-inherit dib f7 hover-bg-moon-gray link mt2 ph2 pv1">read more</a>
+        
+      </div>
+    </div>
+  </div>
+</article>
+
+          </div>
+        
+          <div class="relative w-100 mb4">
+            
+<article class="bb b--black-10">
+  <div class="db pv4 ph3 ph0-l no-underline dark-gray">
+    <div class="flex flex-column flex-row-ns">
+      
+      <div class="blah w-100">
+        <h1 class="f3 fw1 athelas mt0 lh-title">
           <a href="/post/js%E5%AF%B9%E8%B1%A1%E5%9F%BA%E6%9C%AC%E7%94%A8%E6%B3%95/" class="color-inherit dim link">
             JS对象基本用法
             </a>
@@ -171,40 +198,18 @@ if (表达式) { 语句 } else if (表达式) { 语句 } else { 语句 }  可以
 
           </div>
         
-          <div class="relative w-100 mb4">
-            
-<article class="bb b--black-10">
-  <div class="db pv4 ph3 ph0-l no-underline dark-gray">
-    <div class="flex flex-column flex-row-ns">
-      
-      <div class="blah w-100">
-        <h1 class="f3 fw1 athelas mt0 lh-title">
-          <a href="/post/javascript%E7%9A%84%E8%AF%9E%E7%94%9F/" class="color-inherit dim link">
-            JavaScript的诞生
-            </a>
-        </h1>
-        <div class="f6 f5-l lh-copy nested-copy-line-height nested-links">
-          JavaScript 发展重要时间点：
- 1994 年，网景公司发布了 Navigator 浏览器 0.9 版。这是历史上第一个比较成熟的网络浏览器。但是，这个浏览器只能用来浏览，不具备与访问者互动的能力 1995 年 5 月，网景公司决定创造一门网页脚本语言，随后布兰登只用 10 天时间就设计出来了 Javascript 2004 年 4 月 1 日，谷歌发布 Gmail 在线网页 2005 年，Jesse 将谷歌用到的技术命名为 AJAX，前端技术正式出现 2006 年，jQuery 发布，并且在之后的十年里占据了前端技术的主要地位 2009 年，Ryan 基于 V8 创建了 Node.js 2010 年，Isaac 基于 Node.js 写出来 npm 2010 年，TJ 发布了 Express.js  ECMAScript 标准的制定
- 1997 年 6 月，第一版 ECMAScript 发布
- 1999 年 12 月，ES3 发布，这是目前使用最广泛的版本
- 2009 年 12 月，ES5 发布，增加了一些功能
-        </div>
-          <a href="/post/javascript%E7%9A%84%E8%AF%9E%E7%94%9F/" class="ba b--moon-gray bg-light-gray br2 color-inherit dib f7 hover-bg-moon-gray link mt2 ph2 pv1">read more</a>
-        
-      </div>
-    </div>
-  </div>
-</article>
-
-          </div>
-        
       </section>
 
       
       <section class="w-100">
         <h1 class="f3">More</h1>
         
+        
+          <h2 class="f5 fw4 mb4 dib mr3">
+            <a href="/post/javascript%E7%9A%84%E8%AF%9E%E7%94%9F/" class="link black dim">
+              JavaScript的诞生
+            </a>
+          </h2>
         
           <h2 class="f5 fw4 mb4 dib mr3">
             <a href="/post/%E6%B5%85%E6%9E%90url/" class="link black dim">
@@ -221,12 +226,6 @@ if (表达式) { 语句 } else if (表达式) { 语句 } else { 语句 }  可以
           <h2 class="f5 fw4 mb4 dib mr3">
             <a href="/post/html%E5%B8%B8%E7%94%A8%E6%A0%87%E7%AD%BE/" class="link black dim">
               HTML常用标签
-            </a>
-          </h2>
-        
-          <h2 class="f5 fw4 mb4 dib mr3">
-            <a href="/post/html%E5%85%A5%E9%97%A8%E7%AC%94%E8%AE%B01/" class="link black dim">
-              HTML入门笔记1
             </a>
           </h2>
         
