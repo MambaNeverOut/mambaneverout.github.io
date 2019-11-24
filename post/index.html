@@ -35,7 +35,7 @@
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://mambaneverout.github.io/post/" />
 
-<meta property="og:updated_time" content="2019-11-15T21:03:05+08:00" />
+<meta property="og:updated_time" content="2019-11-24T10:05:32+08:00" />
 <meta itemprop="name" content="Posts">
 <meta itemprop="description" content="">
 
@@ -94,6 +94,32 @@
       
     </section>
     <aside class="flex-ns flex-wrap justify-around mt5">
+      
+        <div class="relative w-100 w-30-l mb4 bg-white">
+          
+            <div class="mb3 pa4 mid-gray overflow-hidden">
+    
+      <div class="f6">
+        November 24, 2019
+      </div>
+    
+    <h1 class="f3 near-black">
+      <a href="/post/jquery%E8%AE%BE%E8%AE%A1%E6%80%9D%E6%83%B3/" class="link black dim">
+        JQuery设计思想
+      </a>
+    </h1>
+    <div class="nested-links f5 lh-copy nested-copy-line-height">
+      jQuery 获取元素
+ 将一个表达式，放进构造函数 jQuery()（简写为\$），然后得到被选中的元素。
+ 表达式可以是 CSS 选择器：
+$(document) // 选择整个文档 $('#myId') // 选择ID为myId的网页元素 $('div.myClass) // 选择class为myClass的div元素 $('input[name=first]') // 选择name属性等于first的input元素  也可以是 jQuery 特有的表达式
+$('a:first') //选择网页中第一个a元素 $('tr:odd') //选择表格的奇数行 $('#myForm :input') // 选择表单中的input元素 $('div:visible') //选择可见的div元素 $('div:gt(2)') // 选择所有的div元素，除了前三个 $('div:animated') // 选择当前处于动画状态的div元素  jQuery 还支持对选中的元素进行过滤，对找到的元素再次进行筛选
+　$('div').has('p'); // 选择包含p元素的div元素 $('div').not('.myClass'); //选择class不等于myClass的div元素 $('div').filter('.myClass'); //选择class等于myClass的div元素 $('div').first(); //选择第1个div元素 $('div').eq(5); //选择第6个div元素  也可以获取附近的相关元素(父子元素，兄弟元素)
+　$('div').next('p'); //选择div元素后面的第一个p元素 $('div').parent(); //选择div元素的父元素 $('div').closest('form'); //选择离div最近的那个form父元素 $('div').children(); //选择div的所有子元素 $('div').siblings(); //选择div的同级元素   jQuery 的链式操作
+    </div>
+  </div>
+
+        </div>
       
         <div class="relative w-100 w-30-l mb4 bg-white">
           
@@ -334,28 +360,52 @@ hugo server -D  默认在 http://localhost:1313 中显示。
 
         </div>
       
-        <div class="relative w-100 w-30-l mb4 bg-white">
-          
-            <div class="mb3 pa4 mid-gray overflow-hidden">
-    
-      <div class="f6">
-        October 21, 2019
-      </div>
-    
-    <h1 class="f3 near-black">
-      <a href="/post/%E5%BC%80%E5%8D%9A/" class="link black dim">
-        开博
-      </a>
-    </h1>
-    <div class="nested-links f5 lh-copy nested-copy-line-height">
-       大家好，我的博客开通了。 
-    </div>
-  </div>
-
-        </div>
-      
     </aside>
     
+
+<ul class="pagination">
+    
+    <li class="page-item">
+        <a href="/post/" class="page-link" aria-label="First"><span aria-hidden="true">&laquo;&laquo;</span></a>
+    </li>
+    
+    <li class="page-item disabled">
+    <a  class="page-link" aria-label="Previous"><span aria-hidden="true">&laquo;</span></a>
+    </li>
+    
+    
+    
+    
+    
+    
+    
+        
+        
+    
+    
+    <li class="page-item active"><a class="page-link" href="/post/">1</a></li>
+    
+    
+    
+    
+    
+    
+        
+        
+    
+    
+    <li class="page-item"><a class="page-link" href="/post/page/2/">2</a></li>
+    
+    
+    <li class="page-item">
+    <a href="/post/page/2/" class="page-link" aria-label="Next"><span aria-hidden="true">&raquo;</span></a>
+    </li>
+    
+    <li class="page-item">
+        <a href="/post/page/2/" class="page-link" aria-label="Last"><span aria-hidden="true">&raquo;&raquo;</span></a>
+    </li>
+    
+</ul>
 
 
   </article>
