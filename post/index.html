@@ -35,7 +35,7 @@
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://mambaneverout.github.io/post/" />
 
-<meta property="og:updated_time" content="2019-11-24T10:05:32+08:00" />
+<meta property="og:updated_time" content="2019-12-10T10:04:19+08:00" />
 <meta itemprop="name" content="Posts">
 <meta itemprop="description" content="">
 
@@ -94,6 +94,30 @@
       
     </section>
     <aside class="flex-ns flex-wrap justify-around mt5">
+      
+        <div class="relative w-100 w-30-l mb4 bg-white">
+          
+            <div class="mb3 pa4 mid-gray overflow-hidden">
+    
+      <div class="f6">
+        December 10, 2019
+      </div>
+    
+    <h1 class="f3 near-black">
+      <a href="/post/js%E7%BB%A7%E6%89%BF/" class="link black dim">
+        JS继承
+      </a>
+    </h1>
+    <div class="nested-links f5 lh-copy nested-copy-line-height">
+      JS 实现继承有两种通用的方式  构造函数 + 原型
+ 不写 Parent.call(this, name1) 注释掉 Parent.call(this, name1)之后，执行 pMethod 函数，pMethod 函数被 child 调用，this 指向 child，但在 child 中无法找到 name1，所以输出 undefined。
+ 正确代码 正确代码，需要把 this 指向通过 new Child 构造出来的实例对象(child)，并且把参数 name1 传给 Parent。
+ 终极代码
+function Parent(name1){ this.name1 = name1 } Parent.prototype.pMethod = function(){ console.log(this.name1) } function Child(name2, name1){ Parent.call(this, name1) // 得分点 this.name2 = name2 } Child.prototype.__proto__ = Parent.prototype //上面这句代码的古板写法应该是下面三句 //const empty = function(){} //empty.prototype = Parent.
+    </div>
+  </div>
+
+        </div>
       
         <div class="relative w-100 w-30-l mb4 bg-white">
           
@@ -325,36 +349,6 @@ transform: scale(0.5) translate(-100%,-100%)   transform: none; 取消所有效�
  header: 头部 footer: 脚部 h1~h6：标题 p: 段落 section: 章节 article: 文章 main: 主要内容 aside: 旁支内容（侧边导航栏） div: 划分（万能标签）  全局属性：
  class：CSS书写样式常用 contenteditable：标签变为可编辑的 hidden：隐藏该标签 id：尽量不要使用 style：设置样式 tabindex：Tab键访问 title：标题，显示完整内容  常用的内容标签：
  ol+li：有序列表 ul+li：无序列表 dl+dt+dd：键值对列表 a：超链接（添加target=&rdquo;_blank&rdquo;，在新标签打开网页) strong：内容上的强调 em：语气上的强调 code：显示代码，默认字体是等宽的 pre：包裹的内容中的空格和换行都会显示出来 hr：分割线 br：换行 quote：内联引用 blockquote：块级引用   
-    </div>
-  </div>
-
-        </div>
-      
-        <div class="relative w-100 w-30-l mb4 bg-white">
-          
-            <div class="mb3 pa4 mid-gray overflow-hidden">
-    
-      <div class="f6">
-        October 22, 2019
-      </div>
-    
-    <h1 class="f3 near-black">
-      <a href="/post/%E5%A6%82%E4%BD%95%E7%94%A8hugo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/" class="link black dim">
-        如何用hugo搭建个人博客
-      </a>
-    </h1>
-    <div class="nested-links f5 lh-copy nested-copy-line-height">
-      大家好啊，第一篇博客就来介绍一下如何用hugo搭建一个简单的个人博客。  安装Hugo,下载链接：https://github.com/gohugoio/hugo/releases。
-hugo version  下载完成后可以通过下面的指令检测是否下载成功。
- 建立新网站
-hugo new site blog  上面的代码将在名为的文件夹中创建一个新的Hugo网站blog。
- 添加主题(默认主题为Ananke主题)
-cd blog git init git submodule add https://github.com/budparr/gohugo-theme-ananke.git themes/ananke echo 'theme = &quot;ananke&quot;' &gt;&gt; config.toml  创建新的博客
-hugo new post/开博.md  可以编辑新创建的文件内容，它将从以下内容开始：
---- title: &quot;开博&quot; date: 2019-10-22T08:47:11+01:00 draft: true ---  注意：draft 是指草稿的意思，默认是true（不显示），写完博客记得修改为false，然后才会在你的博客中显示。
- 启动Hugo服务器
-hugo server -D  默认在 http://localhost:1313 中显示。
-  一个简单的hugo博客就搭建完成了，可以开始写自己的博客啦！
     </div>
   </div>
 

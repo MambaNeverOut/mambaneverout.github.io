@@ -6,10 +6,23 @@
     <description>Recent content on Irelia的博客</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-Hans</language>
-    <lastBuildDate>Sun, 24 Nov 2019 10:05:32 +0800</lastBuildDate>
+    <lastBuildDate>Tue, 10 Dec 2019 10:04:19 +0800</lastBuildDate>
     
 	<atom:link href="https://mambaneverout.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>JS继承</title>
+      <link>https://mambaneverout.github.io/post/js%E7%BB%A7%E6%89%BF/</link>
+      <pubDate>Tue, 10 Dec 2019 10:04:19 +0800</pubDate>
+      
+      <guid>https://mambaneverout.github.io/post/js%E7%BB%A7%E6%89%BF/</guid>
+      <description>JS 实现继承有两种通用的方式  构造函数 + 原型
+ 不写 Parent.call(this, name1) 注释掉 Parent.call(this, name1)之后，执行 pMethod 函数，pMethod 函数被 child 调用，this 指向 child，但在 child 中无法找到 name1，所以输出 undefined。
+ 正确代码 正确代码，需要把 this 指向通过 new Child 构造出来的实例对象(child)，并且把参数 name1 传给 Parent。
+ 终极代码
+function Parent(name1){ this.name1 = name1 } Parent.prototype.pMethod = function(){ console.log(this.name1) } function Child(name2, name1){ Parent.call(this, name1) // 得分点 this.name2 = name2 } Child.prototype.__proto__ = Parent.prototype //上面这句代码的古板写法应该是下面三句 //const empty = function(){} //empty.prototype = Parent.</description>
+    </item>
     
     <item>
       <title>JQuery设计思想</title>
