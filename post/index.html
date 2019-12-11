@@ -35,7 +35,7 @@
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://mambaneverout.github.io/post/" />
 
-<meta property="og:updated_time" content="2019-12-10T10:04:19+08:00" />
+<meta property="og:updated_time" content="2019-12-10T16:44:18+08:00" />
 <meta itemprop="name" content="Posts">
 <meta itemprop="description" content="">
 
@@ -94,6 +94,37 @@
       
     </section>
     <aside class="flex-ns flex-wrap justify-around mt5">
+      
+        <div class="relative w-100 w-30-l mb4 bg-white">
+          
+            <div class="mb3 pa4 mid-gray overflow-hidden">
+    
+      <div class="f6">
+        December 10, 2019
+      </div>
+    
+    <h1 class="f3 near-black">
+      <a href="/post/mvc/" class="link black dim">
+        MVC
+      </a>
+    </h1>
+    <div class="nested-links f5 lh-copy nested-copy-line-height">
+      MVC
+ Model (数据) 负责操作所有数据
+const m = { data:{} }  View (视图) 负责所有 UI 界面
+const v = { el: null, html:` &lt;div&gt; &lt;button&gt;点我&lt;/button&gt; &lt;/div&gt; `, init(container){}, render(){} }  Controller (控制器) 负责其他
+const c = { init(container){}, events:{}, autoBindEvents(){} }   EventBus(事件总线)
+ 对象间的通信，负责 Model,View,Controller 之间的通信。
+ on 监听事件
+ trigger 触发事件/emit 发送事件
+ once 事件执行一次
+ off 移除事件监听
+ jQuery
+import $ from 'jQuery' const eventBus = $(window) // const eventBus = $({}) eventBus.
+    </div>
+  </div>
+
+        </div>
       
         <div class="relative w-100 w-30-l mb4 bg-white">
           
@@ -324,31 +355,6 @@ transform: scale(0.5) translate(-100%,-100%)   transform: none; 取消所有效�
   iframe 标签 内联框架元素，它能够将另一个 HTML 页面嵌入到当前页面中。
  Chrome 浏览器不允许任何 iframe 标签指向 TA。  table 标签
  thead tbody tfoot tr: 行 th: 表头 td: 表格单元格 table-layout: auto （内容决定宽度）/fixed （宽度平均） border-collapse: collapse; border 合并 border-spacing: 0; border 之前的距离  img 标签（永远不要让图片变形）
-    </div>
-  </div>
-
-        </div>
-      
-        <div class="relative w-100 w-30-l mb4 bg-white">
-          
-            <div class="mb3 pa4 mid-gray overflow-hidden">
-    
-      <div class="f6">
-        October 23, 2019
-      </div>
-    
-    <h1 class="f3 near-black">
-      <a href="/post/html%E5%85%A5%E9%97%A8%E7%AC%94%E8%AE%B01/" class="link black dim">
-        HTML入门笔记1
-      </a>
-    </h1>
-    <div class="nested-links f5 lh-copy nested-copy-line-height">
-       HTML是由蒂莫西·约翰·“蒂姆”·伯纳·李爵士发明的，他也是万维网的发明者。
- HTML起手式： VS Code中创建一个HTML页面，输入!（注意是英文状态下的!），然后按 Tab 键即可创建一个基础的HTML。
- 常用的表章节的标签：
- header: 头部 footer: 脚部 h1~h6：标题 p: 段落 section: 章节 article: 文章 main: 主要内容 aside: 旁支内容（侧边导航栏） div: 划分（万能标签）  全局属性：
- class：CSS书写样式常用 contenteditable：标签变为可编辑的 hidden：隐藏该标签 id：尽量不要使用 style：设置样式 tabindex：Tab键访问 title：标题，显示完整内容  常用的内容标签：
- ol+li：有序列表 ul+li：无序列表 dl+dt+dd：键值对列表 a：超链接（添加target=&rdquo;_blank&rdquo;，在新标签打开网页) strong：内容上的强调 em：语气上的强调 code：显示代码，默认字体是等宽的 pre：包裹的内容中的空格和换行都会显示出来 hr：分割线 br：换行 quote：内联引用 blockquote：块级引用   
     </div>
   </div>
 

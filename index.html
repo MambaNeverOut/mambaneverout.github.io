@@ -35,7 +35,7 @@
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://mambaneverout.github.io/" />
 
-<meta property="og:updated_time" content="2019-12-10T10:04:19+08:00" />
+<meta property="og:updated_time" content="2019-12-10T16:44:18+08:00" />
 <meta itemprop="name" content="Irelia的博客">
 <meta itemprop="description" content="">
 
@@ -122,6 +122,41 @@
       
       <div class="blah w-100">
         <h1 class="f3 fw1 athelas mt0 lh-title">
+          <a href="/post/mvc/" class="color-inherit dim link">
+            MVC
+            </a>
+        </h1>
+        <div class="f6 f5-l lh-copy nested-copy-line-height nested-links">
+          MVC
+ Model (数据) 负责操作所有数据
+const m = { data:{} }  View (视图) 负责所有 UI 界面
+const v = { el: null, html:` &lt;div&gt; &lt;button&gt;点我&lt;/button&gt; &lt;/div&gt; `, init(container){}, render(){} }  Controller (控制器) 负责其他
+const c = { init(container){}, events:{}, autoBindEvents(){} }   EventBus(事件总线)
+ 对象间的通信，负责 Model,View,Controller 之间的通信。
+ on 监听事件
+ trigger 触发事件/emit 发送事件
+ once 事件执行一次
+ off 移除事件监听
+ jQuery
+import $ from 'jQuery' const eventBus = $(window) // const eventBus = $({}) eventBus.
+        </div>
+          <a href="/post/mvc/" class="ba b--moon-gray bg-light-gray br2 color-inherit dib f7 hover-bg-moon-gray link mt2 ph2 pv1">read more</a>
+        
+      </div>
+    </div>
+  </div>
+</article>
+
+          </div>
+        
+          <div class="relative w-100 mb4">
+            
+<article class="bb b--black-10">
+  <div class="db pv4 ph3 ph0-l no-underline dark-gray">
+    <div class="flex flex-column flex-row-ns">
+      
+      <div class="blah w-100">
+        <h1 class="f3 fw1 athelas mt0 lh-title">
           <a href="/post/js%E7%BB%A7%E6%89%BF/" class="color-inherit dim link">
             JS继承
             </a>
@@ -172,39 +207,18 @@ $('a:first') //选择网页中第一个a元素 $('tr:odd') //选择表格的奇�
 
           </div>
         
-          <div class="relative w-100 mb4">
-            
-<article class="bb b--black-10">
-  <div class="db pv4 ph3 ph0-l no-underline dark-gray">
-    <div class="flex flex-column flex-row-ns">
-      
-      <div class="blah w-100">
-        <h1 class="f3 fw1 athelas mt0 lh-title">
-          <a href="/post/js%E5%87%BD%E6%95%B0%E7%9A%84%E6%89%A7%E8%A1%8C%E6%97%B6%E6%9C%BA/" class="color-inherit dim link">
-            JS函数的执行时机
-            </a>
-        </h1>
-        <div class="f6 f5-l lh-copy nested-copy-line-height nested-links">
-           解释为什么如下代码会打印 6 个 6
-let i = 0 for(i = 0; i&lt;6; i++){ setTimeout(()=&gt;{ console.log(i) },0) }   for 循环遍历 6 次，会执行 6 次 console.log() 当执行第 6 次循环的时候，i 为 5，console.log(5)之后，执行 i++，i 的值变为 6 只有一个全局变量 i，在 for 循环结束后，i 的值为 6，console.log(i)就会打印出 6  写出让上面代码打印 0、1、2、3、4、5 的方法
-for(let i = 0; i&lt;6; i++){ setTimeout(()=&gt;{ console.log(i) },0) }  函数的要素
- 调用时机 作用域 闭包 形参 返回值 调用栈 函数提升 arguments this   
-        </div>
-          <a href="/post/js%E5%87%BD%E6%95%B0%E7%9A%84%E6%89%A7%E8%A1%8C%E6%97%B6%E6%9C%BA/" class="ba b--moon-gray bg-light-gray br2 color-inherit dib f7 hover-bg-moon-gray link mt2 ph2 pv1">read more</a>
-        
-      </div>
-    </div>
-  </div>
-</article>
-
-          </div>
-        
       </section>
 
       
       <section class="w-100">
         <h1 class="f3">More</h1>
         
+        
+          <h2 class="f5 fw4 mb4 dib mr3">
+            <a href="/post/js%E5%87%BD%E6%95%B0%E7%9A%84%E6%89%A7%E8%A1%8C%E6%97%B6%E6%9C%BA/" class="link black dim">
+              JS函数的执行时机
+            </a>
+          </h2>
         
           <h2 class="f5 fw4 mb4 dib mr3">
             <a href="/post/js%E5%AF%B9%E8%B1%A1%E5%9F%BA%E6%9C%AC%E7%94%A8%E6%B3%95/" class="link black dim">
@@ -221,12 +235,6 @@ for(let i = 0; i&lt;6; i++){ setTimeout(()=&gt;{ console.log(i) },0) }  函数�
           <h2 class="f5 fw4 mb4 dib mr3">
             <a href="/post/javascript%E7%9A%84%E8%AF%9E%E7%94%9F/" class="link black dim">
               JavaScript的诞生
-            </a>
-          </h2>
-        
-          <h2 class="f5 fw4 mb4 dib mr3">
-            <a href="/post/%E6%B5%85%E6%9E%90url/" class="link black dim">
-              浅析URL
             </a>
           </h2>
         

@@ -6,10 +6,30 @@
     <description>Recent content on Irelia的博客</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-Hans</language>
-    <lastBuildDate>Tue, 10 Dec 2019 10:04:19 +0800</lastBuildDate>
+    <lastBuildDate>Tue, 10 Dec 2019 16:44:18 +0800</lastBuildDate>
     
 	<atom:link href="https://mambaneverout.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>MVC</title>
+      <link>https://mambaneverout.github.io/post/mvc/</link>
+      <pubDate>Tue, 10 Dec 2019 16:44:18 +0800</pubDate>
+      
+      <guid>https://mambaneverout.github.io/post/mvc/</guid>
+      <description>MVC
+ Model (数据) 负责操作所有数据
+const m = { data:{} }  View (视图) 负责所有 UI 界面
+const v = { el: null, html:` &amp;lt;div&amp;gt; &amp;lt;button&amp;gt;点我&amp;lt;/button&amp;gt; &amp;lt;/div&amp;gt; `, init(container){}, render(){} }  Controller (控制器) 负责其他
+const c = { init(container){}, events:{}, autoBindEvents(){} }   EventBus(事件总线)
+ 对象间的通信，负责 Model,View,Controller 之间的通信。
+ on 监听事件
+ trigger 触发事件/emit 发送事件
+ once 事件执行一次
+ off 移除事件监听
+ jQuery
+import $ from &#39;jQuery&#39; const eventBus = $(window) // const eventBus = $({}) eventBus.</description>
+    </item>
     
     <item>
       <title>JS继承</title>
