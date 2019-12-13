@@ -35,7 +35,7 @@
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://mambaneverout.github.io/" />
 
-<meta property="og:updated_time" content="2019-12-10T16:44:18+08:00" />
+<meta property="og:updated_time" content="2019-12-12T12:45:52+08:00" />
 <meta itemprop="name" content="Irelia的博客">
 <meta itemprop="description" content="">
 
@@ -122,6 +122,37 @@
       
       <div class="blah w-100">
         <h1 class="f3 fw1 athelas mt0 lh-title">
+          <a href="/post/css%E9%80%89%E6%8B%A9%E5%99%A8/" class="color-inherit dim link">
+            CSS选择器
+            </a>
+        </h1>
+        <div class="f6 f5-l lh-copy nested-copy-line-height nested-links">
+          通用选择器
+* { box-sizing: border-box; } .box *{ font-size: 24px; }  属性选择器
+[disabled]{ border:1px solid #ccc; } [type=&quot;text&quot;]{ border:1px solid #ccc; } [id=&quot;title&quot;]{ border:1px solid #ccc; } [data-color=&quot;gray&quot;]{ color: #666; }  不常用的选择器
+ [attr~=val] 仅选择 attr 属性的值（以空格间隔出多个值）中有包含 val 值的所有元素，比如位于被空格分隔的多个类（class）中的一个类。
+[class~=&quot;aa&quot;]{}  [attr*=val] 选择 attr 属性的值中包含字符串 val 的元素。
+[href*=&quot;baidu.com&quot;]{}  [attr^=val] 选择 attr 属性的值以 val 开头（包括 val）的元素。
+[data-name^=&quot;frank&quot;]{}  [attr$=val] 选择 attr 属性的值以 val 结尾（包括 val）的元素。
+[data-name$=&quot;1&quot;]{}  [attr|=val] 选择 attr 属性的值是 val 或以 val-开头的元素（-用来处理语言编码）。
+        </div>
+          <a href="/post/css%E9%80%89%E6%8B%A9%E5%99%A8/" class="ba b--moon-gray bg-light-gray br2 color-inherit dib f7 hover-bg-moon-gray link mt2 ph2 pv1">read more</a>
+        
+      </div>
+    </div>
+  </div>
+</article>
+
+          </div>
+        
+          <div class="relative w-100 mb4">
+            
+<article class="bb b--black-10">
+  <div class="db pv4 ph3 ph0-l no-underline dark-gray">
+    <div class="flex flex-column flex-row-ns">
+      
+      <div class="blah w-100">
+        <h1 class="f3 fw1 athelas mt0 lh-title">
           <a href="/post/mvc/" class="color-inherit dim link">
             MVC
             </a>
@@ -177,42 +208,18 @@ function Parent(name1){ this.name1 = name1 } Parent.prototype.pMethod = function
 
           </div>
         
-          <div class="relative w-100 mb4">
-            
-<article class="bb b--black-10">
-  <div class="db pv4 ph3 ph0-l no-underline dark-gray">
-    <div class="flex flex-column flex-row-ns">
-      
-      <div class="blah w-100">
-        <h1 class="f3 fw1 athelas mt0 lh-title">
-          <a href="/post/jquery%E8%AE%BE%E8%AE%A1%E6%80%9D%E6%83%B3/" class="color-inherit dim link">
-            JQuery设计思想
-            </a>
-        </h1>
-        <div class="f6 f5-l lh-copy nested-copy-line-height nested-links">
-          jQuery 获取元素
- 将一个表达式，放进构造函数 jQuery()（简写为\$），然后得到被选中的元素。
- 表达式可以是 CSS 选择器：
-$(document) // 选择整个文档 $('#myId') // 选择ID为myId的网页元素 $('div.myClass) // 选择class为myClass的div元素 $('input[name=first]') // 选择name属性等于first的input元素  也可以是 jQuery 特有的表达式
-$('a:first') //选择网页中第一个a元素 $('tr:odd') //选择表格的奇数行 $('#myForm :input') // 选择表单中的input元素 $('div:visible') //选择可见的div元素 $('div:gt(2)') // 选择所有的div元素，除了前三个 $('div:animated') // 选择当前处于动画状态的div元素  jQuery 还支持对选中的元素进行过滤，对找到的元素再次进行筛选
-　$('div').has('p'); // 选择包含p元素的div元素 $('div').not('.myClass'); //选择class不等于myClass的div元素 $('div').filter('.myClass'); //选择class等于myClass的div元素 $('div').first(); //选择第1个div元素 $('div').eq(5); //选择第6个div元素  也可以获取附近的相关元素(父子元素，兄弟元素)
-　$('div').next('p'); //选择div元素后面的第一个p元素 $('div').parent(); //选择div元素的父元素 $('div').closest('form'); //选择离div最近的那个form父元素 $('div').children(); //选择div的所有子元素 $('div').siblings(); //选择div的同级元素   jQuery 的链式操作
-        </div>
-          <a href="/post/jquery%E8%AE%BE%E8%AE%A1%E6%80%9D%E6%83%B3/" class="ba b--moon-gray bg-light-gray br2 color-inherit dib f7 hover-bg-moon-gray link mt2 ph2 pv1">read more</a>
-        
-      </div>
-    </div>
-  </div>
-</article>
-
-          </div>
-        
       </section>
 
       
       <section class="w-100">
         <h1 class="f3">More</h1>
         
+        
+          <h2 class="f5 fw4 mb4 dib mr3">
+            <a href="/post/jquery%E8%AE%BE%E8%AE%A1%E6%80%9D%E6%83%B3/" class="link black dim">
+              JQuery设计思想
+            </a>
+          </h2>
         
           <h2 class="f5 fw4 mb4 dib mr3">
             <a href="/post/js%E5%87%BD%E6%95%B0%E7%9A%84%E6%89%A7%E8%A1%8C%E6%97%B6%E6%9C%BA/" class="link black dim">
@@ -229,12 +236,6 @@ $('a:first') //选择网页中第一个a元素 $('tr:odd') //选择表格的奇�
           <h2 class="f5 fw4 mb4 dib mr3">
             <a href="/post/js%E5%9F%BA%E6%9C%AC%E8%AF%AD%E6%B3%95/" class="link black dim">
               JS基本语法
-            </a>
-          </h2>
-        
-          <h2 class="f5 fw4 mb4 dib mr3">
-            <a href="/post/javascript%E7%9A%84%E8%AF%9E%E7%94%9F/" class="link black dim">
-              JavaScript的诞生
             </a>
           </h2>
         

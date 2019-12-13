@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    
+    <title>Irelia的博客  | CSS选择器</title>
+    <meta name="viewport" content="width=device-width,minimum-scale=1">
+    <meta name="generator" content="Hugo 0.58.3" />
+    
+    
+      <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
+    
+
+    
+    
+      <link href="/dist/css/app.d98f2eb6bcd1eaedb7edf166bd16af26.css" rel="stylesheet">
+    
+
+    
+
+    
+      
+    
+
+    
+    
+    <meta property="og:title" content="CSS选择器" />
+<meta property="og:description" content="通用选择器
+* { box-sizing: border-box; } .box *{ font-size: 24px; }  属性选择器
+[disabled]{ border:1px solid #ccc; } [type=&quot;text&quot;]{ border:1px solid #ccc; } [id=&quot;title&quot;]{ border:1px solid #ccc; } [data-color=&quot;gray&quot;]{ color: #666; }  不常用的选择器
+ [attr~=val] 仅选择 attr 属性的值（以空格间隔出多个值）中有包含 val 值的所有元素，比如位于被空格分隔的多个类（class）中的一个类。
+[class~=&quot;aa&quot;]{}  [attr*=val] 选择 attr 属性的值中包含字符串 val 的元素。
+[href*=&quot;baidu.com&quot;]{}  [attr^=val] 选择 attr 属性的值以 val 开头（包括 val）的元素。
+[data-name^=&quot;frank&quot;]{}  [attr$=val] 选择 attr 属性的值以 val 结尾（包括 val）的元素。
+[data-name$=&quot;1&quot;]{}  [attr|=val] 选择 attr 属性的值是 val 或以 val-开头的元素（-用来处理语言编码）。" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://mambaneverout.github.io/post/css%E9%80%89%E6%8B%A9%E5%99%A8/" />
+<meta property="article:published_time" content="2019-12-12T12:45:52+08:00" />
+<meta property="article:modified_time" content="2019-12-12T12:45:52+08:00" />
+<meta itemprop="name" content="CSS选择器">
+<meta itemprop="description" content="通用选择器
+* { box-sizing: border-box; } .box *{ font-size: 24px; }  属性选择器
+[disabled]{ border:1px solid #ccc; } [type=&quot;text&quot;]{ border:1px solid #ccc; } [id=&quot;title&quot;]{ border:1px solid #ccc; } [data-color=&quot;gray&quot;]{ color: #666; }  不常用的选择器
+ [attr~=val] 仅选择 attr 属性的值（以空格间隔出多个值）中有包含 val 值的所有元素，比如位于被空格分隔的多个类（class）中的一个类。
+[class~=&quot;aa&quot;]{}  [attr*=val] 选择 attr 属性的值中包含字符串 val 的元素。
+[href*=&quot;baidu.com&quot;]{}  [attr^=val] 选择 attr 属性的值以 val 开头（包括 val）的元素。
+[data-name^=&quot;frank&quot;]{}  [attr$=val] 选择 attr 属性的值以 val 结尾（包括 val）的元素。
+[data-name$=&quot;1&quot;]{}  [attr|=val] 选择 attr 属性的值是 val 或以 val-开头的元素（-用来处理语言编码）。">
+
+
+<meta itemprop="datePublished" content="2019-12-12T12:45:52&#43;08:00" />
+<meta itemprop="dateModified" content="2019-12-12T12:45:52&#43;08:00" />
+<meta itemprop="wordCount" content="178">
+
+
+
+<meta itemprop="keywords" content="" />
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="CSS选择器"/>
+<meta name="twitter:description" content="通用选择器
+* { box-sizing: border-box; } .box *{ font-size: 24px; }  属性选择器
+[disabled]{ border:1px solid #ccc; } [type=&quot;text&quot;]{ border:1px solid #ccc; } [id=&quot;title&quot;]{ border:1px solid #ccc; } [data-color=&quot;gray&quot;]{ color: #666; }  不常用的选择器
+ [attr~=val] 仅选择 attr 属性的值（以空格间隔出多个值）中有包含 val 值的所有元素，比如位于被空格分隔的多个类（class）中的一个类。
+[class~=&quot;aa&quot;]{}  [attr*=val] 选择 attr 属性的值中包含字符串 val 的元素。
+[href*=&quot;baidu.com&quot;]{}  [attr^=val] 选择 attr 属性的值以 val 开头（包括 val）的元素。
+[data-name^=&quot;frank&quot;]{}  [attr$=val] 选择 attr 属性的值以 val 结尾（包括 val）的元素。
+[data-name$=&quot;1&quot;]{}  [attr|=val] 选择 attr 属性的值是 val 或以 val-开头的元素（-用来处理语言编码）。"/>
+
+  </head>
+
+  <body class="ma0 avenir bg-near-white">
+
+    
+   
+  
+
+  <header>
+    <div class="bg-black">
+      <nav class="pv3 ph3 ph4-ns" role="navigation">
+  <div class="flex-l justify-between items-center center">
+    <a href="https://mambaneverout.github.io/" class="f3 fw2 hover-white no-underline white-90 dib">
+      Irelia的博客
+    </a>
+    <div class="flex-l items-center">
+      
+
+      
+      
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+  </div>
+</nav>
+
+    </div>
+  </header>
+
+
+
+    <main class="pb7" role="main">
+      
+  
+  <article class="flex-l flex-wrap justify-between mw8 center ph3">
+
+    <header class="mt4 w-100">
+      <p class="f6 b helvetica tracked">
+          
+        POSTS
+      </p>
+      <h1 class="f1 athelas mb1">CSS选择器</h1>
+      
+      
+      <time class="f6 mv4 dib tracked" datetime="2019-12-12T12:45:52&#43;08:00">December 12, 2019</time>
+      
+      
+    </header>
+
+    <section class="nested-copy-line-height lh-copy serif f4 nested-links nested-img mid-gray pr4-l w-two-thirds-l"><ul>
+<li><p>通用选择器</p>
+
+<pre><code>* {
+  box-sizing: border-box;
+}
+.box *{
+  font-size: 24px;
+}
+</code></pre></li>
+
+<li><p>属性选择器</p>
+
+<pre><code>[disabled]{
+  border:1px solid #ccc;
+}
+[type=&quot;text&quot;]{
+  border:1px solid #ccc;
+}
+[id=&quot;title&quot;]{
+ border:1px solid #ccc;
+}
+[data-color=&quot;gray&quot;]{
+  color: #666;
+}
+</code></pre></li>
+
+<li><p>不常用的选择器</p>
+
+<ul>
+<li><p>[attr~=val] 仅选择 attr 属性的值（以空格间隔出多个值）中有包含 val 值的所有元素，比如位于被空格分隔的多个类（class）中的一个类。</p>
+
+<pre><code>[class~=&quot;aa&quot;]{}
+</code></pre></li>
+
+<li><p>[attr*=val] 选择 attr 属性的值中包含字符串 val 的元素。</p>
+
+<pre><code>[href*=&quot;baidu.com&quot;]{}
+</code></pre></li>
+
+<li><p>[attr^=val] 选择 attr 属性的值以 val 开头（包括 val）的元素。</p>
+
+<pre><code>[data-name^=&quot;frank&quot;]{}
+</code></pre></li>
+
+<li><p>[attr$=val] 选择 attr 属性的值以 val 结尾（包括 val）的元素。</p>
+
+<pre><code>[data-name$=&quot;1&quot;]{}
+</code></pre></li>
+
+<li><p>[attr|=val] 选择 attr 属性的值是 val 或以 val-开头的元素（-用来处理语言编码）。</p>
+
+<pre><code>[data|=&quot;写代码&quot;]{}
+</code></pre></li>
+</ul></li>
+
+<li><p>组合选择器</p>
+
+<ul>
+<li><p>A, B :同时选中 A 和 B</p>
+
+<pre><code>.author, .detail{}
+</code></pre></li>
+
+<li><p>A B :选中 A 的后代 B 元素(有空格)</p>
+
+<pre><code>.detail li{}
+</code></pre></li>
+
+<li><p>AB :选中既是 A 又是 B 的元素(无空格)</p>
+
+<pre><code>.item.active{}
+</code></pre></li>
+
+<li><p>A&gt;B :选中 A 的直接子元素 B</p></li>
+
+<li><p>A+B :选中 A 的下一个相邻元素</p></li>
+
+<li><p>A~B :选中 A 的后面全部相邻元素 B</p></li>
+</ul></li>
+
+<li><p>伪类</p>
+
+<ul>
+<li>:nth-child(2n){}</li>
+<li>:first-of-type{}</li>
+<li>:last-of-type{}</li>
+<li>:nth-of-type(2) 作为自己父亲当前标签类型的第 x 个孩子</li>
+</ul></li>
+
+<li><p>伪类</p>
+
+<ul>
+<li>:link 选中未访问的链接</li>
+<li>:hover 选中鼠标放置上的链接</li>
+<li>:active 选中鼠标按下未松开时的链接</li>
+<li>:visited 选中访问过的链接</li>
+<li>:link - :visited - :hover - :active 顺序</li>
+</ul></li>
+
+<li><p>更多伪类</p>
+
+<ul>
+<li>:checked 选中被勾选的表单元素</li>
+<li>:disabled 选中被禁用的表单元素</li>
+<li>:focus 选中被激活的表单元素</li>
+<li>:root 选中根节点<html></li>
+</ul></li>
+
+<li><p>伪类</p>
+
+<ul>
+<li>:target 选中页面上 id 为当前 hash 的元素</li>
+<li>不使用 JS 实现一个 Tab 切换 <a href="http://js.jirengu.com/fikan">http://js.jirengu.com/fikan</a></li>
+
+<li><p>不使用 JS 实现弹框 <a href="http://js.jirengu.com/neyul">http://js.jirengu.com/neyul</a></p></li>
+
+<li><p>:not(xx) 选中不为 xx 的元素</p></li>
+</ul></li>
+
+<li><p>伪元素</p>
+
+<ul>
+<li>::before</li>
+
+<li><p>::after</p>
+
+<pre><code>.box::before{
+  content: '前端'
+}
+</code></pre></li>
+
+<li><p>::first-line 选中段落的第一行</p></li>
+
+<li><p>::first-letter 选中段落的第一个字符</p></li>
+
+<li><p>::selection 匹配被鼠标选中的文字内容</p></li>
+</ul></li>
+
+<li><p>伪类表示一个元素的某种状态，伪元素则更像是一个元素。</p></li>
+</ul>
+<ul class="pa0">
+  
+</ul>
+<div class="mt6">
+      
+      
+      </div>
+    </section>
+
+    <aside class="w-30-l mt6-l">
+
+
+
+
+</aside>
+
+  </article>
+
+    </main>
+    <footer class="bg-black bottom-0 w-100 pa3" role="contentinfo">
+  <div class="flex justify-between">
+  <a class="f4 fw4 hover-white no-underline white-70 dn dib-ns pv2 ph3" href="https://mambaneverout.github.io/" >
+    &copy; 2019 Irelia的博客
+  </a>
+    <div>
+
+
+
+
+
+
+
+
+
+
+</div>
+  </div>
+</footer>
+
+    
+
+  <script src="/dist/js/app.3fc0f988d21662902933.js"></script>
+
+
+  </body>
+</html>
