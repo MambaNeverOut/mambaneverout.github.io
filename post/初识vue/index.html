@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    
+    <title>Irelia的博客  | 初识Vue</title>
+    <meta name="viewport" content="width=device-width,minimum-scale=1">
+    <meta name="generator" content="Hugo 0.58.3" />
+    
+    
+      <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
+    
+
+    
+    
+      <link href="/dist/css/app.d98f2eb6bcd1eaedb7edf166bd16af26.css" rel="stylesheet">
+    
+
+    
+
+    
+      
+    
+
+    
+    
+    <meta property="og:title" content="初识Vue" />
+<meta property="og:description" content="创建项目
+vue create vue-demo // 或者 codesandbox.io 上创建   Vue 选项
+Babal (*) TypeScript Progressive Web App (PWA)Support Router Vuex CSS Pre-processors * // css预处理器 Linter/Formatter (*) Unit Testing * // 单元测试 E2E Testing  Lint 提示
+Lint on save // 保存时提示 Lint and fix on commit // 提交时提示  unit testing
+Jest  preset for future projects : N
+  vue.js 与 vue.runtime.js
+ vue.js(完整版):
+ 我有 complier(编译器) 可以直接写在 html 里或者写在 template 中 体积会大一些" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://mambaneverout.github.io/post/%E5%88%9D%E8%AF%86vue/" />
+<meta property="article:published_time" content="2019-12-17T12:06:38+08:00" />
+<meta property="article:modified_time" content="2019-12-17T12:06:38+08:00" />
+<meta itemprop="name" content="初识Vue">
+<meta itemprop="description" content="创建项目
+vue create vue-demo // 或者 codesandbox.io 上创建   Vue 选项
+Babal (*) TypeScript Progressive Web App (PWA)Support Router Vuex CSS Pre-processors * // css预处理器 Linter/Formatter (*) Unit Testing * // 单元测试 E2E Testing  Lint 提示
+Lint on save // 保存时提示 Lint and fix on commit // 提交时提示  unit testing
+Jest  preset for future projects : N
+  vue.js 与 vue.runtime.js
+ vue.js(完整版):
+ 我有 complier(编译器) 可以直接写在 html 里或者写在 template 中 体积会大一些">
+
+
+<meta itemprop="datePublished" content="2019-12-17T12:06:38&#43;08:00" />
+<meta itemprop="dateModified" content="2019-12-17T12:06:38&#43;08:00" />
+<meta itemprop="wordCount" content="153">
+
+
+
+<meta itemprop="keywords" content="" />
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="初识Vue"/>
+<meta name="twitter:description" content="创建项目
+vue create vue-demo // 或者 codesandbox.io 上创建   Vue 选项
+Babal (*) TypeScript Progressive Web App (PWA)Support Router Vuex CSS Pre-processors * // css预处理器 Linter/Formatter (*) Unit Testing * // 单元测试 E2E Testing  Lint 提示
+Lint on save // 保存时提示 Lint and fix on commit // 提交时提示  unit testing
+Jest  preset for future projects : N
+  vue.js 与 vue.runtime.js
+ vue.js(完整版):
+ 我有 complier(编译器) 可以直接写在 html 里或者写在 template 中 体积会大一些"/>
+
+  </head>
+
+  <body class="ma0 avenir bg-near-white">
+
+    
+   
+  
+
+  <header>
+    <div class="bg-black">
+      <nav class="pv3 ph3 ph4-ns" role="navigation">
+  <div class="flex-l justify-between items-center center">
+    <a href="https://mambaneverout.github.io/" class="f3 fw2 hover-white no-underline white-90 dib">
+      Irelia的博客
+    </a>
+    <div class="flex-l items-center">
+      
+
+      
+      
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+  </div>
+</nav>
+
+    </div>
+  </header>
+
+
+
+    <main class="pb7" role="main">
+      
+  
+  <article class="flex-l flex-wrap justify-between mw8 center ph3">
+
+    <header class="mt4 w-100">
+      <p class="f6 b helvetica tracked">
+          
+        POSTS
+      </p>
+      <h1 class="f1 athelas mb1">初识Vue</h1>
+      
+      
+      <time class="f6 mv4 dib tracked" datetime="2019-12-17T12:06:38&#43;08:00">December 17, 2019</time>
+      
+      
+    </header>
+
+    <section class="nested-copy-line-height lh-copy serif f4 nested-links nested-img mid-gray pr4-l w-two-thirds-l"><ol>
+<li><p>创建项目</p>
+
+<pre><code>vue create vue-demo // 或者 codesandbox.io 上创建
+</code></pre>
+
+<ul>
+<li><p>Vue 选项</p>
+
+<pre><code>Babal (*)
+TypeScript
+Progressive Web App (PWA)Support
+Router
+Vuex
+CSS Pre-processors * // css预处理器
+Linter/Formatter (*)
+Unit Testing * // 单元测试
+E2E Testing
+</code></pre></li>
+
+<li><p>Lint 提示</p>
+
+<pre><code>Lint on save // 保存时提示
+Lint and fix on commit // 提交时提示
+</code></pre></li>
+
+<li><p>unit testing</p>
+
+<pre><code>Jest
+</code></pre></li>
+
+<li><p>preset for future projects : N</p></li>
+</ul></li>
+
+<li><p>vue.js 与 vue.runtime.js</p>
+
+<ul>
+<li><p>vue.js(完整版):</p>
+
+<ul>
+<li>我有 complier(编译器)</li>
+<li>可以直接写在 html 里或者写在 template 中</li>
+
+<li><p>体积会大一些</p>
+
+<pre><code>new Vue({
+el: '#app',
+template: `&lt;div id=&quot;app&quot;&gt;&lt;/div&gt;`
+})
+</code></pre></li>
+</ul></li>
+
+<li><p>vue.runtime.js(运行版):</p>
+
+<ul>
+<li>我没有 compiler，但是体积小</li>
+<li>写在 render 函数里，用 h 来创建标签</li>
+
+<li><p>我可以使用 webpack 中的 vue-loader 把 vue 文件里的 html 转换为 h 函数</p>
+
+<pre><code>render(h){  //h = createElement
+return h('div', [this.n, h('button', {on:{click: this.add}},'+1')])
+}
+</code></pre></li>
+</ul></li>
+
+<li><p>生产环境统一使用 vue.min.js / vue.runtime.min.js</p></li>
+
+<li><p>webpack 默认使用的是 vue.runtime.js, 如果要使用 vue.js, 需要自行配置 alias(<a href="https://cn.vuejs.org/v2/guide/installation.html#webpack">https://cn.vuejs.org/v2/guide/installation.html#webpack</a>)</p></li>
+
+<li><p>vue cli 默认使用的是 vue.runtime.js,如果需要引入 vue.js 需要额外配置</p></li>
+
+<li><p>最佳实践：总是使用非完整版，然后配合 vue-loader 和 vue 文件</p></li>
+</ul></li>
+
+<li><p>SEO(搜索引擎优化)</p>
+
+<ul>
+<li>搜索引擎根据 curl 结果猜测页面</li>
+
+<li><p>title, description(meta 标签), keyword(meta 标签), h1, a</p>
+
+<pre><code>&lt;meta name=&quot;description&quot; content=&quot;xxx&quot;&gt;
+&lt;meta name=&quot;keyword&quot; content=&quot;xxx&quot;&gt;
+</code></pre></li>
+
+<li><p>让 curl 得到页面的信息,SEO 就能正常工作</p></li>
+</ul></li>
+
+<li><p>用 codesandbox.io 进行预览: <a href="https://codesandbox.io/s/goofy-banzai-vq4jk">https://codesandbox.io/s/goofy-banzai-vq4jk</a></p></li>
+</ol>
+<ul class="pa0">
+  
+</ul>
+<div class="mt6">
+      
+      
+      </div>
+    </section>
+
+    <aside class="w-30-l mt6-l">
+
+
+
+
+</aside>
+
+  </article>
+
+    </main>
+    <footer class="bg-black bottom-0 w-100 pa3" role="contentinfo">
+  <div class="flex justify-between">
+  <a class="f4 fw4 hover-white no-underline white-70 dn dib-ns pv2 ph3" href="https://mambaneverout.github.io/" >
+    &copy; 2019 Irelia的博客
+  </a>
+    <div>
+
+
+
+
+
+
+
+
+
+
+</div>
+  </div>
+</footer>
+
+    
+
+  <script src="/dist/js/app.3fc0f988d21662902933.js"></script>
+
+
+  </body>
+</html>
