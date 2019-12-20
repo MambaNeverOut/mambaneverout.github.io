@@ -6,10 +6,23 @@
     <description>Recent content on Irelia的博客</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-Hans</language>
-    <lastBuildDate>Tue, 17 Dec 2019 12:06:38 +0800</lastBuildDate>
+    <lastBuildDate>Fri, 20 Dec 2019 09:20:32 +0800</lastBuildDate>
     
 	<atom:link href="https://mambaneverout.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Vue数据响应式</title>
+      <link>https://mambaneverout.github.io/post/vue%E6%95%B0%E6%8D%AE%E5%93%8D%E5%BA%94%E5%BC%8F/</link>
+      <pubDate>Fri, 20 Dec 2019 09:20:32 +0800</pubDate>
+      
+      <guid>https://mambaneverout.github.io/post/vue%E6%95%B0%E6%8D%AE%E5%93%8D%E5%BA%94%E5%BC%8F/</guid>
+      <description>“Vue 是一套用于构建用户界面的渐进式框架，Vue 的核心库只关注视图层。” Vue 文档已经把 Vue 的特点说的很清楚了，Vue 是专注于 UI 界面的框架，数据的修改会实时的反馈到界面中。这就是数据响应式了，通过数据来驱动视图。 在 Vue 文档深入响应式原理中，Vue 是这样说的：“ 当你把一个对象传入 Vue 实例作为 data 选项，Vue 将遍历此对象所有的属性，并使用 Object.defineProperty 把这些属性全部转为 getter/setter。 ”那么 Vue 具体是怎么做的呢？
+Vue 响应式原理: https://cn.vuejs.org/v2/guide/reactivity.html
+1.先来了解一下 getter, setter 和 Object.defineProperty  getter: 不要括号就可以调用的函数
+let obj2 = { 姓: &amp;quot;高&amp;quot;, 名: &amp;quot;圆圆&amp;quot;, get name() { return this.姓 + this.名; }, }; console.log(&amp;quot;需求二：&amp;quot; + obj2.name);  setter: 传入一个值并把这个值赋值给其他变量
+let obj3 = { 姓: &amp;quot;高&amp;quot;, 名: &amp;quot;圆圆&amp;quot;, get name() { return this.</description>
+    </item>
     
     <item>
       <title>初识Vue</title>
