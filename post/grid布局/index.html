@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    
+    <title>Irelia的博客  | Grid布局</title>
+    <meta name="viewport" content="width=device-width,minimum-scale=1">
+    <meta name="generator" content="Hugo 0.58.3" />
+    
+    
+      <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
+    
+
+    
+    
+      <link href="/dist/css/app.d98f2eb6bcd1eaedb7edf166bd16af26.css" rel="stylesheet">
+    
+
+    
+
+    
+      
+    
+
+    
+    
+    <meta property="og:title" content="Grid布局" />
+<meta property="og:description" content="grid 布局是一种二维布局模型，先在页面上画好“虚拟格子”，再设置元素在格子上的位置和跨度 容器属性  声明使用 flex 布局  display: grid; / inline-grid  画好虚拟表格  grid: 30px auto 30px / 10% 1fr 10% (3 行 3 列) grid-gap: 10px 20px; (行与列之间的间隙)  告诉内容如何放置  align-items: start | end | center | stretch; justify-items: start | end | center | stretch; align-content: start; justify-content: space-evenly;  子项属性  grid-column： 3 / span 2; (从第三条线开始，跨越两个格子 =&gt; 3 / 5) grid-row: 3 / 4; justify-self: start; align-self: center;   掘金首页 &lt;body&gt; &lt;header&gt;header&lt;/header&gt; &lt;div class=&quot;subnav&gt;subnav&lt;/div&gt; &lt;main&gt;main&lt;/main&gt; &lt;aside&gt;aside&lt;/aside&gt; &lt;/body&gt;  body{ display: grid; grid: auto auto auto / 1fr 800px 180px 1fr; } header{ grid-area:1/2/2/4; } ." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://mambaneverout.github.io/post/grid%E5%B8%83%E5%B1%80/" />
+<meta property="article:published_time" content="2019-12-21T20:59:43+08:00" />
+<meta property="article:modified_time" content="2019-12-21T20:59:43+08:00" />
+<meta itemprop="name" content="Grid布局">
+<meta itemprop="description" content="grid 布局是一种二维布局模型，先在页面上画好“虚拟格子”，再设置元素在格子上的位置和跨度 容器属性  声明使用 flex 布局  display: grid; / inline-grid  画好虚拟表格  grid: 30px auto 30px / 10% 1fr 10% (3 行 3 列) grid-gap: 10px 20px; (行与列之间的间隙)  告诉内容如何放置  align-items: start | end | center | stretch; justify-items: start | end | center | stretch; align-content: start; justify-content: space-evenly;  子项属性  grid-column： 3 / span 2; (从第三条线开始，跨越两个格子 =&gt; 3 / 5) grid-row: 3 / 4; justify-self: start; align-self: center;   掘金首页 &lt;body&gt; &lt;header&gt;header&lt;/header&gt; &lt;div class=&quot;subnav&gt;subnav&lt;/div&gt; &lt;main&gt;main&lt;/main&gt; &lt;aside&gt;aside&lt;/aside&gt; &lt;/body&gt;  body{ display: grid; grid: auto auto auto / 1fr 800px 180px 1fr; } header{ grid-area:1/2/2/4; } .">
+
+
+<meta itemprop="datePublished" content="2019-12-21T20:59:43&#43;08:00" />
+<meta itemprop="dateModified" content="2019-12-21T20:59:43&#43;08:00" />
+<meta itemprop="wordCount" content="195">
+
+
+
+<meta itemprop="keywords" content="" />
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Grid布局"/>
+<meta name="twitter:description" content="grid 布局是一种二维布局模型，先在页面上画好“虚拟格子”，再设置元素在格子上的位置和跨度 容器属性  声明使用 flex 布局  display: grid; / inline-grid  画好虚拟表格  grid: 30px auto 30px / 10% 1fr 10% (3 行 3 列) grid-gap: 10px 20px; (行与列之间的间隙)  告诉内容如何放置  align-items: start | end | center | stretch; justify-items: start | end | center | stretch; align-content: start; justify-content: space-evenly;  子项属性  grid-column： 3 / span 2; (从第三条线开始，跨越两个格子 =&gt; 3 / 5) grid-row: 3 / 4; justify-self: start; align-self: center;   掘金首页 &lt;body&gt; &lt;header&gt;header&lt;/header&gt; &lt;div class=&quot;subnav&gt;subnav&lt;/div&gt; &lt;main&gt;main&lt;/main&gt; &lt;aside&gt;aside&lt;/aside&gt; &lt;/body&gt;  body{ display: grid; grid: auto auto auto / 1fr 800px 180px 1fr; } header{ grid-area:1/2/2/4; } ."/>
+
+  </head>
+
+  <body class="ma0 avenir bg-near-white">
+
+    
+   
+  
+
+  <header>
+    <div class="bg-black">
+      <nav class="pv3 ph3 ph4-ns" role="navigation">
+  <div class="flex-l justify-between items-center center">
+    <a href="https://mambaneverout.github.io/" class="f3 fw2 hover-white no-underline white-90 dib">
+      Irelia的博客
+    </a>
+    <div class="flex-l items-center">
+      
+
+      
+      
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+  </div>
+</nav>
+
+    </div>
+  </header>
+
+
+
+    <main class="pb7" role="main">
+      
+  
+  <article class="flex-l flex-wrap justify-between mw8 center ph3">
+
+    <header class="mt4 w-100">
+      <p class="f6 b helvetica tracked">
+          
+        POSTS
+      </p>
+      <h1 class="f1 athelas mb1">Grid布局</h1>
+      
+      
+      <time class="f6 mv4 dib tracked" datetime="2019-12-21T20:59:43&#43;08:00">December 21, 2019</time>
+      
+      
+    </header>
+
+    <section class="nested-copy-line-height lh-copy serif f4 nested-links nested-img mid-gray pr4-l w-two-thirds-l">
+
+<h3 id="grid-布局是一种二维布局模型-先在页面上画好-虚拟格子-再设置元素在格子上的位置和跨度">grid 布局是一种二维布局模型，先在页面上画好“虚拟格子”，再设置元素在格子上的位置和跨度</h3>
+
+<h4 id="容器属性">容器属性</h4>
+
+<ol>
+<li>声明使用 flex 布局
+
+<ul>
+<li>display: grid; / inline-grid</li>
+</ul></li>
+<li>画好虚拟表格
+
+<ul>
+<li>grid: 30px auto 30px / 10% 1fr 10% (3 行 3 列)</li>
+<li>grid-gap: 10px 20px; (行与列之间的间隙)</li>
+</ul></li>
+<li>告诉内容如何放置
+
+<ul>
+<li>align-items: start | end | center | stretch;</li>
+<li>justify-items: start | end | center | stretch;</li>
+<li>align-content: start;</li>
+<li>justify-content: space-evenly;</li>
+</ul></li>
+<li>子项属性
+
+<ul>
+<li>grid-column： 3 / span 2; (从第三条线开始，跨越两个格子 =&gt; 3 / 5)</li>
+<li>grid-row: 3 / 4;</li>
+<li>justify-self: start;</li>
+<li>align-self: center;</li>
+</ul></li>
+</ol>
+
+<h4 id="掘金首页">掘金首页</h4>
+
+<pre><code>&lt;body&gt;
+  &lt;header&gt;header&lt;/header&gt;
+  &lt;div class=&quot;subnav&gt;subnav&lt;/div&gt;
+  &lt;main&gt;main&lt;/main&gt;
+  &lt;aside&gt;aside&lt;/aside&gt;
+&lt;/body&gt;
+</code></pre>
+
+<pre><code>body{
+  display: grid;
+  grid: auto auto auto / 1fr 800px 180px 1fr;
+}
+header{
+  grid-area:1/2/2/4;
+}
+.subnav{
+  grid-area:2/2/3/4;
+}
+main{
+  grid-area: 3/2/4/3;
+}
+aside{
+  grid-area: 3/3/4/4;
+}
+</code></pre>
+
+<p>grid 属性文档: <a href="https://blog.jirengu.com/?p=990">https://blog.jirengu.com/?p=990</a></p>
+
+<h3 id="居中方式">居中方式</h3>
+
+<ol>
+<li><pre><code>.box{
+  display: grid;
+  align-items: center;
+  justify-items: center;
+}
+</code></pre></li>
+
+<li><pre><code>.box{
+  display: grid;
+  align-items: center;
+  justify-content: center;
+}
+</code></pre></li>
+
+<li><pre><code>.box{
+  display: grid;
+}
+.box&gt;p{
+  margin: auto;
+}
+</code></pre></li>
+
+<li><pre><code>.box{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+</code></pre></li>
+
+<li><pre><code>.box{
+  display: flex;
+}
+.box&gt;p{
+  margin: auto;
+}
+</code></pre></li>
+
+<li><pre><code>.box的父元素{
+  display: table;
+}
+.box {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+}
+p {
+  display: inline-block;
+}
+</code></pre></li>
+
+<li><pre><code>.box{
+  display: relative;
+}
+.box&gt;p{
+  display: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin: 0;
+}
+</code></pre></li>
+
+<li><pre><code>.box{
+  text-align: center;
+}
+.box::after{
+  content: '';
+  line-height: 200px;
+}
+.box&gt;p{
+  display: inline-block;
+}
+</code></pre></li>
+</ol>
+<ul class="pa0">
+  
+</ul>
+<div class="mt6">
+      
+      
+      </div>
+    </section>
+
+    <aside class="w-30-l mt6-l">
+
+
+
+
+</aside>
+
+  </article>
+
+    </main>
+    <footer class="bg-black bottom-0 w-100 pa3" role="contentinfo">
+  <div class="flex justify-between">
+  <a class="f4 fw4 hover-white no-underline white-70 dn dib-ns pv2 ph3" href="https://mambaneverout.github.io/" >
+    &copy; 2019 Irelia的博客
+  </a>
+    <div>
+
+
+
+
+
+
+
+
+
+
+</div>
+  </div>
+</footer>
+
+    
+
+  <script src="/dist/js/app.3fc0f988d21662902933.js"></script>
+
+
+  </body>
+</html>

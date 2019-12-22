@@ -35,7 +35,7 @@
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://mambaneverout.github.io/post/" />
 
-<meta property="og:updated_time" content="2019-12-21T09:25:43+08:00" />
+<meta property="og:updated_time" content="2019-12-21T20:59:43+08:00" />
 <meta itemprop="name" content="Posts">
 <meta itemprop="description" content="">
 
@@ -94,6 +94,26 @@
       
     </section>
     <aside class="flex-ns flex-wrap justify-around mt5">
+      
+        <div class="relative w-100 w-30-l mb4 bg-white">
+          
+            <div class="mb3 pa4 mid-gray overflow-hidden">
+    
+      <div class="f6">
+        December 21, 2019
+      </div>
+    
+    <h1 class="f3 near-black">
+      <a href="/post/grid%E5%B8%83%E5%B1%80/" class="link black dim">
+        Grid布局
+      </a>
+    </h1>
+    <div class="nested-links f5 lh-copy nested-copy-line-height">
+      grid 布局是一种二维布局模型，先在页面上画好“虚拟格子”，再设置元素在格子上的位置和跨度 容器属性  声明使用 flex 布局  display: grid; / inline-grid  画好虚拟表格  grid: 30px auto 30px / 10% 1fr 10% (3 行 3 列) grid-gap: 10px 20px; (行与列之间的间隙)  告诉内容如何放置  align-items: start | end | center | stretch; justify-items: start | end | center | stretch; align-content: start; justify-content: space-evenly;  子项属性  grid-column： 3 / span 2; (从第三条线开始，跨越两个格子 =&gt; 3 / 5) grid-row: 3 / 4; justify-self: start; align-self: center;   掘金首页 &lt;body&gt; &lt;header&gt;header&lt;/header&gt; &lt;div class=&quot;subnav&gt;subnav&lt;/div&gt; &lt;main&gt;main&lt;/main&gt; &lt;aside&gt;aside&lt;/aside&gt; &lt;/body&gt;  body{ display: grid; grid: auto auto auto / 1fr 800px 180px 1fr; } header{ grid-area:1/2/2/4; } .
+    </div>
+  </div>
+
+        </div>
       
         <div class="relative w-100 w-30-l mb4 bg-white">
           
@@ -319,29 +339,6 @@ for(let i = 0; i&lt;6; i++){ setTimeout(()=&gt;{ console.log(i) },0) }  函数�
 let a = 'mmp' let obj = {a: 'emm'} // obj.a let obj = {[a]: 'emm'} // obj[a]   如果使用 [ ] 语法，那么 JS 会先求 [ ] 中表达式的值，注意区分表达式是变量还是常量。 如果使用点语法，那么点后面一定是 string 常量。  对象的原型
  每个对象都有一个隐藏属性，保存着原型的地址 共有属性组成的对象叫原型   删除对象的属性
 - delete obj.
-    </div>
-  </div>
-
-        </div>
-      
-        <div class="relative w-100 w-30-l mb4 bg-white">
-          
-            <div class="mb3 pa4 mid-gray overflow-hidden">
-    
-      <div class="f6">
-        November 12, 2019
-      </div>
-    
-    <h1 class="f3 near-black">
-      <a href="/post/js%E5%9F%BA%E6%9C%AC%E8%AF%AD%E6%B3%95/" class="link black dim">
-        JS基本语法
-      </a>
-    </h1>
-    <div class="nested-links f5 lh-copy nested-copy-line-height">
-      表达式和语句  表达式  1 + 2 表达式的值为 3 add(1,2) 表达式的值为函数的返回值 console.log 表达式的值为函数本身 console.log(3) 表达式的值为 undefined  语句  var a = 1 是一个语句  区别  表达式一般都有值，语句可以有也可以没有 语句一般是用来改变环境的（声明，赋值）  注意：return 后面不能加回车  标识符的规则  第一个字符可以是 Unicode 字母 或者 \$ 或者 _ 或者 中文 后面的字符包括上面的说有，还可以有数字 变量名是标识符，还有其他标识符  if else 语句 / switch 语句
- if else 语句
- 推荐写法：
-if (表达式) { 语句 } else if (表达式) { 语句 } else { 语句 }  可以省略{}，但是省略后 if else 语句只会默认把后面的第一句放入{}内
     </div>
   </div>
 
