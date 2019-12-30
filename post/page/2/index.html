@@ -35,7 +35,7 @@
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://mambaneverout.github.io/post/" />
 
-<meta property="og:updated_time" content="2019-12-23T11:40:56+08:00" />
+<meta property="og:updated_time" content="2019-12-29T12:14:52+08:00" />
 <meta itemprop="name" content="Posts">
 <meta itemprop="description" content="">
 
@@ -94,6 +94,29 @@
       
     </section>
     <aside class="flex-ns flex-wrap justify-around mt5">
+      
+        <div class="relative w-100 w-30-l mb4 bg-white">
+          
+            <div class="mb3 pa4 mid-gray overflow-hidden">
+    
+      <div class="f6">
+        November 15, 2019
+      </div>
+    
+    <h1 class="f3 near-black">
+      <a href="/post/js%E5%87%BD%E6%95%B0%E7%9A%84%E6%89%A7%E8%A1%8C%E6%97%B6%E6%9C%BA/" class="link black dim">
+        JS函数的执行时机
+      </a>
+    </h1>
+    <div class="nested-links f5 lh-copy nested-copy-line-height">
+       解释为什么如下代码会打印 6 个 6
+let i = 0 for(i = 0; i&lt;6; i++){ setTimeout(()=&gt;{ console.log(i) },0) }   for 循环遍历 6 次，会执行 6 次 console.log() 当执行第 6 次循环的时候，i 为 5，console.log(5)之后，执行 i++，i 的值变为 6 只有一个全局变量 i，在 for 循环结束后，i 的值为 6，console.log(i)就会打印出 6  写出让上面代码打印 0、1、2、3、4、5 的方法
+for(let i = 0; i&lt;6; i++){ setTimeout(()=&gt;{ console.log(i) },0) }  函数的要素
+ 调用时机 作用域 闭包 形参 返回值 调用栈 函数提升 arguments this   
+    </div>
+  </div>
+
+        </div>
       
         <div class="relative w-100 w-30-l mb4 bg-white">
           

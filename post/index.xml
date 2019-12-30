@@ -6,10 +6,22 @@
     <description>Recent content in Posts on Irelia的博客</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-Hans</language>
-    <lastBuildDate>Mon, 23 Dec 2019 11:40:56 +0800</lastBuildDate>
+    <lastBuildDate>Sun, 29 Dec 2019 12:14:52 +0800</lastBuildDate>
     
 	<atom:link href="https://mambaneverout.github.io/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Vue指令和修饰符</title>
+      <link>https://mambaneverout.github.io/post/vue%E6%8C%87%E4%BB%A4%E5%92%8C%E4%BF%AE%E9%A5%B0%E7%AC%A6/</link>
+      <pubDate>Sun, 29 Dec 2019 12:14:52 +0800</pubDate>
+      
+      <guid>https://mambaneverout.github.io/post/vue%E6%8C%87%E4%BB%A4%E5%92%8C%E4%BF%AE%E9%A5%B0%E7%AC%A6/</guid>
+      <description>template(模板)  写在 HTMl 中(Vue 完整版)
+&amp;lt;div id=&amp;quot;xxx&amp;quot;&amp;gt; {{n}} &amp;lt;button @click=&amp;quot;add&amp;quot;&amp;gt;+1&amp;lt;/button&amp;gt; &amp;lt;/div&amp;gt; new Vue({ el: &#39;#app&#39;, data: {n:0}, // data可以改成函数 methods: {add(){}} })  写在 options 中(Vue 完整版)
+&amp;lt;div id=&amp;quot;app&amp;quot;&amp;gt;&amp;lt;/div&amp;gt; // div#app会被替换 new Vue({ template: ` &amp;lt;div&amp;gt; {{n}} &amp;lt;button @click=&amp;quot;add&amp;quot;&amp;gt;+1&amp;lt;/button&amp;gt; &amp;lt;/div&amp;gt; `, data: {n:0}, // data可以改成函数 methods: {add(){}} }).$mounted(&#39;#app&#39;)  配合 xxx.vue 文件(Vue 非完整版)
+template 使用的是XML，语法严格，体积小，更适合写编译器 &amp;lt;template&amp;gt; &amp;lt;div&amp;gt; &amp;lt;button @click=&amp;quot;add&amp;quot;&amp;gt; +1 &amp;lt;/button&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;/template&amp;gt; &amp;lt;script&amp;gt; export default{ data(){ return { n:0 }}, // data必须为函数 methods:{add(){}} } &amp;lt;/script&amp;gt;  // 在其他地方引入 import Xxx from &#39;.</description>
+    </item>
     
     <item>
       <title>Computed和watch</title>

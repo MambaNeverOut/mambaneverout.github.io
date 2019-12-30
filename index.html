@@ -35,7 +35,7 @@
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://mambaneverout.github.io/" />
 
-<meta property="og:updated_time" content="2019-12-23T11:40:56+08:00" />
+<meta property="og:updated_time" content="2019-12-29T12:14:52+08:00" />
 <meta itemprop="name" content="Irelia的博客">
 <meta itemprop="description" content="">
 
@@ -122,6 +122,33 @@
       
       <div class="blah w-100">
         <h1 class="f3 fw1 athelas mt0 lh-title">
+          <a href="/post/vue%E6%8C%87%E4%BB%A4%E5%92%8C%E4%BF%AE%E9%A5%B0%E7%AC%A6/" class="color-inherit dim link">
+            Vue指令和修饰符
+            </a>
+        </h1>
+        <div class="f6 f5-l lh-copy nested-copy-line-height nested-links">
+          template(模板)  写在 HTMl 中(Vue 完整版)
+&lt;div id=&quot;xxx&quot;&gt; {{n}} &lt;button @click=&quot;add&quot;&gt;+1&lt;/button&gt; &lt;/div&gt; new Vue({ el: '#app', data: {n:0}, // data可以改成函数 methods: {add(){}} })  写在 options 中(Vue 完整版)
+&lt;div id=&quot;app&quot;&gt;&lt;/div&gt; // div#app会被替换 new Vue({ template: ` &lt;div&gt; {{n}} &lt;button @click=&quot;add&quot;&gt;+1&lt;/button&gt; &lt;/div&gt; `, data: {n:0}, // data可以改成函数 methods: {add(){}} }).$mounted('#app')  配合 xxx.vue 文件(Vue 非完整版)
+template 使用的是XML，语法严格，体积小，更适合写编译器 &lt;template&gt; &lt;div&gt; &lt;button @click=&quot;add&quot;&gt; +1 &lt;/button&gt; &lt;/div&gt; &lt;/template&gt; &lt;script&gt; export default{ data(){ return { n:0 }}, // data必须为函数 methods:{add(){}} } &lt;/script&gt;  // 在其他地方引入 import Xxx from '.
+        </div>
+          <a href="/post/vue%E6%8C%87%E4%BB%A4%E5%92%8C%E4%BF%AE%E9%A5%B0%E7%AC%A6/" class="ba b--moon-gray bg-light-gray br2 color-inherit dib f7 hover-bg-moon-gray link mt2 ph2 pv1">read more</a>
+        
+      </div>
+    </div>
+  </div>
+</article>
+
+          </div>
+        
+          <div class="relative w-100 mb4">
+            
+<article class="bb b--black-10">
+  <div class="db pv4 ph3 ph0-l no-underline dark-gray">
+    <div class="flex flex-column flex-row-ns">
+      
+      <div class="blah w-100">
+        <h1 class="f3 fw1 athelas mt0 lh-title">
           <a href="/post/computed%E5%92%8Cwatch/" class="color-inherit dim link">
             Computed和watch
             </a>
@@ -164,37 +191,18 @@
 
           </div>
         
-          <div class="relative w-100 mb4">
-            
-<article class="bb b--black-10">
-  <div class="db pv4 ph3 ph0-l no-underline dark-gray">
-    <div class="flex flex-column flex-row-ns">
-      
-      <div class="blah w-100">
-        <h1 class="f3 fw1 athelas mt0 lh-title">
-          <a href="/post/%E5%AE%9A%E4%BD%8D%E4%B8%8E%E5%B1%82%E5%8F%A0%E4%B8%8A%E4%B8%8B%E6%96%87/" class="color-inherit dim link">
-            定位与层叠上下文
-            </a>
-        </h1>
-        <div class="f6 f5-l lh-copy nested-copy-line-height nested-links">
-          定位 position:static  元素在文档常规流中当前的布局位置 top, right, bottom, left 和 z-index 属性无效 用来取消元素的定位  position:relative  元素在文档流中占据的位置不会改变 视觉上位置改变了，不会影响其他元素  position:absolute  脱离了文档流 left: 10px 是自己的外边距相对于参考元素的边框内壁偏移 10px。 如果不设置 left/top，或者设为 auto，则绝对定位元素的位置处于默认位置 绝对定位的元素的宽度不会撑开父元素 给行内元素设置绝对定位后就有了块级的特性，可以设置宽高  position:fixed  相对于浏览器窗口 一定要设置 top/bottom  position:sticky  一定要设置 top 当页面向下滚动时，被视窗顶部拦住，被父级块元素下边缘推走 如果出现多个 sticky，放置在同一容器内，会出现下一个 sticky 元素把上一个“覆盖”的效果 如果出现多个 sticky，放置在并列的多个块级容器内，会出现下一个 sticky 元素把上一个“推走”的效果  使用经验  position:relative 做轻微的偏移，比如图标位置不齐 position:absolute 适用出现元素重叠、放置任意位置的场景 position:fixed 适用需持续固定在浏览器某位置的场景 position:sticky 标题随页面滚动，到顶部固定  层叠上下文   常见的创建层叠上下文的情况：
- z-index: 0 display: flex opacity 小于 1 的元素 transform  opacity: 0.
-        </div>
-          <a href="/post/%E5%AE%9A%E4%BD%8D%E4%B8%8E%E5%B1%82%E5%8F%A0%E4%B8%8A%E4%B8%8B%E6%96%87/" class="ba b--moon-gray bg-light-gray br2 color-inherit dib f7 hover-bg-moon-gray link mt2 ph2 pv1">read more</a>
-        
-      </div>
-    </div>
-  </div>
-</article>
-
-          </div>
-        
       </section>
 
       
       <section class="w-100">
         <h1 class="f3">More</h1>
         
+        
+          <h2 class="f5 fw4 mb4 dib mr3">
+            <a href="/post/%E5%AE%9A%E4%BD%8D%E4%B8%8E%E5%B1%82%E5%8F%A0%E4%B8%8A%E4%B8%8B%E6%96%87/" class="link black dim">
+              定位与层叠上下文
+            </a>
+          </h2>
         
           <h2 class="f5 fw4 mb4 dib mr3">
             <a href="/post/vue%E6%95%B0%E6%8D%AE%E5%93%8D%E5%BA%94%E5%BC%8F/" class="link black dim">
@@ -211,12 +219,6 @@
           <h2 class="f5 fw4 mb4 dib mr3">
             <a href="/post/css%E9%80%89%E6%8B%A9%E5%99%A8/" class="link black dim">
               CSS选择器
-            </a>
-          </h2>
-        
-          <h2 class="f5 fw4 mb4 dib mr3">
-            <a href="/post/mvc/" class="link black dim">
-              MVC
             </a>
           </h2>
         
