@@ -45,7 +45,7 @@ function Parent(name1){ this.name1 = name1 } Parent.prototype.pMethod = function
 
 <meta itemprop="datePublished" content="2019-12-10T10:04:19&#43;08:00" />
 <meta itemprop="dateModified" content="2019-12-10T10:04:19&#43;08:00" />
-<meta itemprop="wordCount" content="113">
+<meta itemprop="wordCount" content="219">
 
 
 
@@ -180,8 +180,52 @@ class Child extends Parent{
 }
 </code></pre>
 
-<p>构造函数中使用的 super() 只能在构造函数中使用，并且必须在使用 this 关键字前调用。不调用的话执行函数会报错。
-<img src="/images/class-error.jpg" alt="" /></p></li>
+<ul>
+<li>构造函数中使用的 super() 只能在构造函数中使用，并且必须在使用 this 关键字前调用。不调用的话执行函数会报错。
+<img src="/images/class-error.jpg" alt="" /></li>
+</ul></li>
+
+<li><p>Mixin(混入)</p>
+
+<ul>
+<li><p>通过不使用继承的方式让一个类中的方法被其他类复用</p>
+
+<pre><code>const mixin = (Base, mixins) =&gt; Object.assign(Base.prototype, mixins)
+const Fly = {
+  canFly() { console.log('I can fly') }
+}
+class Mammal {
+  birthChild() { console.log('I birth a baby') }
+}
+mixin(Mammal, Fly)
+
+let m = new Mammal()
+m.birthChild()
+m.canFly()
+</code></pre></li>
+
+<li><p>变异版(使用继承实现，只是感觉更像混入)</p>
+
+<pre><code>const FlyMixin = Base =&gt; class extends Base {
+  canFly() { console.log('I can fly') }
+}
+const SwimMixin = Base =&gt; class extends Base {
+  canSwim() { console.log('I can swim') }
+}
+class Mammal {
+  birthChild() { console.log('I birth a baby') }
+}
+
+const FlyMammal = FlyMixin(Mammal)
+let m1 = new FlyMammal()
+m1.canFly()
+
+const FlySwimMammal = SwimMixin(FlyMixin(Mammal))
+let m2 = new FlySwimMammal()
+m2.canFly()
+m2.canSwim()
+</code></pre></li>
+</ul></li>
 </ol>
 <ul class="pa0">
   
