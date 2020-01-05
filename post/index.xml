@@ -6,10 +6,24 @@
     <description>Recent content in Posts on Irelia的博客</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-Hans</language>
-    <lastBuildDate>Tue, 31 Dec 2019 12:52:45 +0800</lastBuildDate>
+    <lastBuildDate>Sun, 05 Jan 2020 12:42:18 +0800</lastBuildDate>
     
 	<atom:link href="https://mambaneverout.github.io/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>JS事件</title>
+      <link>https://mambaneverout.github.io/post/js%E4%BA%8B%E4%BB%B6/</link>
+      <pubDate>Sun, 05 Jan 2020 12:42:18 +0800</pubDate>
+      
+      <guid>https://mambaneverout.github.io/post/js%E4%BA%8B%E4%BB%B6/</guid>
+      <description>事件捕获与事件冒泡  DOM 事件流三个阶段：事件捕获阶段，处于目标阶段，事件冒泡阶段  事件绑定 addEventListener  target.addEventListener(type, listener, options)
+ type: 事件类型 listener: 事件处理函数 options: 可选，默认都为 false。 {capture:是否捕获阶段监听，once:是否只监听一次，passive:是否忽略 preventDefault}  target.addEventListener(type, listener, useCapture)
+ useCapture:可选，true 表示在捕获阶段调用 listener，false 表示在冒泡阶段调用 listener  target.removeEventListener
+ target.removeEventListener(&amp;lsquo;click&amp;rsquo;, handler) target.removeEventListener(&amp;lsquo;click&amp;rsquo;, handler, true)
+$btn.onclick = function(e) { console.log(&#39;点了&#39;) } $btn.addEventListener(&#39;click&#39;, function(e){ console.log(&#39;点&#39;) }, true)    阻止事件传播  e.stopPropagation()  阻止默认行为  e.preventDefault()
+$form.addEventListener(&#39;submit&#39;, function(e) { e.preventDefault() if(validUsername($username.value)) { // 表单提交前校验 this.submit() } else { $error.</description>
+    </item>
     
     <item>
       <title>正则表达式</title>

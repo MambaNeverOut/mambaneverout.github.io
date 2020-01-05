@@ -35,7 +35,7 @@
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://mambaneverout.github.io/post/" />
 
-<meta property="og:updated_time" content="2019-12-31T12:52:45+08:00" />
+<meta property="og:updated_time" content="2020-01-05T12:42:18+08:00" />
 <meta itemprop="name" content="Posts">
 <meta itemprop="description" content="">
 
@@ -94,6 +94,31 @@
       
     </section>
     <aside class="flex-ns flex-wrap justify-around mt5">
+      
+        <div class="relative w-100 w-30-l mb4 bg-white">
+          
+            <div class="mb3 pa4 mid-gray overflow-hidden">
+    
+      <div class="f6">
+        January 5, 2020
+      </div>
+    
+    <h1 class="f3 near-black">
+      <a href="/post/js%E4%BA%8B%E4%BB%B6/" class="link black dim">
+        JS事件
+      </a>
+    </h1>
+    <div class="nested-links f5 lh-copy nested-copy-line-height">
+      事件捕获与事件冒泡  DOM 事件流三个阶段：事件捕获阶段，处于目标阶段，事件冒泡阶段  事件绑定 addEventListener  target.addEventListener(type, listener, options)
+ type: 事件类型 listener: 事件处理函数 options: 可选，默认都为 false。 {capture:是否捕获阶段监听，once:是否只监听一次，passive:是否忽略 preventDefault}  target.addEventListener(type, listener, useCapture)
+ useCapture:可选，true 表示在捕获阶段调用 listener，false 表示在冒泡阶段调用 listener  target.removeEventListener
+ target.removeEventListener(&lsquo;click&rsquo;, handler) target.removeEventListener(&lsquo;click&rsquo;, handler, true)
+$btn.onclick = function(e) { console.log('点了') } $btn.addEventListener('click', function(e){ console.log('点') }, true)    阻止事件传播  e.stopPropagation()  阻止默认行为  e.preventDefault()
+$form.addEventListener('submit', function(e) { e.preventDefault() if(validUsername($username.value)) { // 表单提交前校验 this.submit() } else { $error.
+    </div>
+  </div>
+
+        </div>
       
         <div class="relative w-100 w-30-l mb4 bg-white">
           
@@ -305,30 +330,6 @@ const c = { init(container){}, events:{}, autoBindEvents(){} }   EventBus(事件
  off 移除事件监听
  jQuery
 import $ from 'jQuery' const eventBus = $(window) // const eventBus = $({}) eventBus.
-    </div>
-  </div>
-
-        </div>
-      
-        <div class="relative w-100 w-30-l mb4 bg-white">
-          
-            <div class="mb3 pa4 mid-gray overflow-hidden">
-    
-      <div class="f6">
-        December 10, 2019
-      </div>
-    
-    <h1 class="f3 near-black">
-      <a href="/post/js%E7%BB%A7%E6%89%BF/" class="link black dim">
-        JS继承
-      </a>
-    </h1>
-    <div class="nested-links f5 lh-copy nested-copy-line-height">
-      JS 实现继承有两种通用的方式  构造函数 + 原型
- 不写 Parent.call(this, name1) 注释掉 Parent.call(this, name1)之后，执行 pMethod 函数，pMethod 函数被 child 调用，this 指向 child，但在 child 中无法找到 name1，所以输出 undefined。
- 正确代码 正确代码，需要把 this 指向通过 new Child 构造出来的实例对象(child)，并且把参数 name1 传给 Parent。
- 终极代码
-function Parent(name1){ this.name1 = name1 } Parent.prototype.pMethod = function(){ console.log(this.name1) } function Child(name2, name1){ Parent.call(this, name1) // 得分点 this.name2 = name2 } Child.prototype.__proto__ = Parent.prototype //上面这句代码的古板写法应该是下面三句 //const empty = function(){} //empty.prototype = Parent.
     </div>
   </div>
 
