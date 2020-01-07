@@ -35,7 +35,7 @@
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://mambaneverout.github.io/" />
 
-<meta property="og:updated_time" content="2020-01-05T12:42:18+08:00" />
+<meta property="og:updated_time" content="2020-01-07T11:33:47+08:00" />
 <meta itemprop="name" content="Irelia的博客">
 <meta itemprop="description" content="">
 
@@ -122,6 +122,36 @@
       
       <div class="blah w-100">
         <h1 class="f3 fw1 athelas mt0 lh-title">
+          <a href="/post/%E6%B5%85%E5%B0%9Dreact/" class="color-inherit dim link">
+            浅尝React
+            </a>
+        </h1>
+        <div class="f6 f5-l lh-copy nested-copy-line-height nested-links">
+          引入 React  cjs 和 umd 的区别
+ cjs(CommonJS)，是 Node.js 支持的模块规范 umd 是统一模块定义，兼容各种模块规范（含浏览器） 理论上优先使用 umd，同时支持 Node.js 和浏览器 最新的模块的规范是使用 import 和 export 关键字  CDN 引入（顺序不能改变）
+ 引入 React: https://&hellip;/react.x.min.js 引入 ReactDOM: https://&hellip;/react-dom.x.min.js  通过 webpack 引入 React（rollup, parcel 也可以这样引入）
+// 约定：大小写要保持一致 yarn add react react-dom import React from 'react' import ReactDOM from 'react-dom'  create-react-app
+yarn global add create-react-app create-react-app react-demo  setTimeout(fn, 1000) 1s 后尽快执行
+ 普通代码立即求值，函数则在调用时才会去读取值
+  React 虚拟 DOM  React 元素：React.
+        </div>
+          <a href="/post/%E6%B5%85%E5%B0%9Dreact/" class="ba b--moon-gray bg-light-gray br2 color-inherit dib f7 hover-bg-moon-gray link mt2 ph2 pv1">read more</a>
+        
+      </div>
+    </div>
+  </div>
+</article>
+
+          </div>
+        
+          <div class="relative w-100 mb4">
+            
+<article class="bb b--black-10">
+  <div class="db pv4 ph3 ph0-l no-underline dark-gray">
+    <div class="flex flex-column flex-row-ns">
+      
+      <div class="blah w-100">
+        <h1 class="f3 fw1 athelas mt0 lh-title">
           <a href="/post/js%E4%BA%8B%E4%BB%B6/" class="color-inherit dim link">
             JS事件
             </a>
@@ -167,39 +197,18 @@ $form.addEventListener('submit', function(e) { e.preventDefault() if(validUserna
 
           </div>
         
-          <div class="relative w-100 mb4">
-            
-<article class="bb b--black-10">
-  <div class="db pv4 ph3 ph0-l no-underline dark-gray">
-    <div class="flex flex-column flex-row-ns">
-      
-      <div class="blah w-100">
-        <h1 class="f3 fw1 athelas mt0 lh-title">
-          <a href="/post/vue%E6%8C%87%E4%BB%A4%E5%92%8C%E4%BF%AE%E9%A5%B0%E7%AC%A6/" class="color-inherit dim link">
-            Vue指令和修饰符
-            </a>
-        </h1>
-        <div class="f6 f5-l lh-copy nested-copy-line-height nested-links">
-          template(模板)  写在 HTMl 中(Vue 完整版)
-&lt;div id=&quot;xxx&quot;&gt; {{n}} &lt;button @click=&quot;add&quot;&gt;+1&lt;/button&gt; &lt;/div&gt; new Vue({ el: '#app', data: {n:0}, // data可以改成函数 methods: {add(){}} })  写在 options 中(Vue 完整版)
-&lt;div id=&quot;app&quot;&gt;&lt;/div&gt; // div#app会被替换 new Vue({ template: ` &lt;div&gt; {{n}} &lt;button @click=&quot;add&quot;&gt;+1&lt;/button&gt; &lt;/div&gt; `, data: {n:0}, // data可以改成函数 methods: {add(){}} }).$mounted('#app')  配合 xxx.vue 文件(Vue 非完整版)
-template 使用的是XML，语法严格，体积小，更适合写编译器 &lt;template&gt; &lt;div&gt; &lt;button @click=&quot;add&quot;&gt; +1 &lt;/button&gt; &lt;/div&gt; &lt;/template&gt; &lt;script&gt; export default{ data(){ return { n:0 }}, // data必须为函数 methods:{add(){}} } &lt;/script&gt;  // 在其他地方引入 import Xxx from '.
-        </div>
-          <a href="/post/vue%E6%8C%87%E4%BB%A4%E5%92%8C%E4%BF%AE%E9%A5%B0%E7%AC%A6/" class="ba b--moon-gray bg-light-gray br2 color-inherit dib f7 hover-bg-moon-gray link mt2 ph2 pv1">read more</a>
-        
-      </div>
-    </div>
-  </div>
-</article>
-
-          </div>
-        
       </section>
 
       
       <section class="w-100">
         <h1 class="f3">More</h1>
         
+        
+          <h2 class="f5 fw4 mb4 dib mr3">
+            <a href="/post/vue%E6%8C%87%E4%BB%A4%E5%92%8C%E4%BF%AE%E9%A5%B0%E7%AC%A6/" class="link black dim">
+              Vue指令和修饰符
+            </a>
+          </h2>
         
           <h2 class="f5 fw4 mb4 dib mr3">
             <a href="/post/computed%E5%92%8Cwatch/" class="link black dim">
@@ -216,12 +225,6 @@ template 使用的是XML，语法严格，体积小，更适合写编译器 &lt;
           <h2 class="f5 fw4 mb4 dib mr3">
             <a href="/post/%E5%AE%9A%E4%BD%8D%E4%B8%8E%E5%B1%82%E5%8F%A0%E4%B8%8A%E4%B8%8B%E6%96%87/" class="link black dim">
               定位与层叠上下文
-            </a>
-          </h2>
-        
-          <h2 class="f5 fw4 mb4 dib mr3">
-            <a href="/post/vue%E6%95%B0%E6%8D%AE%E5%93%8D%E5%BA%94%E5%BC%8F/" class="link black dim">
-              Vue数据响应式
             </a>
           </h2>
         

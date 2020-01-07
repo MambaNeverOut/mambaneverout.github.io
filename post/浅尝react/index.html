@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    
+    <title>Irelia的博客  | 浅尝React</title>
+    <meta name="viewport" content="width=device-width,minimum-scale=1">
+    <meta name="generator" content="Hugo 0.58.3" />
+    
+    
+      <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
+    
+
+    
+    
+      <link href="/dist/css/app.d98f2eb6bcd1eaedb7edf166bd16af26.css" rel="stylesheet">
+    
+
+    
+
+    
+      
+    
+
+    
+    
+    <meta property="og:title" content="浅尝React" />
+<meta property="og:description" content="引入 React  cjs 和 umd 的区别
+ cjs(CommonJS)，是 Node.js 支持的模块规范 umd 是统一模块定义，兼容各种模块规范（含浏览器） 理论上优先使用 umd，同时支持 Node.js 和浏览器 最新的模块的规范是使用 import 和 export 关键字  CDN 引入（顺序不能改变）
+ 引入 React: https://&hellip;/react.x.min.js 引入 ReactDOM: https://&hellip;/react-dom.x.min.js  通过 webpack 引入 React（rollup, parcel 也可以这样引入）
+// 约定：大小写要保持一致 yarn add react react-dom import React from &#39;react&#39; import ReactDOM from &#39;react-dom&#39;  create-react-app
+yarn global add create-react-app create-react-app react-demo  setTimeout(fn, 1000) 1s 后尽快执行
+ 普通代码立即求值，函数则在调用时才会去读取值
+  React 虚拟 DOM  React 元素：React." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://mambaneverout.github.io/post/%E6%B5%85%E5%B0%9Dreact/" />
+<meta property="article:published_time" content="2020-01-07T11:33:47+08:00" />
+<meta property="article:modified_time" content="2020-01-07T11:33:47+08:00" />
+<meta itemprop="name" content="浅尝React">
+<meta itemprop="description" content="引入 React  cjs 和 umd 的区别
+ cjs(CommonJS)，是 Node.js 支持的模块规范 umd 是统一模块定义，兼容各种模块规范（含浏览器） 理论上优先使用 umd，同时支持 Node.js 和浏览器 最新的模块的规范是使用 import 和 export 关键字  CDN 引入（顺序不能改变）
+ 引入 React: https://&hellip;/react.x.min.js 引入 ReactDOM: https://&hellip;/react-dom.x.min.js  通过 webpack 引入 React（rollup, parcel 也可以这样引入）
+// 约定：大小写要保持一致 yarn add react react-dom import React from &#39;react&#39; import ReactDOM from &#39;react-dom&#39;  create-react-app
+yarn global add create-react-app create-react-app react-demo  setTimeout(fn, 1000) 1s 后尽快执行
+ 普通代码立即求值，函数则在调用时才会去读取值
+  React 虚拟 DOM  React 元素：React.">
+
+
+<meta itemprop="datePublished" content="2020-01-07T11:33:47&#43;08:00" />
+<meta itemprop="dateModified" content="2020-01-07T11:33:47&#43;08:00" />
+<meta itemprop="wordCount" content="281">
+
+
+
+<meta itemprop="keywords" content="" />
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="浅尝React"/>
+<meta name="twitter:description" content="引入 React  cjs 和 umd 的区别
+ cjs(CommonJS)，是 Node.js 支持的模块规范 umd 是统一模块定义，兼容各种模块规范（含浏览器） 理论上优先使用 umd，同时支持 Node.js 和浏览器 最新的模块的规范是使用 import 和 export 关键字  CDN 引入（顺序不能改变）
+ 引入 React: https://&hellip;/react.x.min.js 引入 ReactDOM: https://&hellip;/react-dom.x.min.js  通过 webpack 引入 React（rollup, parcel 也可以这样引入）
+// 约定：大小写要保持一致 yarn add react react-dom import React from &#39;react&#39; import ReactDOM from &#39;react-dom&#39;  create-react-app
+yarn global add create-react-app create-react-app react-demo  setTimeout(fn, 1000) 1s 后尽快执行
+ 普通代码立即求值，函数则在调用时才会去读取值
+  React 虚拟 DOM  React 元素：React."/>
+
+  </head>
+
+  <body class="ma0 avenir bg-near-white">
+
+    
+   
+  
+
+  <header>
+    <div class="bg-black">
+      <nav class="pv3 ph3 ph4-ns" role="navigation">
+  <div class="flex-l justify-between items-center center">
+    <a href="https://mambaneverout.github.io/" class="f3 fw2 hover-white no-underline white-90 dib">
+      Irelia的博客
+    </a>
+    <div class="flex-l items-center">
+      
+
+      
+      
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+  </div>
+</nav>
+
+    </div>
+  </header>
+
+
+
+    <main class="pb7" role="main">
+      
+  
+  <article class="flex-l flex-wrap justify-between mw8 center ph3">
+
+    <header class="mt4 w-100">
+      <p class="f6 b helvetica tracked">
+          
+        POSTS
+      </p>
+      <h1 class="f1 athelas mb1">浅尝React</h1>
+      
+      
+      <time class="f6 mv4 dib tracked" datetime="2020-01-07T11:33:47&#43;08:00">January 7, 2020</time>
+      
+      
+    </header>
+
+    <section class="nested-copy-line-height lh-copy serif f4 nested-links nested-img mid-gray pr4-l w-two-thirds-l">
+
+<h3 id="引入-react">引入 React</h3>
+
+<ul>
+<li><p>cjs 和 umd 的区别</p>
+
+<ul>
+<li>cjs(CommonJS)，是 Node.js 支持的模块规范</li>
+<li>umd 是统一模块定义，兼容各种模块规范（含浏览器）</li>
+<li>理论上优先使用 umd，同时支持 Node.js 和浏览器</li>
+<li>最新的模块的规范是使用 import 和 export 关键字</li>
+</ul></li>
+
+<li><p>CDN 引入（顺序不能改变）</p>
+
+<ul>
+<li>引入 React: https://&hellip;/react.x.min.js</li>
+<li>引入 ReactDOM: https://&hellip;/react-dom.x.min.js</li>
+</ul></li>
+
+<li><p>通过 webpack 引入 React（rollup, parcel 也可以这样引入）</p>
+
+<pre><code>// 约定：大小写要保持一致
+yarn add react react-dom
+import React from 'react'
+import ReactDOM from 'react-dom'
+</code></pre></li>
+
+<li><p>create-react-app</p>
+
+<pre><code>yarn global add create-react-app
+create-react-app react-demo
+</code></pre></li>
+
+<li><p>setTimeout(fn, 1000) 1s 后尽快执行</p></li>
+
+<li><p>普通代码立即求值，函数则在调用时才会去读取值</p></li>
+</ul>
+
+<h3 id="react-虚拟-dom">React 虚拟 DOM</h3>
+
+<ul>
+<li><p>React 元素：React.createElement(&lsquo;div&rsquo;, null, n)</p>
+
+<ul>
+<li><p>createElement 的返回值 element 可以代表一个 DOM 对象</p></li>
+
+<li><p>但 element 不是真正的 DOM 对象，一般称为虚拟 DOM</p></li>
+</ul></li>
+
+<li><p>React 组件：() =&gt; React.createElement(&lsquo;div&rsquo;, null, n)</p>
+
+<ul>
+<li>返回 element 的函数多次执行，每次得到最新的虚拟 DOM</li>
+
+<li><p>DOM Diff 算法用来对比 虚拟 DOM ，发现其中的不同，局部更新</p>
+
+<pre><code>const App = () =&gt; React.createElement(&quot;div&quot;, null, [
+n,
+  React.createElement(
+    &quot;button&quot;,
+    { onClick: () =&gt; { n += 1;ReactDOM.render(App(), root);} },
+  &quot;+1&quot;)
+]);
+
+ReactDOM.render(App(), root);
+</code></pre></li>
+</ul></li>
+</ul>
+
+<h3 id="jsx-x-表示扩展-js-扩展版">JSX（X 表示扩展，JS 扩展版）</h3>
+
+<ul>
+<li>JSX-loader 被 babel-loader 取代了，而 babel-loader 被 webpack 内置了</li>
+</ul>
+
+<h4 id="使用-jsx">使用 JSX</h4>
+
+<ol>
+<li>create-react-app
+
+<ul>
+<li>跟@vue/cli 用法类似</li>
+<li>yarn global add create-react-app</li>
+<li>cd react-demo</li>
+<li>yarn start</li>
+<li>App.js 默认使用 jsx 语法（webpack 默认把 js 文件作为 jsx 文件）</li>
+</ul></li>
+<li>webpack + babel-loader</li>
+<li>CDN（永远不要在生产环境使用）
+
+<ul>
+<li>引入 babel.min.js</li>
+<li>把 <code>&lt;script&gt;</code> 改成 <code>&lt;script type=&quot;text/babel&quot;&gt;</code></li>
+<li>babel 会自动进行转译</li>
+<li>示例：<a href="https://codesandbox.io/s/goofy-sky-fmnhd">https://codesandbox.io/s/goofy-sky-fmnhd</a></li>
+</ul></li>
+</ol>
+
+<h4 id="使用-jsx-的注意事项">使用 JSX 的注意事项</h4>
+
+<ul>
+<li>使用 className，而不是 class</li>
+
+<li><p>标签里面的所以 JS 代码都要用{}包起来</p>
+
+<ul>
+<li>使用变量 n：{n}</li>
+<li>使用对象：<code>{ {name: 'Irelia'} }</code></li>
+</ul></li>
+
+<li><p>在 return 后面加()</p></li>
+</ul>
+
+<h4 id="jsx-的条件判断">JSX 的条件判断</h4>
+
+<pre><code>const Component = () =&gt; {
+  return (
+    &lt;div&gt;
+      { n%2 === 0 ? &lt;div&gt;n是偶数&lt;/div&gt; : &lt;div&gt;n是奇数&lt;/div&gt;}
+    &lt;/div&gt;
+  )
+}
+</code></pre>
+
+<pre><code>const Component = () =&gt; {
+  let inner
+  if( n%2 === 0 ){
+    inner = &lt;div&gt;n是偶数&lt;/div&gt;
+  }else{
+    inner = &lt;div&gt;n是奇数&lt;/div&gt; }
+  const content = ( &lt;div&gt;{{ inner }}&lt;/div&gt;)
+  return content
+}
+</code></pre>
+
+<h4 id="jsx-的循环">JSX 的循环</h4>
+
+<pre><code>const Component = (props) =&gt; {
+  return ( &lt;div&gt;
+    { props.numbers.map((n, index) =&gt; {
+    return &lt;div&gt;下标{index}值为{n}&lt;/div&gt;
+  }) }
+  &lt;/div&gt;)
+}
+</code></pre>
+
+<pre><code>const Component = (props) =&gt; {
+  const array = []
+  for(let i=0; i&lt;props.numbers.length; i++){
+    array.push(&lt;div&gt;下标{i}值为{props.numbers[i]}&lt;/div&gt;)
+  }
+  return  &lt;div&gt;{ array }&lt;/div&gt;
+}
+</code></pre>
+<ul class="pa0">
+  
+</ul>
+<div class="mt6">
+      
+      
+      </div>
+    </section>
+
+    <aside class="w-30-l mt6-l">
+
+
+
+
+</aside>
+
+  </article>
+
+    </main>
+    <footer class="bg-black bottom-0 w-100 pa3" role="contentinfo">
+  <div class="flex justify-between">
+  <a class="f4 fw4 hover-white no-underline white-70 dn dib-ns pv2 ph3" href="https://mambaneverout.github.io/" >
+    &copy; 2020 Irelia的博客
+  </a>
+    <div>
+
+
+
+
+
+
+
+
+
+
+</div>
+  </div>
+</footer>
+
+    
+
+  <script src="/dist/js/app.3fc0f988d21662902933.js"></script>
+
+
+  </body>
+</html>

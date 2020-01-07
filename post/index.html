@@ -35,7 +35,7 @@
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://mambaneverout.github.io/post/" />
 
-<meta property="og:updated_time" content="2020-01-05T12:42:18+08:00" />
+<meta property="og:updated_time" content="2020-01-07T11:33:47+08:00" />
 <meta itemprop="name" content="Posts">
 <meta itemprop="description" content="">
 
@@ -94,6 +94,32 @@
       
     </section>
     <aside class="flex-ns flex-wrap justify-around mt5">
+      
+        <div class="relative w-100 w-30-l mb4 bg-white">
+          
+            <div class="mb3 pa4 mid-gray overflow-hidden">
+    
+      <div class="f6">
+        January 7, 2020
+      </div>
+    
+    <h1 class="f3 near-black">
+      <a href="/post/%E6%B5%85%E5%B0%9Dreact/" class="link black dim">
+        浅尝React
+      </a>
+    </h1>
+    <div class="nested-links f5 lh-copy nested-copy-line-height">
+      引入 React  cjs 和 umd 的区别
+ cjs(CommonJS)，是 Node.js 支持的模块规范 umd 是统一模块定义，兼容各种模块规范（含浏览器） 理论上优先使用 umd，同时支持 Node.js 和浏览器 最新的模块的规范是使用 import 和 export 关键字  CDN 引入（顺序不能改变）
+ 引入 React: https://&hellip;/react.x.min.js 引入 ReactDOM: https://&hellip;/react-dom.x.min.js  通过 webpack 引入 React（rollup, parcel 也可以这样引入）
+// 约定：大小写要保持一致 yarn add react react-dom import React from 'react' import ReactDOM from 'react-dom'  create-react-app
+yarn global add create-react-app create-react-app react-demo  setTimeout(fn, 1000) 1s 后尽快执行
+ 普通代码立即求值，函数则在调用时才会去读取值
+  React 虚拟 DOM  React 元素：React.
+    </div>
+  </div>
+
+        </div>
       
         <div class="relative w-100 w-30-l mb4 bg-white">
           
@@ -299,37 +325,6 @@ Jest  preset for future projects : N
 [href*=&quot;baidu.com&quot;]{}  [attr^=val] 选择 attr 属性的值以 val 开头（包括 val）的元素。
 [data-name^=&quot;frank&quot;]{}  [attr$=val] 选择 attr 属性的值以 val 结尾（包括 val）的元素。
 [data-name$=&quot;1&quot;]{}  [attr|=val] 选择 attr 属性的值是 val 或以 val-开头的元素（-用来处理语言编码）。
-    </div>
-  </div>
-
-        </div>
-      
-        <div class="relative w-100 w-30-l mb4 bg-white">
-          
-            <div class="mb3 pa4 mid-gray overflow-hidden">
-    
-      <div class="f6">
-        December 10, 2019
-      </div>
-    
-    <h1 class="f3 near-black">
-      <a href="/post/mvc/" class="link black dim">
-        MVC
-      </a>
-    </h1>
-    <div class="nested-links f5 lh-copy nested-copy-line-height">
-      MVC
- Model (数据) 负责操作所有数据
-const m = { data:{} }  View (视图) 负责所有 UI 界面
-const v = { el: null, html:` &lt;div&gt; &lt;button&gt;点我&lt;/button&gt; &lt;/div&gt; `, init(container){}, render(){} }  Controller (控制器) 负责其他
-const c = { init(container){}, events:{}, autoBindEvents(){} }   EventBus(事件总线)
- 对象间的通信，负责 Model,View,Controller 之间的通信。
- on 监听事件
- trigger 触发事件/emit 发送事件
- once 事件执行一次
- off 移除事件监听
- jQuery
-import $ from 'jQuery' const eventBus = $(window) // const eventBus = $({}) eventBus.
     </div>
   </div>
 

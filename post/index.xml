@@ -6,10 +6,25 @@
     <description>Recent content in Posts on Irelia的博客</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-Hans</language>
-    <lastBuildDate>Sun, 05 Jan 2020 12:42:18 +0800</lastBuildDate>
+    <lastBuildDate>Tue, 07 Jan 2020 11:33:47 +0800</lastBuildDate>
     
 	<atom:link href="https://mambaneverout.github.io/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>浅尝React</title>
+      <link>https://mambaneverout.github.io/post/%E6%B5%85%E5%B0%9Dreact/</link>
+      <pubDate>Tue, 07 Jan 2020 11:33:47 +0800</pubDate>
+      
+      <guid>https://mambaneverout.github.io/post/%E6%B5%85%E5%B0%9Dreact/</guid>
+      <description>引入 React  cjs 和 umd 的区别
+ cjs(CommonJS)，是 Node.js 支持的模块规范 umd 是统一模块定义，兼容各种模块规范（含浏览器） 理论上优先使用 umd，同时支持 Node.js 和浏览器 最新的模块的规范是使用 import 和 export 关键字  CDN 引入（顺序不能改变）
+ 引入 React: https://&amp;hellip;/react.x.min.js 引入 ReactDOM: https://&amp;hellip;/react-dom.x.min.js  通过 webpack 引入 React（rollup, parcel 也可以这样引入）
+// 约定：大小写要保持一致 yarn add react react-dom import React from &#39;react&#39; import ReactDOM from &#39;react-dom&#39;  create-react-app
+yarn global add create-react-app create-react-app react-demo  setTimeout(fn, 1000) 1s 后尽快执行
+ 普通代码立即求值，函数则在调用时才会去读取值
+  React 虚拟 DOM  React 元素：React.</description>
+    </item>
     
     <item>
       <title>JS事件</title>
@@ -175,10 +190,9 @@ $(&#39;a:first&#39;) //选择网页中第一个a元素 $(&#39;tr:odd&#39;) //选
       <pubDate>Fri, 15 Nov 2019 21:03:05 +0800</pubDate>
       
       <guid>https://mambaneverout.github.io/post/js%E5%87%BD%E6%95%B0%E7%9A%84%E6%89%A7%E8%A1%8C%E6%97%B6%E6%9C%BA/</guid>
-      <description> 解释为什么如下代码会打印 6 个 6
+      <description>解释为什么如下代码会打印 6 个 6
 let i = 0 for(i = 0; i&amp;lt;6; i++){ setTimeout(()=&amp;gt;{ console.log(i) },0) }   for 循环遍历 6 次，会执行 6 次 console.log() 当执行第 6 次循环的时候，i 为 5，console.log(5)之后，执行 i++，i 的值变为 6 只有一个全局变量 i，在 for 循环结束后，i 的值为 6，console.log(i)就会打印出 6  写出让上面代码打印 0、1、2、3、4、5 的方法
-for(let i = 0; i&amp;lt;6; i++){ setTimeout(()=&amp;gt;{ console.log(i) },0) }  函数的要素
- 调用时机 作用域 闭包 形参 返回值 调用栈 函数提升 arguments this   </description>
+for(let i = 0; i&amp;lt;6; i++){ setTimeout(()=&amp;gt;{ console.log(i) },0) }  for(var i = 0; i&amp;lt;6; i++){ let j = i setTimeout(()=&amp;gt;{ console.log(j) },0) }  for(let i = 0; i&amp;lt;6; i++){ !</description>
     </item>
     
     <item>
