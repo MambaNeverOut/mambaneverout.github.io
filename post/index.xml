@@ -6,10 +6,23 @@
     <description>Recent content in Posts on Irelia的博客</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-Hans</language>
-    <lastBuildDate>Tue, 07 Jan 2020 11:33:47 +0800</lastBuildDate>
+    <lastBuildDate>Wed, 08 Jan 2020 12:43:50 +0800</lastBuildDate>
     
 	<atom:link href="https://mambaneverout.github.io/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Vue进阶属性</title>
+      <link>https://mambaneverout.github.io/post/vue%E8%BF%9B%E9%98%B6%E5%B1%9E%E6%80%A7/</link>
+      <pubDate>Wed, 08 Jan 2020 12:43:50 +0800</pubDate>
+      
+      <guid>https://mambaneverout.github.io/post/vue%E8%BF%9B%E9%98%B6%E5%B1%9E%E6%80%A7/</guid>
+      <description>directives(指令)  全局指令
+Vue.directives(&#39;my-directive&#39;,{ inserted: function(el){ el.addEventListener(&#39;click&#39;, ()=&amp;gt;{console.log(&#39;directive&#39;)})} })  局部指令
+directives:{ on2:{ // 模仿简单版v-on inserted(el, info){ el.addEventListener(info.arg, info.value) } }, unbind(el, info){ // 移除事件监听 el.removeEventListener(info.arg, info.value) } }  directive 函数属性
+ bind(el, info, vnode, oldVnode) 与 created 类似 inserted(el, info, vnode, oldVnode) 与 mounted 类似 update(el, info, vnode, oldVnode) 与 updated 类似 componentUpdated(el, info, vnode, oldVnode) unbind(el, info, vnode, oldVnode) 与 destoryed 类似  指令的作用
+ 减少重复的 DOM 操作（数据绑定，事件监听，DOM 更新）   mixins(混入)  mixins 的作用: 减少 data、methods、钩子的重复</description>
+    </item>
     
     <item>
       <title>浅尝React</title>
