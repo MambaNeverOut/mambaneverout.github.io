@@ -227,7 +227,7 @@ ReactDOM.render(App(), root);
 <ul>
 <li>使用 className，而不是 class</li>
 
-<li><p>标签里面的所以 JS 代码都要用{}包起来</p>
+<li><p>标签里面的所有 JS 代码都要用{}包起来</p>
 
 <ul>
 <li>使用变量 n：{n}</li>
@@ -254,7 +254,7 @@ ReactDOM.render(App(), root);
     inner = &lt;div&gt;n是偶数&lt;/div&gt;
   }else{
     inner = &lt;div&gt;n是奇数&lt;/div&gt; }
-  const content = ( &lt;div&gt;{{ inner }}&lt;/div&gt;)
+  const content = ( &lt;div&gt;{ inner }&lt;/div&gt;)
   return content
 }
 </code></pre>

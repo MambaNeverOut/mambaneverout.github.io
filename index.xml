@@ -6,10 +6,26 @@
     <description>Recent content on Irelia的博客</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-Hans</language>
-    <lastBuildDate>Wed, 08 Jan 2020 12:43:50 +0800</lastBuildDate>
+    <lastBuildDate>Fri, 10 Jan 2020 10:44:55 +0800</lastBuildDate>
     
 	<atom:link href="https://mambaneverout.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>BOM</title>
+      <link>https://mambaneverout.github.io/post/bom/</link>
+      <pubDate>Fri, 10 Jan 2020 10:44:55 +0800</pubDate>
+      
+      <guid>https://mambaneverout.github.io/post/bom/</guid>
+      <description>BOM  BOM(Browser Object Model)浏览器对象模型，提供了独立于内容的、可以与浏览器窗口进行互动的对象结构
+ var 声明的全局变量和 function 声明的函数是 window 的属性
+ let、const 声明的变量不是
+  navigator 浏览器相关信息  navigator.userAgent
+// 判断用户设备 const isIPhone = /iphone/i.test(navigator.userAgent) const isIOS = /iphone|ipad/i.test(navigator.userAgent) const isAndroid = /android/i.test(navigator.userAgent)   screen 屏幕信息  screen.availWidth 可用宽度 screen.availHeight 可用高度
+// 判断是横屏还是竖屏 screen.orientation.onchange = function(){ console.log(screen.orientation.type) // &amp;quot;landscape-primary&amp;quot; 水平宽度大于垂直宽度 // &amp;quot;portrait-primary&amp;quot; 垂直宽度大于水平宽度 }   尺寸  页面文档高度: document.documentElement.offset Height
+ 屏幕高度: screen.height
+ 浏览器视窗高度: document.</description>
+    </item>
     
     <item>
       <title>Vue进阶属性</title>
