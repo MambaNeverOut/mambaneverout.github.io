@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    
+    <title>Irelia的博客  | 5分钟学习TypeScript</title>
+    <meta name="viewport" content="width=device-width,minimum-scale=1">
+    <meta name="generator" content="Hugo 0.58.3" />
+    
+    
+      <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
+    
+
+    
+    
+      <link href="/dist/css/app.d98f2eb6bcd1eaedb7edf166bd16af26.css" rel="stylesheet">
+    
+
+    
+
+    
+      
+    
+
+    
+    
+    <meta property="og:title" content="5分钟学习TypeScript" />
+<meta property="og:description" content="安装  配置 npm 淘宝源：npm config set registry https://registry.npm.taobao.org/ npm install typescript@版本号 -g npm install ts-node@版本号 -g // 使 ts 可以在 node 上运行  把 ts-node 安装后的可执行文件路径记录下来   调试  Windows 用户需要运行命令  npm init -y npm i -D ts-node typescript  创建.vscode/launch.json 文件，内容如下
+{ &quot;configurations&quot;: [ { &quot;name&quot;: &quot;ts-node&quot;, &quot;type&quot;: &quot;node&quot;, &quot;request&quot;: &quot;launch&quot;, &quot;program&quot;: &quot;注意看这里，要写成ts-node对应的可执行文件，Windows 用户注意了，你应该写成 ${workspaceRoot}/node_modules/ts-node/dist/bin.js&quot;, &quot;args&quot;: [&quot;${relativeFile}&quot;], &quot;cwd&quot;: &quot;${workspaceRoot}&quot;, &quot;protocol&quot;: &quot;inspector&quot; } ] }  找到调试选项，选择 ts-node，然后点击调试，就会在下方控制台输出结果" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://mambaneverout.github.io/post/5%E5%88%86%E9%92%9F%E5%AD%A6%E4%B9%A0typescript/" />
+<meta property="article:published_time" content="2020-01-12T22:10:21+08:00" />
+<meta property="article:modified_time" content="2020-01-12T22:10:21+08:00" />
+<meta itemprop="name" content="5分钟学习TypeScript">
+<meta itemprop="description" content="安装  配置 npm 淘宝源：npm config set registry https://registry.npm.taobao.org/ npm install typescript@版本号 -g npm install ts-node@版本号 -g // 使 ts 可以在 node 上运行  把 ts-node 安装后的可执行文件路径记录下来   调试  Windows 用户需要运行命令  npm init -y npm i -D ts-node typescript  创建.vscode/launch.json 文件，内容如下
+{ &quot;configurations&quot;: [ { &quot;name&quot;: &quot;ts-node&quot;, &quot;type&quot;: &quot;node&quot;, &quot;request&quot;: &quot;launch&quot;, &quot;program&quot;: &quot;注意看这里，要写成ts-node对应的可执行文件，Windows 用户注意了，你应该写成 ${workspaceRoot}/node_modules/ts-node/dist/bin.js&quot;, &quot;args&quot;: [&quot;${relativeFile}&quot;], &quot;cwd&quot;: &quot;${workspaceRoot}&quot;, &quot;protocol&quot;: &quot;inspector&quot; } ] }  找到调试选项，选择 ts-node，然后点击调试，就会在下方控制台输出结果">
+
+
+<meta itemprop="datePublished" content="2020-01-12T22:10:21&#43;08:00" />
+<meta itemprop="dateModified" content="2020-01-12T22:10:21&#43;08:00" />
+<meta itemprop="wordCount" content="150">
+
+
+
+<meta itemprop="keywords" content="" />
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="5分钟学习TypeScript"/>
+<meta name="twitter:description" content="安装  配置 npm 淘宝源：npm config set registry https://registry.npm.taobao.org/ npm install typescript@版本号 -g npm install ts-node@版本号 -g // 使 ts 可以在 node 上运行  把 ts-node 安装后的可执行文件路径记录下来   调试  Windows 用户需要运行命令  npm init -y npm i -D ts-node typescript  创建.vscode/launch.json 文件，内容如下
+{ &quot;configurations&quot;: [ { &quot;name&quot;: &quot;ts-node&quot;, &quot;type&quot;: &quot;node&quot;, &quot;request&quot;: &quot;launch&quot;, &quot;program&quot;: &quot;注意看这里，要写成ts-node对应的可执行文件，Windows 用户注意了，你应该写成 ${workspaceRoot}/node_modules/ts-node/dist/bin.js&quot;, &quot;args&quot;: [&quot;${relativeFile}&quot;], &quot;cwd&quot;: &quot;${workspaceRoot}&quot;, &quot;protocol&quot;: &quot;inspector&quot; } ] }  找到调试选项，选择 ts-node，然后点击调试，就会在下方控制台输出结果"/>
+
+  </head>
+
+  <body class="ma0 avenir bg-near-white">
+
+    
+   
+  
+
+  <header>
+    <div class="bg-black">
+      <nav class="pv3 ph3 ph4-ns" role="navigation">
+  <div class="flex-l justify-between items-center center">
+    <a href="https://mambaneverout.github.io/" class="f3 fw2 hover-white no-underline white-90 dib">
+      Irelia的博客
+    </a>
+    <div class="flex-l items-center">
+      
+
+      
+      
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+  </div>
+</nav>
+
+    </div>
+  </header>
+
+
+
+    <main class="pb7" role="main">
+      
+  
+  <article class="flex-l flex-wrap justify-between mw8 center ph3">
+
+    <header class="mt4 w-100">
+      <p class="f6 b helvetica tracked">
+          
+        POSTS
+      </p>
+      <h1 class="f1 athelas mb1">5分钟学习TypeScript</h1>
+      
+      
+      <time class="f6 mv4 dib tracked" datetime="2020-01-12T22:10:21&#43;08:00">January 12, 2020</time>
+      
+      
+    </header>
+
+    <section class="nested-copy-line-height lh-copy serif f4 nested-links nested-img mid-gray pr4-l w-two-thirds-l">
+
+<h3 id="安装">安装</h3>
+
+<ul>
+<li>配置 npm 淘宝源：<code>npm config set registry https://registry.npm.taobao.org/</code></li>
+<li><code>npm install typescript@版本号 -g</code></li>
+<li><code>npm install ts-node@版本号 -g</code> // 使 ts 可以在 node 上运行
+
+<ul>
+<li>把 ts-node 安装后的可执行文件路径记录下来</li>
+</ul></li>
+</ul>
+
+<h3 id="调试">调试</h3>
+
+<ul>
+<li>Windows 用户需要运行命令
+
+<ul>
+<li><code>npm init -y</code></li>
+<li><code>npm i -D ts-node typescript</code></li>
+</ul></li>
+
+<li><p>创建.vscode/launch.json 文件，内容如下</p>
+
+<pre><code>{
+ &quot;configurations&quot;: [
+     {
+     &quot;name&quot;: &quot;ts-node&quot;,
+     &quot;type&quot;: &quot;node&quot;,
+     &quot;request&quot;: &quot;launch&quot;,
+     &quot;program&quot;: &quot;注意看这里，要写成ts-node对应的可执行文件，Windows 用户注意了，你应该写成
+     ${workspaceRoot}/node_modules/ts-node/dist/bin.js&quot;,
+     &quot;args&quot;: [&quot;${relativeFile}&quot;],
+     &quot;cwd&quot;: &quot;${workspaceRoot}&quot;,
+     &quot;protocol&quot;: &quot;inspector&quot;
+     }
+ ]
+}
+</code></pre></li>
+
+<li><p>找到调试选项，选择 ts-node，然后点击调试，就会在下方控制台输出结果</p></li>
+
+<li><p>ts 文件需要通过 tsc 命令编译为 js 文件才可以在浏览器中运行</p></li>
+</ul>
+
+<h3 id="示例">示例</h3>
+
+<ul>
+<li><p>接口</p>
+
+<pre><code>interface Person{
+  姓: string;
+  名: string;
+}
+function greeter(person:Person){
+  return &quot;Hello,&quot;+person.姓+&quot; &quot;+person.名;
+}
+let user = {姓:&quot;type&quot;,名:&quot;script&quot;}
+console.log(greeter(user))
+</code></pre></li>
+
+<li><p>类</p>
+
+<pre><code>class Student {
+  fullName: string;
+  constructor(public 姓, public 名) {
+      // public会把属性变为对象的属性，等价于this.firstName = firstName
+      this.fullName = 姓 + 名;
+  }
+}
+</code></pre></li>
+
+<li><p>重载</p>
+
+<pre><code>// 可以支持多种形式的参数类型
+function add(a:string, b:string):string;
+function add(a:number, b:number):number;
+function add(a:any, b:any):any{
+  return a + b
+}
+</code></pre></li>
+
+<li><p>数组</p>
+
+<pre><code>let list: number[] = [1,2,3]
+let list: Array&lt;number&gt; = [1,2,3]
+</code></pre></li>
+
+<li><p>元组</p>
+
+<pre><code>let x: [string, number]
+</code></pre></li>
+
+<li><p>枚举</p>
+
+<pre><code>enum Gender{
+  Male,
+  Female
+}
+</code></pre></li>
+</ul>
+<ul class="pa0">
+  
+</ul>
+<div class="mt6">
+      
+      
+      </div>
+    </section>
+
+    <aside class="w-30-l mt6-l">
+
+
+
+
+</aside>
+
+  </article>
+
+    </main>
+    <footer class="bg-black bottom-0 w-100 pa3" role="contentinfo">
+  <div class="flex justify-between">
+  <a class="f4 fw4 hover-white no-underline white-70 dn dib-ns pv2 ph3" href="https://mambaneverout.github.io/" >
+    &copy; 2020 Irelia的博客
+  </a>
+    <div>
+
+
+
+
+
+
+
+
+
+
+</div>
+  </div>
+</footer>
+
+    
+
+  <script src="/dist/js/app.3fc0f988d21662902933.js"></script>
+
+
+  </body>
+</html>

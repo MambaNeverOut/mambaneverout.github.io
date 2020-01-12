@@ -35,7 +35,7 @@
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://mambaneverout.github.io/post/" />
 
-<meta property="og:updated_time" content="2020-01-10T10:44:55+08:00" />
+<meta property="og:updated_time" content="2020-01-12T22:10:21+08:00" />
 <meta itemprop="name" content="Posts">
 <meta itemprop="description" content="">
 
@@ -94,6 +94,27 @@
       
     </section>
     <aside class="flex-ns flex-wrap justify-around mt5">
+      
+        <div class="relative w-100 w-30-l mb4 bg-white">
+          
+            <div class="mb3 pa4 mid-gray overflow-hidden">
+    
+      <div class="f6">
+        January 12, 2020
+      </div>
+    
+    <h1 class="f3 near-black">
+      <a href="/post/5%E5%88%86%E9%92%9F%E5%AD%A6%E4%B9%A0typescript/" class="link black dim">
+        5分钟学习TypeScript
+      </a>
+    </h1>
+    <div class="nested-links f5 lh-copy nested-copy-line-height">
+      安装  配置 npm 淘宝源：npm config set registry https://registry.npm.taobao.org/ npm install typescript@版本号 -g npm install ts-node@版本号 -g // 使 ts 可以在 node 上运行  把 ts-node 安装后的可执行文件路径记录下来   调试  Windows 用户需要运行命令  npm init -y npm i -D ts-node typescript  创建.vscode/launch.json 文件，内容如下
+{ &quot;configurations&quot;: [ { &quot;name&quot;: &quot;ts-node&quot;, &quot;type&quot;: &quot;node&quot;, &quot;request&quot;: &quot;launch&quot;, &quot;program&quot;: &quot;注意看这里，要写成ts-node对应的可执行文件，Windows 用户注意了，你应该写成 ${workspaceRoot}/node_modules/ts-node/dist/bin.js&quot;, &quot;args&quot;: [&quot;${relativeFile}&quot;], &quot;cwd&quot;: &quot;${workspaceRoot}&quot;, &quot;protocol&quot;: &quot;inspector&quot; } ] }  找到调试选项，选择 ts-node，然后点击调试，就会在下方控制台输出结果
+    </div>
+  </div>
+
+        </div>
       
         <div class="relative w-100 w-30-l mb4 bg-white">
           
@@ -298,30 +319,6 @@ template 使用的是XML，语法严格，体积小，更适合写编译器 &lt;
     <div class="nested-links f5 lh-copy nested-copy-line-height">
       定位 position:static  元素在文档常规流中当前的布局位置 top, right, bottom, left 和 z-index 属性无效 用来取消元素的定位  position:relative  元素在文档流中占据的位置不会改变 视觉上位置改变了，不会影响其他元素  position:absolute  脱离了文档流 left: 10px 是自己的外边距相对于参考元素的边框内壁偏移 10px。 如果不设置 left/top，或者设为 auto，则绝对定位元素的位置处于默认位置 绝对定位的元素的宽度不会撑开父元素 给行内元素设置绝对定位后就有了块级的特性，可以设置宽高  position:fixed  相对于浏览器窗口 一定要设置 top/bottom  position:sticky  一定要设置 top 当页面向下滚动时，被视窗顶部拦住，被父级块元素下边缘推走 如果出现多个 sticky，放置在同一容器内，会出现下一个 sticky 元素把上一个“覆盖”的效果 如果出现多个 sticky，放置在并列的多个块级容器内，会出现下一个 sticky 元素把上一个“推走”的效果  使用经验  position:relative 做轻微的偏移，比如图标位置不齐 position:absolute 适用出现元素重叠、放置任意位置的场景 position:fixed 适用需持续固定在浏览器某位置的场景 position:sticky 标题随页面滚动，到顶部固定  层叠上下文   常见的创建层叠上下文的情况：
  z-index: 0 display: flex opacity 小于 1 的元素 transform  opacity: 0.
-    </div>
-  </div>
-
-        </div>
-      
-        <div class="relative w-100 w-30-l mb4 bg-white">
-          
-            <div class="mb3 pa4 mid-gray overflow-hidden">
-    
-      <div class="f6">
-        December 20, 2019
-      </div>
-    
-    <h1 class="f3 near-black">
-      <a href="/post/vue%E6%95%B0%E6%8D%AE%E5%93%8D%E5%BA%94%E5%BC%8F/" class="link black dim">
-        Vue数据响应式
-      </a>
-    </h1>
-    <div class="nested-links f5 lh-copy nested-copy-line-height">
-      “Vue 是一套用于构建用户界面的渐进式框架，Vue 的核心库只关注视图层。” Vue 文档已经把 Vue 的特点说的很清楚了，Vue 是专注于 UI 界面的框架，数据的修改会实时的反馈到界面中。这就是数据响应式了，通过数据来驱动视图。 在 Vue 文档深入响应式原理中，Vue 是这样说的：“ 当你把一个对象传入 Vue 实例作为 data 选项，Vue 将遍历此对象所有的属性，并使用 Object.defineProperty 把这些属性全部转为 getter/setter。 ”那么 Vue 具体是怎么做的呢？
-Vue 响应式原理: https://cn.vuejs.org/v2/guide/reactivity.html
-1.先来了解一下 getter, setter 和 Object.defineProperty  getter: 不要括号就可以调用的函数
-let obj2 = { 姓: &quot;高&quot;, 名: &quot;圆圆&quot;, get name() { return this.姓 + this.名; }, }; console.log(&quot;需求二：&quot; + obj2.name);  setter: 传入一个值并把这个值赋值给其他变量
-let obj3 = { 姓: &quot;高&quot;, 名: &quot;圆圆&quot;, get name() { return this.
     </div>
   </div>
 
