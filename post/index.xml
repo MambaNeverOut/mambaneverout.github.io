@@ -6,10 +6,23 @@
     <description>Recent content in Posts on Irelia的博客</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-Hans</language>
-    <lastBuildDate>Sun, 12 Jan 2020 22:10:21 +0800</lastBuildDate>
+    <lastBuildDate>Mon, 13 Jan 2020 10:46:13 +0800</lastBuildDate>
     
 	<atom:link href="https://mambaneverout.github.io/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>TypeScript特性（接口）</title>
+      <link>https://mambaneverout.github.io/post/typescript%E7%89%B9%E6%80%A7%E6%8E%A5%E5%8F%A3/</link>
+      <pubDate>Mon, 13 Jan 2020 10:46:13 +0800</pubDate>
+      
+      <guid>https://mambaneverout.github.io/post/typescript%E7%89%B9%E6%80%A7%E6%8E%A5%E5%8F%A3/</guid>
+      <description>基础类型  七种数据类型（symbol）
+let a:null = null let b:undefined = undefined let c:boolean = true let d:string = &#39;xxx&#39; let e:number = 1.223 let obj:Object = { name:&#39;Irelia&#39;} let n:any = 1; //可以是任意数据类型  枚举
+ 值默认为 0,1,2&amp;hellip; 如果当前枚举成员没有初始化的值且它之前的枚举成员是一个数字常量。当前枚举成员的值为它上一个枚举成员的值加 1。
+enum Gender{ Man = &#39;man&#39;; // 默认为Man = 0 A = 1, B, C; // 1,2,3 }   void(空)
+function print(x:any):void { // 没有返回值 console.log(x) }  undefined</description>
+    </item>
     
     <item>
       <title>5分钟学习TypeScript</title>

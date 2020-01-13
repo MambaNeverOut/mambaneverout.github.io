@@ -35,7 +35,7 @@
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://mambaneverout.github.io/" />
 
-<meta property="og:updated_time" content="2020-01-12T22:10:21+08:00" />
+<meta property="og:updated_time" content="2020-01-13T10:46:13+08:00" />
 <meta itemprop="name" content="Irelia的博客">
 <meta itemprop="description" content="">
 
@@ -122,6 +122,34 @@
       
       <div class="blah w-100">
         <h1 class="f3 fw1 athelas mt0 lh-title">
+          <a href="/post/typescript%E7%89%B9%E6%80%A7%E6%8E%A5%E5%8F%A3/" class="color-inherit dim link">
+            TypeScript特性（接口）
+            </a>
+        </h1>
+        <div class="f6 f5-l lh-copy nested-copy-line-height nested-links">
+          基础类型  七种数据类型（symbol）
+let a:null = null let b:undefined = undefined let c:boolean = true let d:string = 'xxx' let e:number = 1.223 let obj:Object = { name:'Irelia'} let n:any = 1; //可以是任意数据类型  枚举
+ 值默认为 0,1,2&hellip; 如果当前枚举成员没有初始化的值且它之前的枚举成员是一个数字常量。当前枚举成员的值为它上一个枚举成员的值加 1。
+enum Gender{ Man = 'man'; // 默认为Man = 0 A = 1, B, C; // 1,2,3 }   void(空)
+function print(x:any):void { // 没有返回值 console.log(x) }  undefined
+        </div>
+          <a href="/post/typescript%E7%89%B9%E6%80%A7%E6%8E%A5%E5%8F%A3/" class="ba b--moon-gray bg-light-gray br2 color-inherit dib f7 hover-bg-moon-gray link mt2 ph2 pv1">read more</a>
+        
+      </div>
+    </div>
+  </div>
+</article>
+
+          </div>
+        
+          <div class="relative w-100 mb4">
+            
+<article class="bb b--black-10">
+  <div class="db pv4 ph3 ph0-l no-underline dark-gray">
+    <div class="flex flex-column flex-row-ns">
+      
+      <div class="blah w-100">
+        <h1 class="f3 fw1 athelas mt0 lh-title">
           <a href="/post/5%E5%88%86%E9%92%9F%E5%AD%A6%E4%B9%A0typescript/" class="color-inherit dim link">
             5分钟学习TypeScript
             </a>
@@ -170,40 +198,18 @@
 
           </div>
         
-          <div class="relative w-100 mb4">
-            
-<article class="bb b--black-10">
-  <div class="db pv4 ph3 ph0-l no-underline dark-gray">
-    <div class="flex flex-column flex-row-ns">
-      
-      <div class="blah w-100">
-        <h1 class="f3 fw1 athelas mt0 lh-title">
-          <a href="/post/vue%E8%BF%9B%E9%98%B6%E5%B1%9E%E6%80%A7/" class="color-inherit dim link">
-            Vue进阶属性
-            </a>
-        </h1>
-        <div class="f6 f5-l lh-copy nested-copy-line-height nested-links">
-          directives(指令)  全局指令
-Vue.directives('my-directive',{ inserted: function(el){ el.addEventListener('click', ()=&gt;{console.log('directive')})} })  局部指令
-directives:{ on2:{ // 模仿简单版v-on inserted(el, info){ el.addEventListener(info.arg, info.value) } }, unbind(el, info){ // 移除事件监听 el.removeEventListener(info.arg, info.value) } }  directive 函数属性
- bind(el, info, vnode, oldVnode) 与 created 类似 inserted(el, info, vnode, oldVnode) 与 mounted 类似 update(el, info, vnode, oldVnode) 与 updated 类似 componentUpdated(el, info, vnode, oldVnode) unbind(el, info, vnode, oldVnode) 与 destoryed 类似  指令的作用
- 减少重复的 DOM 操作（数据绑定，事件监听，DOM 更新）   mixins(混入)  mixins 的作用: 减少 data、methods、钩子的重复
-        </div>
-          <a href="/post/vue%E8%BF%9B%E9%98%B6%E5%B1%9E%E6%80%A7/" class="ba b--moon-gray bg-light-gray br2 color-inherit dib f7 hover-bg-moon-gray link mt2 ph2 pv1">read more</a>
-        
-      </div>
-    </div>
-  </div>
-</article>
-
-          </div>
-        
       </section>
 
       
       <section class="w-100">
         <h1 class="f3">More</h1>
         
+        
+          <h2 class="f5 fw4 mb4 dib mr3">
+            <a href="/post/vue%E8%BF%9B%E9%98%B6%E5%B1%9E%E6%80%A7/" class="link black dim">
+              Vue进阶属性
+            </a>
+          </h2>
         
           <h2 class="f5 fw4 mb4 dib mr3">
             <a href="/post/%E6%B5%85%E5%B0%9Dreact/" class="link black dim">
@@ -220,12 +226,6 @@ directives:{ on2:{ // 模仿简单版v-on inserted(el, info){ el.addEventListene
           <h2 class="f5 fw4 mb4 dib mr3">
             <a href="/post/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F/" class="link black dim">
               正则表达式
-            </a>
-          </h2>
-        
-          <h2 class="f5 fw4 mb4 dib mr3">
-            <a href="/post/vue%E6%8C%87%E4%BB%A4%E5%92%8C%E4%BF%AE%E9%A5%B0%E7%AC%A6/" class="link black dim">
-              Vue指令和修饰符
             </a>
           </h2>
         

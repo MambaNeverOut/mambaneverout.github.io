@@ -35,7 +35,7 @@
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://mambaneverout.github.io/post/" />
 
-<meta property="og:updated_time" content="2020-01-12T22:10:21+08:00" />
+<meta property="og:updated_time" content="2020-01-13T10:46:13+08:00" />
 <meta itemprop="name" content="Posts">
 <meta itemprop="description" content="">
 
@@ -94,6 +94,30 @@
       
     </section>
     <aside class="flex-ns flex-wrap justify-around mt5">
+      
+        <div class="relative w-100 w-30-l mb4 bg-white">
+          
+            <div class="mb3 pa4 mid-gray overflow-hidden">
+    
+      <div class="f6">
+        January 13, 2020
+      </div>
+    
+    <h1 class="f3 near-black">
+      <a href="/post/typescript%E7%89%B9%E6%80%A7%E6%8E%A5%E5%8F%A3/" class="link black dim">
+        TypeScript特性（接口）
+      </a>
+    </h1>
+    <div class="nested-links f5 lh-copy nested-copy-line-height">
+      基础类型  七种数据类型（symbol）
+let a:null = null let b:undefined = undefined let c:boolean = true let d:string = 'xxx' let e:number = 1.223 let obj:Object = { name:'Irelia'} let n:any = 1; //可以是任意数据类型  枚举
+ 值默认为 0,1,2&hellip; 如果当前枚举成员没有初始化的值且它之前的枚举成员是一个数字常量。当前枚举成员的值为它上一个枚举成员的值加 1。
+enum Gender{ Man = 'man'; // 默认为Man = 0 A = 1, B, C; // 1,2,3 }   void(空)
+function print(x:any):void { // 没有返回值 console.log(x) }  undefined
+    </div>
+  </div>
+
+        </div>
       
         <div class="relative w-100 w-30-l mb4 bg-white">
           
@@ -298,27 +322,6 @@ template 使用的是XML，语法严格，体积小，更适合写编译器 &lt;
     </h1>
     <div class="nested-links f5 lh-copy nested-copy-line-height">
       grid 布局是一种二维布局模型，先在页面上画好“虚拟格子”，再设置元素在格子上的位置和跨度 容器属性  声明使用 flex 布局  display: grid; / inline-grid  画好虚拟表格  grid: 30px auto 30px / 10% 1fr 10% (3 行 3 列) grid-gap: 10px 20px; (行与列之间的间隙)  告诉内容如何放置  align-items: start | end | center | stretch; justify-items: start | end | center | stretch; align-content: start; justify-content: space-evenly;  子项属性  grid-column： 3 / span 2; (从第三条线开始，跨越两个格子 =&gt; 3 / 5) grid-row: 3 / 4; justify-self: start; align-self: center;   掘金首页 &lt;body&gt; &lt;header&gt;header&lt;/header&gt; &lt;div class=&quot;subnav&gt;subnav&lt;/div&gt; &lt;main&gt;main&lt;/main&gt; &lt;aside&gt;aside&lt;/aside&gt; &lt;/body&gt;  body{ display: grid; grid: auto auto auto / 1fr 800px 180px 1fr; } header{ grid-area:1/2/2/4; } .
-    </div>
-  </div>
-
-        </div>
-      
-        <div class="relative w-100 w-30-l mb4 bg-white">
-          
-            <div class="mb3 pa4 mid-gray overflow-hidden">
-    
-      <div class="f6">
-        December 21, 2019
-      </div>
-    
-    <h1 class="f3 near-black">
-      <a href="/post/%E5%AE%9A%E4%BD%8D%E4%B8%8E%E5%B1%82%E5%8F%A0%E4%B8%8A%E4%B8%8B%E6%96%87/" class="link black dim">
-        定位与层叠上下文
-      </a>
-    </h1>
-    <div class="nested-links f5 lh-copy nested-copy-line-height">
-      定位 position:static  元素在文档常规流中当前的布局位置 top, right, bottom, left 和 z-index 属性无效 用来取消元素的定位  position:relative  元素在文档流中占据的位置不会改变 视觉上位置改变了，不会影响其他元素  position:absolute  脱离了文档流 left: 10px 是自己的外边距相对于参考元素的边框内壁偏移 10px。 如果不设置 left/top，或者设为 auto，则绝对定位元素的位置处于默认位置 绝对定位的元素的宽度不会撑开父元素 给行内元素设置绝对定位后就有了块级的特性，可以设置宽高  position:fixed  相对于浏览器窗口 一定要设置 top/bottom  position:sticky  一定要设置 top 当页面向下滚动时，被视窗顶部拦住，被父级块元素下边缘推走 如果出现多个 sticky，放置在同一容器内，会出现下一个 sticky 元素把上一个“覆盖”的效果 如果出现多个 sticky，放置在并列的多个块级容器内，会出现下一个 sticky 元素把上一个“推走”的效果  使用经验  position:relative 做轻微的偏移，比如图标位置不齐 position:absolute 适用出现元素重叠、放置任意位置的场景 position:fixed 适用需持续固定在浏览器某位置的场景 position:sticky 标题随页面滚动，到顶部固定  层叠上下文   常见的创建层叠上下文的情况：
- z-index: 0 display: flex opacity 小于 1 的元素 transform  opacity: 0.
     </div>
   </div>
 

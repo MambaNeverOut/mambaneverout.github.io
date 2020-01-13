@@ -35,7 +35,7 @@
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://mambaneverout.github.io/post/" />
 
-<meta property="og:updated_time" content="2020-01-12T22:10:21+08:00" />
+<meta property="og:updated_time" content="2020-01-13T10:46:13+08:00" />
 <meta itemprop="name" content="Posts">
 <meta itemprop="description" content="">
 
@@ -94,6 +94,27 @@
       
     </section>
     <aside class="flex-ns flex-wrap justify-around mt5">
+      
+        <div class="relative w-100 w-30-l mb4 bg-white">
+          
+            <div class="mb3 pa4 mid-gray overflow-hidden">
+    
+      <div class="f6">
+        December 21, 2019
+      </div>
+    
+    <h1 class="f3 near-black">
+      <a href="/post/%E5%AE%9A%E4%BD%8D%E4%B8%8E%E5%B1%82%E5%8F%A0%E4%B8%8A%E4%B8%8B%E6%96%87/" class="link black dim">
+        定位与层叠上下文
+      </a>
+    </h1>
+    <div class="nested-links f5 lh-copy nested-copy-line-height">
+      定位 position:static  元素在文档常规流中当前的布局位置 top, right, bottom, left 和 z-index 属性无效 用来取消元素的定位  position:relative  元素在文档流中占据的位置不会改变 视觉上位置改变了，不会影响其他元素  position:absolute  脱离了文档流 left: 10px 是自己的外边距相对于参考元素的边框内壁偏移 10px。 如果不设置 left/top，或者设为 auto，则绝对定位元素的位置处于默认位置 绝对定位的元素的宽度不会撑开父元素 给行内元素设置绝对定位后就有了块级的特性，可以设置宽高  position:fixed  相对于浏览器窗口 一定要设置 top/bottom  position:sticky  一定要设置 top 当页面向下滚动时，被视窗顶部拦住，被父级块元素下边缘推走 如果出现多个 sticky，放置在同一容器内，会出现下一个 sticky 元素把上一个“覆盖”的效果 如果出现多个 sticky，放置在并列的多个块级容器内，会出现下一个 sticky 元素把上一个“推走”的效果  使用经验  position:relative 做轻微的偏移，比如图标位置不齐 position:absolute 适用出现元素重叠、放置任意位置的场景 position:fixed 适用需持续固定在浏览器某位置的场景 position:sticky 标题随页面滚动，到顶部固定  层叠上下文   常见的创建层叠上下文的情况：
+ z-index: 0 display: flex opacity 小于 1 的元素 transform  opacity: 0.
+    </div>
+  </div>
+
+        </div>
       
         <div class="relative w-100 w-30-l mb4 bg-white">
           
@@ -320,30 +341,6 @@ let a = 'mmp' let obj = {a: 'emm'} // obj.a let obj = {[a]: 'emm'} // obj[a]   �
  if else 语句
  推荐写法：
 if (表达式) { 语句 } else if (表达式) { 语句 } else { 语句 }  可以省略{}，但是省略后 if else 语句只会默认把后面的第一句放入{}内
-    </div>
-  </div>
-
-        </div>
-      
-        <div class="relative w-100 w-30-l mb4 bg-white">
-          
-            <div class="mb3 pa4 mid-gray overflow-hidden">
-    
-      <div class="f6">
-        November 4, 2019
-      </div>
-    
-    <h1 class="f3 near-black">
-      <a href="/post/javascript%E7%9A%84%E8%AF%9E%E7%94%9F/" class="link black dim">
-        JavaScript的诞生
-      </a>
-    </h1>
-    <div class="nested-links f5 lh-copy nested-copy-line-height">
-      JavaScript 发展重要时间点：
- 1994 年，网景公司发布了 Navigator 浏览器 0.9 版。这是历史上第一个比较成熟的网络浏览器。但是，这个浏览器只能用来浏览，不具备与访问者互动的能力 1995 年 5 月，网景公司决定创造一门网页脚本语言，随后布兰登只用 10 天时间就设计出来了 Javascript 2004 年 4 月 1 日，谷歌发布 Gmail 在线网页 2005 年，Jesse 将谷歌用到的技术命名为 AJAX，前端技术正式出现 2006 年，jQuery 发布，并且在之后的十年里占据了前端技术的主要地位 2009 年，Ryan 基于 V8 创建了 Node.js 2010 年，Isaac 基于 Node.js 写出来 npm 2010 年，TJ 发布了 Express.js  ECMAScript 标准的制定
- 1997 年 6 月，第一版 ECMAScript 发布
- 1999 年 12 月，ES3 发布，这是目前使用最广泛的版本
- 2009 年 12 月，ES5 发布，增加了一些功能
     </div>
   </div>
 
