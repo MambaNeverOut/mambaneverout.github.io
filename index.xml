@@ -6,10 +6,20 @@
     <description>Recent content on Irelia的博客</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-Hans</language>
-    <lastBuildDate>Mon, 13 Jan 2020 10:46:13 +0800</lastBuildDate>
+    <lastBuildDate>Tue, 14 Jan 2020 10:10:08 +0800</lastBuildDate>
     
 	<atom:link href="https://mambaneverout.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>React组件</title>
+      <link>https://mambaneverout.github.io/post/react%E7%BB%84%E4%BB%B6/</link>
+      <pubDate>Tue, 14 Jan 2020 10:10:08 +0800</pubDate>
+      
+      <guid>https://mambaneverout.github.io/post/react%E7%BB%84%E4%BB%B6/</guid>
+      <description>React 组件  元素与组件
+React 元素（d小写） const div = React.createElement(&#39;div&#39;,...) React 组件（D大写) const Div = () =&amp;gt; React.createElement(&#39;div&#39;,...)   函数组件  function Welcome(props){ return &amp;lt;h1&amp;gt;Hello, {props.name}&amp;lt;/h1&amp;gt;; } 使用方法: &amp;lt;Welcome name=&amp;quot;frank&amp;quot;/&amp;gt;  类组件  class Welcome extends React.Component{ constructor(){ super() this.state = {n:0} } render(){ return &amp;lt;h1&amp;gt;Hello, {this.props.name}&amp;lt;/h1&amp;gt; } } 使用方法: &amp;lt;Welcome name=&amp;quot;frank&amp;quot;/&amp;gt;  state(内部数据)  类组件首先要在 constructor 中初始化，然后可以用 this.state 读，this.setState 写(setState 最好使用函数) 函数组件用 useState 返回数组，第一项读，第二项写 类组件的 setState 会异步改变 n，函数组件的 setN 不会改变 n，而是会生成一个新的 n</description>
+    </item>
     
     <item>
       <title>TypeScript特性（接口）</title>
