@@ -35,7 +35,7 @@
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://mambaneverout.github.io/" />
 
-<meta property="og:updated_time" content="2020-01-14T10:10:08+08:00" />
+<meta property="og:updated_time" content="2020-01-20T13:14:23+08:00" />
 <meta itemprop="name" content="Irelia的博客">
 <meta itemprop="description" content="">
 
@@ -122,6 +122,34 @@
       
       <div class="blah w-100">
         <h1 class="f3 fw1 athelas mt0 lh-title">
+          <a href="/post/typescript%E7%BB%93%E5%90%88vue/" class="color-inherit dim link">
+            TypeScript结合Vue
+            </a>
+        </h1>
+        <div class="f6 f5-l lh-copy nested-copy-line-height nested-links">
+          Vue 文档：https://cn.vuejs.org/v2/guide/typescript.html#ad
+ 创建 Vue 项目
+npm install --global @vue/cli vue create my-project  基于类的 Vue 组件
+import Vue from 'vue' import Component from 'vue-class-component' // @Component 修饰符注明了此类为一个 Vue 组件 @Component({ // 所有的组件选项都可以放在这里(props, components, watch) template: '&lt;button @click=&quot;onClick&quot;&gt;Click!&lt;/button&gt;' }) export default class MyComponent extends Vue { // 初始数据可以直接声明为实例的属性(data) message: string = 'Hello!' // 组件方法也可以直接声明为实例的方法(methods) onClick (): void { window.alert(this.message) } }  @Component() 里面包含的是共用的属性
+ export default class MyComponent extends Vue{} 里面包含的是组件自己特有的属性
+        </div>
+          <a href="/post/typescript%E7%BB%93%E5%90%88vue/" class="ba b--moon-gray bg-light-gray br2 color-inherit dib f7 hover-bg-moon-gray link mt2 ph2 pv1">read more</a>
+        
+      </div>
+    </div>
+  </div>
+</article>
+
+          </div>
+        
+          <div class="relative w-100 mb4">
+            
+<article class="bb b--black-10">
+  <div class="db pv4 ph3 ph0-l no-underline dark-gray">
+    <div class="flex flex-column flex-row-ns">
+      
+      <div class="blah w-100">
+        <h1 class="f3 fw1 athelas mt0 lh-title">
           <a href="/post/react%E7%BB%84%E4%BB%B6/" class="color-inherit dim link">
             React组件
             </a>
@@ -167,37 +195,18 @@ function print(x:any):void { // 没有返回值 console.log(x) }  undefined
 
           </div>
         
-          <div class="relative w-100 mb4">
-            
-<article class="bb b--black-10">
-  <div class="db pv4 ph3 ph0-l no-underline dark-gray">
-    <div class="flex flex-column flex-row-ns">
-      
-      <div class="blah w-100">
-        <h1 class="f3 fw1 athelas mt0 lh-title">
-          <a href="/post/5%E5%88%86%E9%92%9F%E5%AD%A6%E4%B9%A0typescript/" class="color-inherit dim link">
-            5分钟学习TypeScript
-            </a>
-        </h1>
-        <div class="f6 f5-l lh-copy nested-copy-line-height nested-links">
-          安装  配置 npm 淘宝源：npm config set registry https://registry.npm.taobao.org/ npm install typescript@版本号 -g npm install ts-node@版本号 -g // 使 ts 可以在 node 上运行  把 ts-node 安装后的可执行文件路径记录下来   调试  Windows 用户需要运行命令  npm init -y npm i -D ts-node typescript  创建.vscode/launch.json 文件，内容如下
-{ &quot;configurations&quot;: [ { &quot;name&quot;: &quot;ts-node&quot;, &quot;type&quot;: &quot;node&quot;, &quot;request&quot;: &quot;launch&quot;, &quot;program&quot;: &quot;注意看这里，要写成ts-node对应的可执行文件，Windows 用户注意了，你应该写成 ${workspaceRoot}/node_modules/ts-node/dist/bin.js&quot;, &quot;args&quot;: [&quot;${relativeFile}&quot;], &quot;cwd&quot;: &quot;${workspaceRoot}&quot;, &quot;protocol&quot;: &quot;inspector&quot; } ] }  找到调试选项，选择 ts-node，然后点击调试，就会在下方控制台输出结果
-        </div>
-          <a href="/post/5%E5%88%86%E9%92%9F%E5%AD%A6%E4%B9%A0typescript/" class="ba b--moon-gray bg-light-gray br2 color-inherit dib f7 hover-bg-moon-gray link mt2 ph2 pv1">read more</a>
-        
-      </div>
-    </div>
-  </div>
-</article>
-
-          </div>
-        
       </section>
 
       
       <section class="w-100">
         <h1 class="f3">More</h1>
         
+        
+          <h2 class="f5 fw4 mb4 dib mr3">
+            <a href="/post/5%E5%88%86%E9%92%9F%E5%AD%A6%E4%B9%A0typescript/" class="link black dim">
+              5分钟学习TypeScript
+            </a>
+          </h2>
         
           <h2 class="f5 fw4 mb4 dib mr3">
             <a href="/post/bom/" class="link black dim">
@@ -214,12 +223,6 @@ function print(x:any):void { // 没有返回值 console.log(x) }  undefined
           <h2 class="f5 fw4 mb4 dib mr3">
             <a href="/post/%E6%B5%85%E5%B0%9Dreact/" class="link black dim">
               浅尝React
-            </a>
-          </h2>
-        
-          <h2 class="f5 fw4 mb4 dib mr3">
-            <a href="/post/js%E4%BA%8B%E4%BB%B6/" class="link black dim">
-              JS事件
             </a>
           </h2>
         

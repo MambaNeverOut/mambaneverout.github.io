@@ -35,7 +35,7 @@
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://mambaneverout.github.io/post/" />
 
-<meta property="og:updated_time" content="2020-01-14T10:10:08+08:00" />
+<meta property="og:updated_time" content="2020-01-20T13:14:23+08:00" />
 <meta itemprop="name" content="Posts">
 <meta itemprop="description" content="">
 
@@ -94,6 +94,30 @@
       
     </section>
     <aside class="flex-ns flex-wrap justify-around mt5">
+      
+        <div class="relative w-100 w-30-l mb4 bg-white">
+          
+            <div class="mb3 pa4 mid-gray overflow-hidden">
+    
+      <div class="f6">
+        January 20, 2020
+      </div>
+    
+    <h1 class="f3 near-black">
+      <a href="/post/typescript%E7%BB%93%E5%90%88vue/" class="link black dim">
+        TypeScript结合Vue
+      </a>
+    </h1>
+    <div class="nested-links f5 lh-copy nested-copy-line-height">
+      Vue 文档：https://cn.vuejs.org/v2/guide/typescript.html#ad
+ 创建 Vue 项目
+npm install --global @vue/cli vue create my-project  基于类的 Vue 组件
+import Vue from 'vue' import Component from 'vue-class-component' // @Component 修饰符注明了此类为一个 Vue 组件 @Component({ // 所有的组件选项都可以放在这里(props, components, watch) template: '&lt;button @click=&quot;onClick&quot;&gt;Click!&lt;/button&gt;' }) export default class MyComponent extends Vue { // 初始数据可以直接声明为实例的属性(data) message: string = 'Hello!' // 组件方法也可以直接声明为实例的方法(methods) onClick (): void { window.alert(this.message) } }  @Component() 里面包含的是共用的属性
+ export default class MyComponent extends Vue{} 里面包含的是组件自己特有的属性
+    </div>
+  </div>
+
+        </div>
       
         <div class="relative w-100 w-30-l mb4 bg-white">
           
@@ -301,28 +325,6 @@ $form.addEventListener('submit', function(e) { e.preventDefault() if(validUserna
 &lt;div id=&quot;xxx&quot;&gt; {{n}} &lt;button @click=&quot;add&quot;&gt;+1&lt;/button&gt; &lt;/div&gt; new Vue({ el: '#app', data: {n:0}, // data可以改成函数 methods: {add(){}} })  写在 options 中(Vue 完整版)
 &lt;div id=&quot;app&quot;&gt;&lt;/div&gt; // div#app会被替换 new Vue({ template: ` &lt;div&gt; {{n}} &lt;button @click=&quot;add&quot;&gt;+1&lt;/button&gt; &lt;/div&gt; `, data: {n:0}, // data可以改成函数 methods: {add(){}} }).$mounted('#app')  配合 xxx.vue 文件(Vue 非完整版)
 template 使用的是XML，语法严格，体积小，更适合写编译器 &lt;template&gt; &lt;div&gt; &lt;button @click=&quot;add&quot;&gt; +1 &lt;/button&gt; &lt;/div&gt; &lt;/template&gt; &lt;script&gt; export default{ data(){ return { n:0 }}, // data必须为函数 methods:{add(){}} } &lt;/script&gt;  // 在其他地方引入 import Xxx from '.
-    </div>
-  </div>
-
-        </div>
-      
-        <div class="relative w-100 w-30-l mb4 bg-white">
-          
-            <div class="mb3 pa4 mid-gray overflow-hidden">
-    
-      <div class="f6">
-        December 23, 2019
-      </div>
-    
-    <h1 class="f3 near-black">
-      <a href="/post/computed%E5%92%8Cwatch/" class="link black dim">
-        Computed和watch
-      </a>
-    </h1>
-    <div class="nested-links f5 lh-copy nested-copy-line-height">
-      computed  computed 默认只有 getter，需要的时候也可以提供 setter
- computed:{ displayName: { get(){ const user = this.user return user.nickname || user.phone || user.email } set(value){ this.user.nickname = value } } }  计算属性的结果会缓存
- computed:{ displayUsers(){ const hash = { male: '男', female: '女' } const { users, gender } = this if(gender === &quot;&quot;){ return users } else if(typeof gender === &quot;string&quot;){ return users.filter(u =&gt; u.gender === hash[gender]) } else { throw new Error(&quot;意料之外的值&quot;) } } },   watch  watch 是异步的，可以在数据变化之后立即使用 Vue.
     </div>
   </div>
 

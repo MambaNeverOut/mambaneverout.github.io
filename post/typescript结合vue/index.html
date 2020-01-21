@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    
+    <title>Irelia的博客  | TypeScript结合Vue</title>
+    <meta name="viewport" content="width=device-width,minimum-scale=1">
+    <meta name="generator" content="Hugo 0.58.3" />
+    
+    
+      <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
+    
+
+    
+    
+      <link href="/dist/css/app.d98f2eb6bcd1eaedb7edf166bd16af26.css" rel="stylesheet">
+    
+
+    
+
+    
+      
+    
+
+    
+    
+    <meta property="og:title" content="TypeScript结合Vue" />
+<meta property="og:description" content="Vue 文档：https://cn.vuejs.org/v2/guide/typescript.html#ad
+ 创建 Vue 项目
+npm install --global @vue/cli vue create my-project  基于类的 Vue 组件
+import Vue from &#39;vue&#39; import Component from &#39;vue-class-component&#39; // @Component 修饰符注明了此类为一个 Vue 组件 @Component({ // 所有的组件选项都可以放在这里(props, components, watch) template: &#39;&lt;button @click=&quot;onClick&quot;&gt;Click!&lt;/button&gt;&#39; }) export default class MyComponent extends Vue { // 初始数据可以直接声明为实例的属性(data) message: string = &#39;Hello!&#39; // 组件方法也可以直接声明为实例的方法(methods) onClick (): void { window.alert(this.message) } }  @Component() 里面包含的是共用的属性
+ export default class MyComponent extends Vue{} 里面包含的是组件自己特有的属性" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://mambaneverout.github.io/post/typescript%E7%BB%93%E5%90%88vue/" />
+<meta property="article:published_time" content="2020-01-20T13:14:23+08:00" />
+<meta property="article:modified_time" content="2020-01-20T13:14:23+08:00" />
+<meta itemprop="name" content="TypeScript结合Vue">
+<meta itemprop="description" content="Vue 文档：https://cn.vuejs.org/v2/guide/typescript.html#ad
+ 创建 Vue 项目
+npm install --global @vue/cli vue create my-project  基于类的 Vue 组件
+import Vue from &#39;vue&#39; import Component from &#39;vue-class-component&#39; // @Component 修饰符注明了此类为一个 Vue 组件 @Component({ // 所有的组件选项都可以放在这里(props, components, watch) template: &#39;&lt;button @click=&quot;onClick&quot;&gt;Click!&lt;/button&gt;&#39; }) export default class MyComponent extends Vue { // 初始数据可以直接声明为实例的属性(data) message: string = &#39;Hello!&#39; // 组件方法也可以直接声明为实例的方法(methods) onClick (): void { window.alert(this.message) } }  @Component() 里面包含的是共用的属性
+ export default class MyComponent extends Vue{} 里面包含的是组件自己特有的属性">
+
+
+<meta itemprop="datePublished" content="2020-01-20T13:14:23&#43;08:00" />
+<meta itemprop="dateModified" content="2020-01-20T13:14:23&#43;08:00" />
+<meta itemprop="wordCount" content="154">
+
+
+
+<meta itemprop="keywords" content="" />
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="TypeScript结合Vue"/>
+<meta name="twitter:description" content="Vue 文档：https://cn.vuejs.org/v2/guide/typescript.html#ad
+ 创建 Vue 项目
+npm install --global @vue/cli vue create my-project  基于类的 Vue 组件
+import Vue from &#39;vue&#39; import Component from &#39;vue-class-component&#39; // @Component 修饰符注明了此类为一个 Vue 组件 @Component({ // 所有的组件选项都可以放在这里(props, components, watch) template: &#39;&lt;button @click=&quot;onClick&quot;&gt;Click!&lt;/button&gt;&#39; }) export default class MyComponent extends Vue { // 初始数据可以直接声明为实例的属性(data) message: string = &#39;Hello!&#39; // 组件方法也可以直接声明为实例的方法(methods) onClick (): void { window.alert(this.message) } }  @Component() 里面包含的是共用的属性
+ export default class MyComponent extends Vue{} 里面包含的是组件自己特有的属性"/>
+
+  </head>
+
+  <body class="ma0 avenir bg-near-white">
+
+    
+   
+  
+
+  <header>
+    <div class="bg-black">
+      <nav class="pv3 ph3 ph4-ns" role="navigation">
+  <div class="flex-l justify-between items-center center">
+    <a href="https://mambaneverout.github.io/" class="f3 fw2 hover-white no-underline white-90 dib">
+      Irelia的博客
+    </a>
+    <div class="flex-l items-center">
+      
+
+      
+      
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+  </div>
+</nav>
+
+    </div>
+  </header>
+
+
+
+    <main class="pb7" role="main">
+      
+  
+  <article class="flex-l flex-wrap justify-between mw8 center ph3">
+
+    <header class="mt4 w-100">
+      <p class="f6 b helvetica tracked">
+          
+        POSTS
+      </p>
+      <h1 class="f1 athelas mb1">TypeScript结合Vue</h1>
+      
+      
+      <time class="f6 mv4 dib tracked" datetime="2020-01-20T13:14:23&#43;08:00">January 20, 2020</time>
+      
+      
+    </header>
+
+    <section class="nested-copy-line-height lh-copy serif f4 nested-links nested-img mid-gray pr4-l w-two-thirds-l"><ul>
+<li><p>Vue 文档：<a href="https://cn.vuejs.org/v2/guide/typescript.html#ad">https://cn.vuejs.org/v2/guide/typescript.html#ad</a></p></li>
+
+<li><p>创建 Vue 项目</p>
+
+<pre><code>npm install --global @vue/cli
+vue create my-project
+</code></pre></li>
+
+<li><p>基于类的 Vue 组件</p>
+
+<pre><code>import Vue from 'vue'
+import Component from 'vue-class-component'
+
+// @Component 修饰符注明了此类为一个 Vue 组件
+@Component({
+  // 所有的组件选项都可以放在这里(props, components, watch)
+  template: '&lt;button @click=&quot;onClick&quot;&gt;Click!&lt;/button&gt;'
+})
+export default class MyComponent extends Vue {
+  // 初始数据可以直接声明为实例的属性(data)
+  message: string = 'Hello!'
+
+  // 组件方法也可以直接声明为实例的方法(methods)
+  onClick (): void {
+    window.alert(this.message)
+  }
+}
+</code></pre></li>
+
+<li><p><code>@Component()</code> 里面包含的是共用的属性</p></li>
+
+<li><p><code>export default class MyComponent extends Vue{}</code> 里面包含的是组件自己特有的属性</p></li>
+
+<li><p>示例</p>
+
+<pre><code>import Vue from 'vue'
+import Component from 'vue-class-component'
+
+interface Todo{
+  name: String;
+  status: 'done' | 'todo' | 'deleted''
+}
+
+@Component({
+  components: {
+    NewTodo,
+    TodoList,
+  },
+  watch: {
+    list(newValue: Array&lt;Todo&gt;){
+      let string = JSON.stringify(newValue)
+      localStorage.setItem('data',string)
+    }
+  }
+})
+export default class App extends Vue {
+  list: Array&lt;Todo&gt; = localStorage.getItem('data')
+    ? JSON.parse(&lt;string&gt;localStorage.getItem('data')) : []; // 断言
+  addTodo(name:String){
+    let todo: Todo = {name: name, status: 'todo'}
+    this.list.push(todo)
+  }
+  updateTodo(todo: Todo,part: Partial&lt;Todo&gt;){
+    // Partial&lt;Todo&gt;表示类型为Todo中的一部分
+    let index = this.list.indexOf(todo)
+    let newTodo = Object.assign({}, todo, part)
+    this.list.splice(index, 1, newTodo)
+  }
+}
+</code></pre></li>
+</ul>
+<ul class="pa0">
+  
+</ul>
+<div class="mt6">
+      
+      
+      </div>
+    </section>
+
+    <aside class="w-30-l mt6-l">
+
+
+
+
+</aside>
+
+  </article>
+
+    </main>
+    <footer class="bg-black bottom-0 w-100 pa3" role="contentinfo">
+  <div class="flex justify-between">
+  <a class="f4 fw4 hover-white no-underline white-70 dn dib-ns pv2 ph3" href="https://mambaneverout.github.io/" >
+    &copy; 2020 Irelia的博客
+  </a>
+    <div>
+
+
+
+
+
+
+
+
+
+
+</div>
+  </div>
+</footer>
+
+    
+
+  <script src="/dist/js/app.3fc0f988d21662902933.js"></script>
+
+
+  </body>
+</html>
