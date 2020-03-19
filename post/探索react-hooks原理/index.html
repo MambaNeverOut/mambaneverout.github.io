@@ -116,8 +116,7 @@
 <ul>
 <li><p>先来尝试实现单个数据的 useState</p>
 
-<pre><code>
-  let _state;
+<pre><code>  let _state;
   function myUseState(initialValue) {
       _state = _state || initialValue;
       function setState(newState) {
@@ -144,8 +143,7 @@
 
 <li><p>那么，如果要对两个或多个数据进行 useState 呢？</p>
 
-<pre><code>
-  let _state = [];
+<pre><code>  let _state = [];
   let index = 0;
   const myUseState = initialValue =&gt; {
       let currentIndex = index;
