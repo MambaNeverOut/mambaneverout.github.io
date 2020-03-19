@@ -6,10 +6,20 @@
     <description>Recent content in Posts on Irelia的博客</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-Hans</language>
-    <lastBuildDate>Mon, 20 Jan 2020 13:14:23 +0800</lastBuildDate>
+    <lastBuildDate>Wed, 18 Mar 2020 22:17:09 +0800</lastBuildDate>
     
 	<atom:link href="https://mambaneverout.github.io/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>探索React Hooks原理</title>
+      <link>https://mambaneverout.github.io/post/%E6%8E%A2%E7%B4%A2react-hooks%E5%8E%9F%E7%90%86/</link>
+      <pubDate>Wed, 18 Mar 2020 22:17:09 +0800</pubDate>
+      
+      <guid>https://mambaneverout.github.io/post/%E6%8E%A2%E7%B4%A2react-hooks%E5%8E%9F%E7%90%86/</guid>
+      <description>今天我们来探究一下 React Hooks 的原理 useState  先来尝试实现单个数据的 useState
+ let _state; function myUseState(initialValue) { _state = _state || initialValue; function setState(newState) { _state = newState; render(); } return [_state, setState]; } const render = () =&amp;gt; ReactDOM.render(&amp;lt;App /&amp;gt;, rootElement); function App() { const [n, setN] = myUseState(0); return ( &amp;lt;div className=&amp;quot;App&amp;quot;&amp;gt; &amp;lt;p&amp;gt;{n}&amp;lt;/p&amp;gt; &amp;lt;p&amp;gt; &amp;lt;button onClick={() =&amp;gt; setN(n + 1)}&amp;gt;+1&amp;lt;/button&amp;gt; &amp;lt;/p&amp;gt; &amp;lt;/div&amp;gt; ); } ReactDOM.render(&amp;lt;App /&amp;gt;, rootElement);  那么，如果要对两个或多个数据进行 useState 呢？</description>
+    </item>
     
     <item>
       <title>TypeScript结合Vue</title>

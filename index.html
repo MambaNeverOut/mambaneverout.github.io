@@ -35,7 +35,7 @@
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://mambaneverout.github.io/" />
 
-<meta property="og:updated_time" content="2020-01-20T13:14:23+08:00" />
+<meta property="og:updated_time" content="2020-03-18T22:17:09+08:00" />
 <meta itemprop="name" content="Irelia的博客">
 <meta itemprop="description" content="">
 
@@ -122,6 +122,31 @@
       
       <div class="blah w-100">
         <h1 class="f3 fw1 athelas mt0 lh-title">
+          <a href="/post/%E6%8E%A2%E7%B4%A2react-hooks%E5%8E%9F%E7%90%86/" class="color-inherit dim link">
+            探索React Hooks原理
+            </a>
+        </h1>
+        <div class="f6 f5-l lh-copy nested-copy-line-height nested-links">
+          今天我们来探究一下 React Hooks 的原理 useState  先来尝试实现单个数据的 useState
+ let _state; function myUseState(initialValue) { _state = _state || initialValue; function setState(newState) { _state = newState; render(); } return [_state, setState]; } const render = () =&gt; ReactDOM.render(&lt;App /&gt;, rootElement); function App() { const [n, setN] = myUseState(0); return ( &lt;div className=&quot;App&quot;&gt; &lt;p&gt;{n}&lt;/p&gt; &lt;p&gt; &lt;button onClick={() =&gt; setN(n + 1)}&gt;+1&lt;/button&gt; &lt;/p&gt; &lt;/div&gt; ); } ReactDOM.render(&lt;App /&gt;, rootElement);  那么，如果要对两个或多个数据进行 useState 呢？
+        </div>
+          <a href="/post/%E6%8E%A2%E7%B4%A2react-hooks%E5%8E%9F%E7%90%86/" class="ba b--moon-gray bg-light-gray br2 color-inherit dib f7 hover-bg-moon-gray link mt2 ph2 pv1">read more</a>
+        
+      </div>
+    </div>
+  </div>
+</article>
+
+          </div>
+        
+          <div class="relative w-100 mb4">
+            
+<article class="bb b--black-10">
+  <div class="db pv4 ph3 ph0-l no-underline dark-gray">
+    <div class="flex flex-column flex-row-ns">
+      
+      <div class="blah w-100">
+        <h1 class="f3 fw1 athelas mt0 lh-title">
           <a href="/post/typescript%E7%BB%93%E5%90%88vue/" class="color-inherit dim link">
             TypeScript结合Vue
             </a>
@@ -167,40 +192,18 @@ React 元素（d小写） const div = React.createElement('div',...) React 组�
 
           </div>
         
-          <div class="relative w-100 mb4">
-            
-<article class="bb b--black-10">
-  <div class="db pv4 ph3 ph0-l no-underline dark-gray">
-    <div class="flex flex-column flex-row-ns">
-      
-      <div class="blah w-100">
-        <h1 class="f3 fw1 athelas mt0 lh-title">
-          <a href="/post/typescript%E7%89%B9%E6%80%A7%E6%8E%A5%E5%8F%A3/" class="color-inherit dim link">
-            TypeScript特性（接口）
-            </a>
-        </h1>
-        <div class="f6 f5-l lh-copy nested-copy-line-height nested-links">
-          基础类型  七种数据类型（symbol）
-let a:null = null let b:undefined = undefined let c:boolean = true let d:string = 'xxx' let e:number = 1.223 let obj:Object = { name:'Irelia'} let n:any = 1; //可以是任意数据类型  枚举
- 值默认为 0,1,2&hellip; 如果当前枚举成员没有初始化的值且它之前的枚举成员是一个数字常量。当前枚举成员的值为它上一个枚举成员的值加 1。
-enum Gender{ Man = 'man'; // 默认为Man = 0 A = 1, B, C; // 1,2,3 }   void(空)
-function print(x:any):void { // 没有返回值 console.log(x) }  undefined
-        </div>
-          <a href="/post/typescript%E7%89%B9%E6%80%A7%E6%8E%A5%E5%8F%A3/" class="ba b--moon-gray bg-light-gray br2 color-inherit dib f7 hover-bg-moon-gray link mt2 ph2 pv1">read more</a>
-        
-      </div>
-    </div>
-  </div>
-</article>
-
-          </div>
-        
       </section>
 
       
       <section class="w-100">
         <h1 class="f3">More</h1>
         
+        
+          <h2 class="f5 fw4 mb4 dib mr3">
+            <a href="/post/typescript%E7%89%B9%E6%80%A7%E6%8E%A5%E5%8F%A3/" class="link black dim">
+              TypeScript特性（接口）
+            </a>
+          </h2>
         
           <h2 class="f5 fw4 mb4 dib mr3">
             <a href="/post/5%E5%88%86%E9%92%9F%E5%AD%A6%E4%B9%A0typescript/" class="link black dim">
@@ -217,12 +220,6 @@ function print(x:any):void { // 没有返回值 console.log(x) }  undefined
           <h2 class="f5 fw4 mb4 dib mr3">
             <a href="/post/vue%E8%BF%9B%E9%98%B6%E5%B1%9E%E6%80%A7/" class="link black dim">
               Vue进阶属性
-            </a>
-          </h2>
-        
-          <h2 class="f5 fw4 mb4 dib mr3">
-            <a href="/post/%E6%B5%85%E5%B0%9Dreact/" class="link black dim">
-              浅尝React
             </a>
           </h2>
         

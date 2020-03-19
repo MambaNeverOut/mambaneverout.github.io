@@ -35,7 +35,7 @@
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://mambaneverout.github.io/post/" />
 
-<meta property="og:updated_time" content="2020-01-20T13:14:23+08:00" />
+<meta property="og:updated_time" content="2020-03-18T22:17:09+08:00" />
 <meta itemprop="name" content="Posts">
 <meta itemprop="description" content="">
 
@@ -94,6 +94,27 @@
       
     </section>
     <aside class="flex-ns flex-wrap justify-around mt5">
+      
+        <div class="relative w-100 w-30-l mb4 bg-white">
+          
+            <div class="mb3 pa4 mid-gray overflow-hidden">
+    
+      <div class="f6">
+        March 18, 2020
+      </div>
+    
+    <h1 class="f3 near-black">
+      <a href="/post/%E6%8E%A2%E7%B4%A2react-hooks%E5%8E%9F%E7%90%86/" class="link black dim">
+        探索React Hooks原理
+      </a>
+    </h1>
+    <div class="nested-links f5 lh-copy nested-copy-line-height">
+      今天我们来探究一下 React Hooks 的原理 useState  先来尝试实现单个数据的 useState
+ let _state; function myUseState(initialValue) { _state = _state || initialValue; function setState(newState) { _state = newState; render(); } return [_state, setState]; } const render = () =&gt; ReactDOM.render(&lt;App /&gt;, rootElement); function App() { const [n, setN] = myUseState(0); return ( &lt;div className=&quot;App&quot;&gt; &lt;p&gt;{n}&lt;/p&gt; &lt;p&gt; &lt;button onClick={() =&gt; setN(n + 1)}&gt;+1&lt;/button&gt; &lt;/p&gt; &lt;/div&gt; ); } ReactDOM.render(&lt;App /&gt;, rootElement);  那么，如果要对两个或多个数据进行 useState 呢？
+    </div>
+  </div>
+
+        </div>
       
         <div class="relative w-100 w-30-l mb4 bg-white">
           
@@ -302,29 +323,6 @@ $form.addEventListener('submit', function(e) { e.preventDefault() if(validUserna
     </h1>
     <div class="nested-links f5 lh-copy nested-copy-line-height">
       浅拷贝（只拷贝数据的第一层） const shadowCopy = arr =&gt; arr.map(v =&gt; v) // 数组拷贝 function shadowCopy(src) { let result = Array.isArray(src) ? [] : {} for(let key in src){ result[key] = src[key] } return result }  深拷贝 function deepCopy(src){ let result = Array.isArray(src) ? [] : {} for(let key in src){ if( typeof src[key] === 'object' &amp;&amp; src[key] !== null) { result[key] = deepCopy(src[key]) } else { result[key] = src[key] } } return result }  正则表达式 创建  字面量方式创建
-    </div>
-  </div>
-
-        </div>
-      
-        <div class="relative w-100 w-30-l mb4 bg-white">
-          
-            <div class="mb3 pa4 mid-gray overflow-hidden">
-    
-      <div class="f6">
-        December 29, 2019
-      </div>
-    
-    <h1 class="f3 near-black">
-      <a href="/post/vue%E6%8C%87%E4%BB%A4%E5%92%8C%E4%BF%AE%E9%A5%B0%E7%AC%A6/" class="link black dim">
-        Vue指令和修饰符
-      </a>
-    </h1>
-    <div class="nested-links f5 lh-copy nested-copy-line-height">
-      template(模板)  写在 HTMl 中(Vue 完整版)
-&lt;div id=&quot;xxx&quot;&gt; {{n}} &lt;button @click=&quot;add&quot;&gt;+1&lt;/button&gt; &lt;/div&gt; new Vue({ el: '#app', data: {n:0}, // data可以改成函数 methods: {add(){}} })  写在 options 中(Vue 完整版)
-&lt;div id=&quot;app&quot;&gt;&lt;/div&gt; // div#app会被替换 new Vue({ template: ` &lt;div&gt; {{n}} &lt;button @click=&quot;add&quot;&gt;+1&lt;/button&gt; &lt;/div&gt; `, data: {n:0}, // data可以改成函数 methods: {add(){}} }).$mounted('#app')  配合 xxx.vue 文件(Vue 非完整版)
-template 使用的是XML，语法严格，体积小，更适合写编译器 &lt;template&gt; &lt;div&gt; &lt;button @click=&quot;add&quot;&gt; +1 &lt;/button&gt; &lt;/div&gt; &lt;/template&gt; &lt;script&gt; export default{ data(){ return { n:0 }}, // data必须为函数 methods:{add(){}} } &lt;/script&gt;  // 在其他地方引入 import Xxx from '.
     </div>
   </div>
 
