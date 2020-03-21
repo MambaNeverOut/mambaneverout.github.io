@@ -6,10 +6,22 @@
     <description>Recent content on Irelia的博客</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-Hans</language>
-    <lastBuildDate>Wed, 18 Mar 2020 22:17:09 +0800</lastBuildDate>
+    <lastBuildDate>Thu, 19 Mar 2020 12:08:40 +0800</lastBuildDate>
     
 	<atom:link href="https://mambaneverout.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>React Hooks的API</title>
+      <link>https://mambaneverout.github.io/post/react-hooks%E7%9A%84api/</link>
+      <pubDate>Thu, 19 Mar 2020 12:08:40 +0800</pubDate>
+      
+      <guid>https://mambaneverout.github.io/post/react-hooks%E7%9A%84api/</guid>
+      <description>useState  使用方法：
+const [n,setN] = React.useState(0) const [user,setUser] = React.useState({name:&#39;F}) const [state,setState] = React.useState(()=&amp;gt;({name:&#39;F})) // 可以接收函数，该函数返回初始state，且只执行一次  注意：
+ 不可以局部更新（需要自己合并属性，useReducer 也需要自己合并） 不能写到 if 中 对象的地址不变，内部改变，React 认为没有变化（要使用 setUser({})） setState(i =&amp;gt; i + 1)，需要对 state 进行多次 setState 的操作时，使用函数   useReducer  复杂版的 useState(用来践行 Flux/Redux 的思想)
+ const initial = { n: 0 }; const reducer = (state, action) =&amp;gt; { if (action.type === &amp;quot;add&amp;quot;) { return { n: state.n + action.</description>
+    </item>
     
     <item>
       <title>探索React Hooks原理</title>

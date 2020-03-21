@@ -35,7 +35,7 @@
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://mambaneverout.github.io/" />
 
-<meta property="og:updated_time" content="2020-03-18T22:17:09+08:00" />
+<meta property="og:updated_time" content="2020-03-19T12:08:40+08:00" />
 <meta itemprop="name" content="Irelia的博客">
 <meta itemprop="description" content="">
 
@@ -122,6 +122,33 @@
       
       <div class="blah w-100">
         <h1 class="f3 fw1 athelas mt0 lh-title">
+          <a href="/post/react-hooks%E7%9A%84api/" class="color-inherit dim link">
+            React Hooks的API
+            </a>
+        </h1>
+        <div class="f6 f5-l lh-copy nested-copy-line-height nested-links">
+          useState  使用方法：
+const [n,setN] = React.useState(0) const [user,setUser] = React.useState({name:'F}) const [state,setState] = React.useState(()=&gt;({name:'F})) // 可以接收函数，该函数返回初始state，且只执行一次  注意：
+ 不可以局部更新（需要自己合并属性，useReducer 也需要自己合并） 不能写到 if 中 对象的地址不变，内部改变，React 认为没有变化（要使用 setUser({})） setState(i =&gt; i + 1)，需要对 state 进行多次 setState 的操作时，使用函数   useReducer  复杂版的 useState(用来践行 Flux/Redux 的思想)
+ const initial = { n: 0 }; const reducer = (state, action) =&gt; { if (action.type === &quot;add&quot;) { return { n: state.n + action.
+        </div>
+          <a href="/post/react-hooks%E7%9A%84api/" class="ba b--moon-gray bg-light-gray br2 color-inherit dib f7 hover-bg-moon-gray link mt2 ph2 pv1">read more</a>
+        
+      </div>
+    </div>
+  </div>
+</article>
+
+          </div>
+        
+          <div class="relative w-100 mb4">
+            
+<article class="bb b--black-10">
+  <div class="db pv4 ph3 ph0-l no-underline dark-gray">
+    <div class="flex flex-column flex-row-ns">
+      
+      <div class="blah w-100">
+        <h1 class="f3 fw1 athelas mt0 lh-title">
           <a href="/post/%E6%8E%A2%E7%B4%A2react-hooks%E5%8E%9F%E7%90%86/" class="color-inherit dim link">
             探索React Hooks原理
             </a>
@@ -167,37 +194,18 @@ import Vue from 'vue' import Component from 'vue-class-component' // @Component 
 
           </div>
         
-          <div class="relative w-100 mb4">
-            
-<article class="bb b--black-10">
-  <div class="db pv4 ph3 ph0-l no-underline dark-gray">
-    <div class="flex flex-column flex-row-ns">
-      
-      <div class="blah w-100">
-        <h1 class="f3 fw1 athelas mt0 lh-title">
-          <a href="/post/react%E7%BB%84%E4%BB%B6/" class="color-inherit dim link">
-            React组件
-            </a>
-        </h1>
-        <div class="f6 f5-l lh-copy nested-copy-line-height nested-links">
-          React 组件  元素与组件
-React 元素（d小写） const div = React.createElement('div',...) React 组件（D大写) const Div = () =&gt; React.createElement('div',...)   函数组件  function Welcome(props){ return &lt;h1&gt;Hello, {props.name}&lt;/h1&gt;; } 使用方法: &lt;Welcome name=&quot;frank&quot;/&gt;  类组件  class Welcome extends React.Component{ constructor(){ super() this.state = {n:0} } render(){ return &lt;h1&gt;Hello, {this.props.name}&lt;/h1&gt; } } 使用方法: &lt;Welcome name=&quot;frank&quot;/&gt;  state(内部数据)  类组件首先要在 constructor 中初始化，然后可以用 this.state 读，this.setState 写(setState 最好使用函数) 函数组件用 useState 返回数组，第一项读，第二项写 类组件的 setState 会异步改变 n，函数组件的 setN 不会改变 n，而是会生成一个新的 n
-        </div>
-          <a href="/post/react%E7%BB%84%E4%BB%B6/" class="ba b--moon-gray bg-light-gray br2 color-inherit dib f7 hover-bg-moon-gray link mt2 ph2 pv1">read more</a>
-        
-      </div>
-    </div>
-  </div>
-</article>
-
-          </div>
-        
       </section>
 
       
       <section class="w-100">
         <h1 class="f3">More</h1>
         
+        
+          <h2 class="f5 fw4 mb4 dib mr3">
+            <a href="/post/react%E7%BB%84%E4%BB%B6/" class="link black dim">
+              React组件
+            </a>
+          </h2>
         
           <h2 class="f5 fw4 mb4 dib mr3">
             <a href="/post/typescript%E7%89%B9%E6%80%A7%E6%8E%A5%E5%8F%A3/" class="link black dim">
@@ -214,12 +222,6 @@ React 元素（d小写） const div = React.createElement('div',...) React 组�
           <h2 class="f5 fw4 mb4 dib mr3">
             <a href="/post/bom/" class="link black dim">
               BOM
-            </a>
-          </h2>
-        
-          <h2 class="f5 fw4 mb4 dib mr3">
-            <a href="/post/vue%E8%BF%9B%E9%98%B6%E5%B1%9E%E6%80%A7/" class="link black dim">
-              Vue进阶属性
             </a>
           </h2>
         
