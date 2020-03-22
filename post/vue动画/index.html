@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    
+    <title>Irelia的博客  | Vue动画</title>
+    <meta name="viewport" content="width=device-width,minimum-scale=1">
+    <meta name="generator" content="Hugo 0.58.3" />
+    
+    
+      <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
+    
+
+    
+    
+      <link href="/dist/css/app.d98f2eb6bcd1eaedb7edf166bd16af26.css" rel="stylesheet">
+    
+
+    
+
+    
+      
+    
+
+    
+    
+    <meta property="og:title" content="Vue动画" />
+<meta property="og:description" content="transition  需要初始值 fade-enter 进入过渡的开始状态* fade-enter-active 进入过渡时生效的状态* fade-enter-to 进入过渡的结束状态 fade-leave 离开过渡的开始状态 fade-leave-active 离开过渡时生效的状态* fade-leave-to 离开过渡的结束状态*  animation  bounce-enter-active bounce-leave-active 第三方动画库 Animate.css
+ &lt;link href=&quot;https://cdn.jsdelivr.net/npm/animate.css@3.5.1&quot; rel=&quot;stylesheet&quot; type=&quot;text/css&quot;&gt; &lt;transition name=&quot;custom-classes-transition&quot; enter-active-class=&quot;animated tada&quot; leave-active-class=&quot;animated bounceOutRight&quot; &gt; &lt;/transition&gt;   JS 操作动画  注意：当只用 JS 过渡的时候，在 enter 和 leave 中必须使用 done 进行回调。否则，它们将被同步调用，过渡会立即完成。
+ 推荐对于仅使用 JavaScript 过渡的元素添加 v-bind:css=&ldquo;false&rdquo;，Vue 会跳过 CSS 的检测。这也可以避免过渡过程中 CSS 的影响。
+ &lt;transition v-on:before-enter=&quot;beforeEnter&quot; v-on:enter=&quot;enter&quot; v-on:after-enter=&quot;afterEnter&quot; v-on:enter-cancelled=&quot;enterCancelled&quot; v-on:before-leave=&quot;beforeLeave&quot; v-on:leave=&quot;leave&quot; v-on:after-leave=&quot;afterLeave&quot; v-on:leave-cancelled=&quot;leaveCancelled&quot; &gt;&lt;/transition&gt;   methods: { beforeEnter: function (el) {}, // 当与 CSS 结合使用时 // 回调函数 done 是可选的 enter: function (el, done) { // ." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://mambaneverout.github.io/post/vue%E5%8A%A8%E7%94%BB/" />
+<meta property="article:published_time" content="2020-03-21T09:33:03+08:00" />
+<meta property="article:modified_time" content="2020-03-21T09:33:03+08:00" />
+<meta itemprop="name" content="Vue动画">
+<meta itemprop="description" content="transition  需要初始值 fade-enter 进入过渡的开始状态* fade-enter-active 进入过渡时生效的状态* fade-enter-to 进入过渡的结束状态 fade-leave 离开过渡的开始状态 fade-leave-active 离开过渡时生效的状态* fade-leave-to 离开过渡的结束状态*  animation  bounce-enter-active bounce-leave-active 第三方动画库 Animate.css
+ &lt;link href=&quot;https://cdn.jsdelivr.net/npm/animate.css@3.5.1&quot; rel=&quot;stylesheet&quot; type=&quot;text/css&quot;&gt; &lt;transition name=&quot;custom-classes-transition&quot; enter-active-class=&quot;animated tada&quot; leave-active-class=&quot;animated bounceOutRight&quot; &gt; &lt;/transition&gt;   JS 操作动画  注意：当只用 JS 过渡的时候，在 enter 和 leave 中必须使用 done 进行回调。否则，它们将被同步调用，过渡会立即完成。
+ 推荐对于仅使用 JavaScript 过渡的元素添加 v-bind:css=&ldquo;false&rdquo;，Vue 会跳过 CSS 的检测。这也可以避免过渡过程中 CSS 的影响。
+ &lt;transition v-on:before-enter=&quot;beforeEnter&quot; v-on:enter=&quot;enter&quot; v-on:after-enter=&quot;afterEnter&quot; v-on:enter-cancelled=&quot;enterCancelled&quot; v-on:before-leave=&quot;beforeLeave&quot; v-on:leave=&quot;leave&quot; v-on:after-leave=&quot;afterLeave&quot; v-on:leave-cancelled=&quot;leaveCancelled&quot; &gt;&lt;/transition&gt;   methods: { beforeEnter: function (el) {}, // 当与 CSS 结合使用时 // 回调函数 done 是可选的 enter: function (el, done) { // .">
+
+
+<meta itemprop="datePublished" content="2020-03-21T09:33:03&#43;08:00" />
+<meta itemprop="dateModified" content="2020-03-21T09:33:03&#43;08:00" />
+<meta itemprop="wordCount" content="430">
+
+
+
+<meta itemprop="keywords" content="" />
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Vue动画"/>
+<meta name="twitter:description" content="transition  需要初始值 fade-enter 进入过渡的开始状态* fade-enter-active 进入过渡时生效的状态* fade-enter-to 进入过渡的结束状态 fade-leave 离开过渡的开始状态 fade-leave-active 离开过渡时生效的状态* fade-leave-to 离开过渡的结束状态*  animation  bounce-enter-active bounce-leave-active 第三方动画库 Animate.css
+ &lt;link href=&quot;https://cdn.jsdelivr.net/npm/animate.css@3.5.1&quot; rel=&quot;stylesheet&quot; type=&quot;text/css&quot;&gt; &lt;transition name=&quot;custom-classes-transition&quot; enter-active-class=&quot;animated tada&quot; leave-active-class=&quot;animated bounceOutRight&quot; &gt; &lt;/transition&gt;   JS 操作动画  注意：当只用 JS 过渡的时候，在 enter 和 leave 中必须使用 done 进行回调。否则，它们将被同步调用，过渡会立即完成。
+ 推荐对于仅使用 JavaScript 过渡的元素添加 v-bind:css=&ldquo;false&rdquo;，Vue 会跳过 CSS 的检测。这也可以避免过渡过程中 CSS 的影响。
+ &lt;transition v-on:before-enter=&quot;beforeEnter&quot; v-on:enter=&quot;enter&quot; v-on:after-enter=&quot;afterEnter&quot; v-on:enter-cancelled=&quot;enterCancelled&quot; v-on:before-leave=&quot;beforeLeave&quot; v-on:leave=&quot;leave&quot; v-on:after-leave=&quot;afterLeave&quot; v-on:leave-cancelled=&quot;leaveCancelled&quot; &gt;&lt;/transition&gt;   methods: { beforeEnter: function (el) {}, // 当与 CSS 结合使用时 // 回调函数 done 是可选的 enter: function (el, done) { // ."/>
+
+  </head>
+
+  <body class="ma0 avenir bg-near-white">
+
+    
+   
+  
+
+  <header>
+    <div class="bg-black">
+      <nav class="pv3 ph3 ph4-ns" role="navigation">
+  <div class="flex-l justify-between items-center center">
+    <a href="https://mambaneverout.github.io/" class="f3 fw2 hover-white no-underline white-90 dib">
+      Irelia的博客
+    </a>
+    <div class="flex-l items-center">
+      
+
+      
+      
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+  </div>
+</nav>
+
+    </div>
+  </header>
+
+
+
+    <main class="pb7" role="main">
+      
+  
+  <article class="flex-l flex-wrap justify-between mw8 center ph3">
+
+    <header class="mt4 w-100">
+      <p class="f6 b helvetica tracked">
+          
+        POSTS
+      </p>
+      <h1 class="f1 athelas mb1">Vue动画</h1>
+      
+      
+      <time class="f6 mv4 dib tracked" datetime="2020-03-21T09:33:03&#43;08:00">March 21, 2020</time>
+      
+      
+    </header>
+
+    <section class="nested-copy-line-height lh-copy serif f4 nested-links nested-img mid-gray pr4-l w-two-thirds-l">
+
+<h4 id="transition">transition</h4>
+
+<ul>
+<li>需要初始值</li>
+<li>fade-enter 进入过渡的开始状态*</li>
+<li>fade-enter-active 进入过渡时生效的状态*</li>
+<li>fade-enter-to 进入过渡的结束状态</li>
+<li>fade-leave 离开过渡的开始状态</li>
+<li>fade-leave-active 离开过渡时生效的状态*</li>
+<li>fade-leave-to 离开过渡的结束状态*</li>
+</ul>
+
+<h4 id="animation">animation</h4>
+
+<ul>
+<li>bounce-enter-active</li>
+<li>bounce-leave-active</li>
+
+<li><p>第三方动画库 Animate.css</p>
+
+<pre><code>  &lt;link href=&quot;https://cdn.jsdelivr.net/npm/animate.css@3.5.1&quot; rel=&quot;stylesheet&quot; type=&quot;text/css&quot;&gt;
+  &lt;transition
+    name=&quot;custom-classes-transition&quot;
+    enter-active-class=&quot;animated tada&quot;
+    leave-active-class=&quot;animated bounceOutRight&quot;
+  &gt;
+  &lt;/transition&gt;
+</code></pre></li>
+</ul>
+
+<h4 id="js-操作动画">JS 操作动画</h4>
+
+<ul>
+<li><p>注意：当只用 JS 过渡的时候，在 enter 和 leave 中必须使用 done 进行回调。否则，它们将被同步调用，过渡会立即完成。</p></li>
+
+<li><p>推荐对于仅使用 JavaScript 过渡的元素添加 v-bind:css=&ldquo;false&rdquo;，Vue 会跳过 CSS 的检测。这也可以避免过渡过程中 CSS 的影响。</p>
+
+<pre><code>  &lt;transition
+    v-on:before-enter=&quot;beforeEnter&quot;
+    v-on:enter=&quot;enter&quot;
+    v-on:after-enter=&quot;afterEnter&quot;
+    v-on:enter-cancelled=&quot;enterCancelled&quot;
+    v-on:before-leave=&quot;beforeLeave&quot;
+    v-on:leave=&quot;leave&quot;
+    v-on:after-leave=&quot;afterLeave&quot;
+    v-on:leave-cancelled=&quot;leaveCancelled&quot;
+  &gt;&lt;/transition&gt;
+</code></pre>
+
+<pre><code>  methods: {
+    beforeEnter: function (el) {},
+    // 当与 CSS 结合使用时
+    // 回调函数 done 是可选的
+    enter: function (el, done) {
+      // ...
+      done()
+    },
+    afterEnter: function (el) {},
+    enterCancelled: function (el) {},
+
+    beforeLeave: function (el) {},
+    // 当与 CSS 结合使用时
+    // 回调函数 done 是可选的
+    leave: function (el, done) {
+      // ...
+      done()
+    },
+    afterLeave: function (el) {},
+    // leaveCancelled 只用于 v-show 中
+    leaveCancelled: function (el) {}
+  }
+</code></pre></li>
+
+<li><p>使用 Velocity.js</p>
+
+<pre><code>  &lt;script src=&quot;https://cdnjs.cloudflare.com/ajax/libs/velocity/1.2.3/velocity.min.js&quot;&gt;&lt;/script&gt;
+  &lt;div id=&quot;example-4&quot;&gt;
+    &lt;button @click=&quot;show = !show&quot;&gt;
+      Toggle
+    &lt;/button&gt;
+    &lt;transition
+      v-on:before-enter=&quot;beforeEnter&quot;
+      v-on:enter=&quot;enter&quot;
+      v-on:leave=&quot;leave&quot;
+      v-bind:css=&quot;false&quot;
+    &gt;
+      &lt;p v-if=&quot;show&quot;&gt;
+        Demo
+      &lt;/p&gt;
+    &lt;/transition&gt;
+  &lt;/div&gt;
+</code></pre>
+
+<pre><code>new Vue({
+  el: '#example-4',
+  data: {
+    show: false
+  },
+  methods: {
+    beforeEnter: function (el) {
+      el.style.opacity = 0
+      el.style.transformOrigin = 'left'
+    },
+    enter: function (el, done) {
+      Velocity(el, { opacity: 1, fontSize: '1.4em' }, { duration: 300 })
+      Velocity(el, { fontSize: '1em' }, { complete: done })
+    },
+    leave: function (el, done) {
+      Velocity(el, { translateX: '15px', rotateZ: '50deg' }, { duration: 600 })
+      Velocity(el, { rotateZ: '100deg' }, { loop: 2 })
+      Velocity(el, {
+        rotateZ: '45deg',
+        translateY: '30px',
+        translateX: '30px',
+        opacity: 0
+      }, { complete: done })
+    }
+  }
+})
+</code></pre></li>
+</ul>
+
+<h4 id="多元素过渡">多元素过渡</h4>
+
+<ul>
+<li><p>v-if/v-else</p>
+
+<pre><code>&lt;div id=&quot;demo&quot;&gt;
+  &lt;transition name=&quot;fade&quot; mode=&quot;out-in&quot;&gt;
+    &lt;button key=&quot;on&quot; v-if=&quot;status === 'off'&quot; @click=&quot;status = 'on'&quot;&gt;
+      on
+    &lt;/button&gt;
+    &lt;button key=&quot;off&quot; v-else @click=&quot;status = 'off'&quot;&gt;
+      off
+    &lt;/button&gt;
+  &lt;/transition&gt;
+&lt;/div&gt;
+</code></pre>
+
+<pre><code>  new Vue({
+    el: 'demo'
+    data:{ status:'on'}
+  })
+  .fade-enter-active,.fade-leave-active{
+    transition: all 1s;
+  }
+  .fade-enter,.fade-leave-to{
+    opacity: 0
+  }
+</code></pre></li>
+</ul>
+
+<h4 id="多组件过渡">多组件过渡</h4>
+
+<ul>
+<li><p>不需要使用 key，只需要使用动态组件</p>
+
+<pre><code class="language-js">&lt;div id=&quot;transition-component-demo&quot;&gt;
+  &lt;button @click=&quot;view=&quot;v-a&quot;&gt;
+      on
+    &lt;/button&gt;
+    &lt;button @click=&quot;view=&quot;v-b&quot;&gt;
+      off
+    &lt;/button&gt;
+  &lt;transition name=&quot;fade&quot; mode=&quot;out-in&quot;&gt;
+    &lt;component :is=&quot;view&quot;&gt;&lt;/component&gt;
+  &lt;/transition&gt;
+&lt;/div&gt;
+</code></pre>
+
+<pre><code>  new Vue({
+    el: 'transition-component-demo',
+    data:{ view:'v-a'},
+    components:{
+      'v-a':{
+        template:'&lt;div&gt;Component A&lt;/div&gt;
+      },
+      'v-b':{
+        template:'&lt;div&gt;Component B&lt;/div&gt;
+      }
+    }
+  })
+  .component-fade-enter-active,.component-fade-leave-active{
+    transition: all 1s;
+  }
+  .component-fade-enter,.component-fade-leave-to{
+    opacity: 0
+  }
+</code></pre></li>
+</ul>
+
+<h4 id="列表过渡">列表过渡</h4>
+
+<ul>
+<li><p>不同于 <transition>，它会以一个真实元素呈现：默认为一个 <span>。你也可以通过 tag 属性更换为其他元素。</p></li>
+
+<li><p>过渡模式 mode 不可用。</p></li>
+
+<li><p>内部元素 总是需要 提供唯一的 key 属性值。</p></li>
+
+<li><p>CSS 过渡的类将会应用在内部的元素中，而不是这个组/容器本身。</p>
+
+<pre><code>  &lt;div id=&quot;list-demo&quot; class=&quot;demo&quot;&gt;
+    &lt;button v-on:click=&quot;add&quot;&gt;Add&lt;/button&gt;
+    &lt;button v-on:click=&quot;remove&quot;&gt;Remove&lt;/button&gt;
+    &lt;transition-group name=&quot;list&quot; tag=&quot;p&quot;&gt;
+      &lt;span v-for=&quot;item in items&quot; :key=&quot;item&quot; class=&quot;list-item&quot;&gt;
+        {{ item }}
+      &lt;/span&gt;
+    &lt;/transition-group&gt;
+  &lt;/div&gt;
+</code></pre>
+
+<pre><code>  new Vue({
+    el: '#list-demo',
+    data: {
+      items: [1,2,3,4,5,6,7,8,9],
+      nextNum: 10
+    },
+    methods: {
+      randomIndex: function () {
+        return Math.floor(Math.random() * this.items.length)
+      },
+      add: function () {
+        this.items.splice(this.randomIndex(), 0, this.nextNum++)
+      },
+      remove: function () {
+        this.items.splice(this.randomIndex(), 1)
+      },
+    }
+  })
+</code></pre>
+
+<pre><code>  .list-item {
+    display: inline-block;
+    margin-right: 10px;
+  }
+  .list-enter-active, .list-leave-active {
+    transition: all 1s;
+  }
+  .list-enter, .list-leave-to {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+</code></pre></li>
+</ul>
+<ul class="pa0">
+  
+</ul>
+<div class="mt6">
+      
+      
+      </div>
+    </section>
+
+    <aside class="w-30-l mt6-l">
+
+
+
+
+</aside>
+
+  </article>
+
+    </main>
+    <footer class="bg-black bottom-0 w-100 pa3" role="contentinfo">
+  <div class="flex justify-between">
+  <a class="f4 fw4 hover-white no-underline white-70 dn dib-ns pv2 ph3" href="https://mambaneverout.github.io/" >
+    &copy; 2020 Irelia的博客
+  </a>
+    <div>
+
+
+
+
+
+
+
+
+
+
+</div>
+  </div>
+</footer>
+
+    
+
+  <script src="/dist/js/app.3fc0f988d21662902933.js"></script>
+
+
+  </body>
+</html>

@@ -35,7 +35,7 @@
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://mambaneverout.github.io/" />
 
-<meta property="og:updated_time" content="2020-03-19T12:08:40+08:00" />
+<meta property="og:updated_time" content="2020-03-21T09:33:03+08:00" />
 <meta itemprop="name" content="Irelia的博客">
 <meta itemprop="description" content="">
 
@@ -122,6 +122,33 @@
       
       <div class="blah w-100">
         <h1 class="f3 fw1 athelas mt0 lh-title">
+          <a href="/post/vue%E5%8A%A8%E7%94%BB/" class="color-inherit dim link">
+            Vue动画
+            </a>
+        </h1>
+        <div class="f6 f5-l lh-copy nested-copy-line-height nested-links">
+          transition  需要初始值 fade-enter 进入过渡的开始状态* fade-enter-active 进入过渡时生效的状态* fade-enter-to 进入过渡的结束状态 fade-leave 离开过渡的开始状态 fade-leave-active 离开过渡时生效的状态* fade-leave-to 离开过渡的结束状态*  animation  bounce-enter-active bounce-leave-active 第三方动画库 Animate.css
+ &lt;link href=&quot;https://cdn.jsdelivr.net/npm/animate.css@3.5.1&quot; rel=&quot;stylesheet&quot; type=&quot;text/css&quot;&gt; &lt;transition name=&quot;custom-classes-transition&quot; enter-active-class=&quot;animated tada&quot; leave-active-class=&quot;animated bounceOutRight&quot; &gt; &lt;/transition&gt;   JS 操作动画  注意：当只用 JS 过渡的时候，在 enter 和 leave 中必须使用 done 进行回调。否则，它们将被同步调用，过渡会立即完成。
+ 推荐对于仅使用 JavaScript 过渡的元素添加 v-bind:css=&ldquo;false&rdquo;，Vue 会跳过 CSS 的检测。这也可以避免过渡过程中 CSS 的影响。
+ &lt;transition v-on:before-enter=&quot;beforeEnter&quot; v-on:enter=&quot;enter&quot; v-on:after-enter=&quot;afterEnter&quot; v-on:enter-cancelled=&quot;enterCancelled&quot; v-on:before-leave=&quot;beforeLeave&quot; v-on:leave=&quot;leave&quot; v-on:after-leave=&quot;afterLeave&quot; v-on:leave-cancelled=&quot;leaveCancelled&quot; &gt;&lt;/transition&gt;   methods: { beforeEnter: function (el) {}, // 当与 CSS 结合使用时 // 回调函数 done 是可选的 enter: function (el, done) { // .
+        </div>
+          <a href="/post/vue%E5%8A%A8%E7%94%BB/" class="ba b--moon-gray bg-light-gray br2 color-inherit dib f7 hover-bg-moon-gray link mt2 ph2 pv1">read more</a>
+        
+      </div>
+    </div>
+  </div>
+</article>
+
+          </div>
+        
+          <div class="relative w-100 mb4">
+            
+<article class="bb b--black-10">
+  <div class="db pv4 ph3 ph0-l no-underline dark-gray">
+    <div class="flex flex-column flex-row-ns">
+      
+      <div class="blah w-100">
+        <h1 class="f3 fw1 athelas mt0 lh-title">
           <a href="/post/react-hooks%E7%9A%84api/" class="color-inherit dim link">
             React Hooks的API
             </a>
@@ -166,40 +193,18 @@ const [n,setN] = React.useState(0) const [user,setUser] = React.useState({name:'
 
           </div>
         
-          <div class="relative w-100 mb4">
-            
-<article class="bb b--black-10">
-  <div class="db pv4 ph3 ph0-l no-underline dark-gray">
-    <div class="flex flex-column flex-row-ns">
-      
-      <div class="blah w-100">
-        <h1 class="f3 fw1 athelas mt0 lh-title">
-          <a href="/post/typescript%E7%BB%93%E5%90%88vue/" class="color-inherit dim link">
-            TypeScript结合Vue
-            </a>
-        </h1>
-        <div class="f6 f5-l lh-copy nested-copy-line-height nested-links">
-          Vue 文档：https://cn.vuejs.org/v2/guide/typescript.html#ad
- 创建 Vue 项目
-npm install --global @vue/cli vue create my-project  基于类的 Vue 组件
-import Vue from 'vue' import Component from 'vue-class-component' // @Component 修饰符注明了此类为一个 Vue 组件 @Component({ // 所有的组件选项都可以放在这里(props, components, watch) template: '&lt;button @click=&quot;onClick&quot;&gt;Click!&lt;/button&gt;' }) export default class MyComponent extends Vue { // 初始数据可以直接声明为实例的属性(data) message: string = 'Hello!' // 组件方法也可以直接声明为实例的方法(methods) onClick (): void { window.alert(this.message) } }  @Component() 里面包含的是共用的属性
- export default class MyComponent extends Vue{} 里面包含的是组件自己特有的属性
-        </div>
-          <a href="/post/typescript%E7%BB%93%E5%90%88vue/" class="ba b--moon-gray bg-light-gray br2 color-inherit dib f7 hover-bg-moon-gray link mt2 ph2 pv1">read more</a>
-        
-      </div>
-    </div>
-  </div>
-</article>
-
-          </div>
-        
       </section>
 
       
       <section class="w-100">
         <h1 class="f3">More</h1>
         
+        
+          <h2 class="f5 fw4 mb4 dib mr3">
+            <a href="/post/typescript%E7%BB%93%E5%90%88vue/" class="link black dim">
+              TypeScript结合Vue
+            </a>
+          </h2>
         
           <h2 class="f5 fw4 mb4 dib mr3">
             <a href="/post/react%E7%BB%84%E4%BB%B6/" class="link black dim">
@@ -216,12 +221,6 @@ import Vue from 'vue' import Component from 'vue-class-component' // @Component 
           <h2 class="f5 fw4 mb4 dib mr3">
             <a href="/post/5%E5%88%86%E9%92%9F%E5%AD%A6%E4%B9%A0typescript/" class="link black dim">
               5分钟学习TypeScript
-            </a>
-          </h2>
-        
-          <h2 class="f5 fw4 mb4 dib mr3">
-            <a href="/post/bom/" class="link black dim">
-              BOM
             </a>
           </h2>
         

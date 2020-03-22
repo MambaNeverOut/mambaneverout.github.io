@@ -6,10 +6,22 @@
     <description>Recent content in Posts on Irelia的博客</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-Hans</language>
-    <lastBuildDate>Thu, 19 Mar 2020 12:08:40 +0800</lastBuildDate>
+    <lastBuildDate>Sat, 21 Mar 2020 09:33:03 +0800</lastBuildDate>
     
 	<atom:link href="https://mambaneverout.github.io/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Vue动画</title>
+      <link>https://mambaneverout.github.io/post/vue%E5%8A%A8%E7%94%BB/</link>
+      <pubDate>Sat, 21 Mar 2020 09:33:03 +0800</pubDate>
+      
+      <guid>https://mambaneverout.github.io/post/vue%E5%8A%A8%E7%94%BB/</guid>
+      <description>transition  需要初始值 fade-enter 进入过渡的开始状态* fade-enter-active 进入过渡时生效的状态* fade-enter-to 进入过渡的结束状态 fade-leave 离开过渡的开始状态 fade-leave-active 离开过渡时生效的状态* fade-leave-to 离开过渡的结束状态*  animation  bounce-enter-active bounce-leave-active 第三方动画库 Animate.css
+ &amp;lt;link href=&amp;quot;https://cdn.jsdelivr.net/npm/animate.css@3.5.1&amp;quot; rel=&amp;quot;stylesheet&amp;quot; type=&amp;quot;text/css&amp;quot;&amp;gt; &amp;lt;transition name=&amp;quot;custom-classes-transition&amp;quot; enter-active-class=&amp;quot;animated tada&amp;quot; leave-active-class=&amp;quot;animated bounceOutRight&amp;quot; &amp;gt; &amp;lt;/transition&amp;gt;   JS 操作动画  注意：当只用 JS 过渡的时候，在 enter 和 leave 中必须使用 done 进行回调。否则，它们将被同步调用，过渡会立即完成。
+ 推荐对于仅使用 JavaScript 过渡的元素添加 v-bind:css=&amp;ldquo;false&amp;rdquo;，Vue 会跳过 CSS 的检测。这也可以避免过渡过程中 CSS 的影响。
+ &amp;lt;transition v-on:before-enter=&amp;quot;beforeEnter&amp;quot; v-on:enter=&amp;quot;enter&amp;quot; v-on:after-enter=&amp;quot;afterEnter&amp;quot; v-on:enter-cancelled=&amp;quot;enterCancelled&amp;quot; v-on:before-leave=&amp;quot;beforeLeave&amp;quot; v-on:leave=&amp;quot;leave&amp;quot; v-on:after-leave=&amp;quot;afterLeave&amp;quot; v-on:leave-cancelled=&amp;quot;leaveCancelled&amp;quot; &amp;gt;&amp;lt;/transition&amp;gt;   methods: { beforeEnter: function (el) {}, // 当与 CSS 结合使用时 // 回调函数 done 是可选的 enter: function (el, done) { // .</description>
+    </item>
     
     <item>
       <title>React Hooks的API</title>

@@ -35,7 +35,7 @@
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://mambaneverout.github.io/post/" />
 
-<meta property="og:updated_time" content="2020-03-19T12:08:40+08:00" />
+<meta property="og:updated_time" content="2020-03-21T09:33:03+08:00" />
 <meta itemprop="name" content="Posts">
 <meta itemprop="description" content="">
 
@@ -94,6 +94,36 @@
       
     </section>
     <aside class="flex-ns flex-wrap justify-around mt5">
+      
+        <div class="relative w-100 w-30-l mb4 bg-white">
+          
+            <div class="mb3 pa4 mid-gray overflow-hidden">
+    
+      <div class="f6">
+        October 22, 2019
+      </div>
+    
+    <h1 class="f3 near-black">
+      <a href="/post/%E5%A6%82%E4%BD%95%E7%94%A8hugo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/" class="link black dim">
+        如何用hugo搭建个人博客
+      </a>
+    </h1>
+    <div class="nested-links f5 lh-copy nested-copy-line-height">
+      大家好啊，第一篇博客就来介绍一下如何用hugo搭建一个简单的个人博客。  安装Hugo,下载链接：https://github.com/gohugoio/hugo/releases。
+hugo version  下载完成后可以通过下面的指令检测是否下载成功。
+ 建立新网站
+hugo new site blog  上面的代码将在名为的文件夹中创建一个新的Hugo网站blog。
+ 添加主题(默认主题为Ananke主题)
+cd blog git init git submodule add https://github.com/budparr/gohugo-theme-ananke.git themes/ananke echo 'theme = &quot;ananke&quot;' &gt;&gt; config.toml  创建新的博客
+hugo new post/开博.md  可以编辑新创建的文件内容，它将从以下内容开始：
+--- title: &quot;开博&quot; date: 2019-10-22T08:47:11+01:00 draft: true ---  注意：draft 是指草稿的意思，默认是true（不显示），写完博客记得修改为false，然后才会在你的博客中显示。
+ 启动Hugo服务器
+hugo server -D  默认在 http://localhost:1313 中显示。
+  一个简单的hugo博客就搭建完成了，可以开始写自己的博客啦！
+    </div>
+  </div>
+
+        </div>
       
         <div class="relative w-100 w-30-l mb4 bg-white">
           
