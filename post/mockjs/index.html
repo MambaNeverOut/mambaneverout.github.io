@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    
+    <title>Irelia的博客  | Mockjs</title>
+    <meta name="viewport" content="width=device-width,minimum-scale=1">
+    <meta name="generator" content="Hugo 0.58.3" />
+    
+    
+      <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
+    
+
+    
+    
+      <link href="/dist/css/app.d98f2eb6bcd1eaedb7edf166bd16af26.css" rel="stylesheet">
+    
+
+    
+
+    
+      
+    
+
+    
+    
+    <meta property="og:title" content="Mockjs" />
+<meta property="og:description" content="Mockjs 官方文档：http://mockjs.com/examples.html RAP2 官方文档：http://rap2.taobao.org/
+ 常见用法：@ctitle(3, 10)、@cparagraph、@cword、@cname、@integer(10, 100)、@float(20, 30, 2, 3)、 @color、@date、@time、@now、@id、@url、@email、@image(&lsquo;200x100&rsquo;)
+{ &#39;statusCode|1&#39; : [1, 3, 2, 8], &#39;msg&#39;: &#39;@cword(4, 10)&#39;, &#39;data|4&#39;: [ { id: &#39;@id&#39;, title: &#39;@ctitle&#39;, author: &#39;@cname&#39;, createdAt: &#39;@datetime&#39; } ] }  String
+&#39;name|min-max&#39;: string Mock.mock({ &quot;string|1-10&quot;: &quot;★&quot; // 重复 1-10 次 }) Mock.mock({ &quot;string|3&quot;: &quot;★&quot; // 重复三次 })  Number
+&#39;name|&#43;1&#39;: number Mock.mock({ &quot;number|1-100&quot;: 56 // 1-100 }) Mock.mock({ &quot;number|&#43;1&quot;: 45 // &#43;1 }) Mock." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://mambaneverout.github.io/post/mockjs/" />
+<meta property="article:published_time" content="2020-03-23T21:41:47+08:00" />
+<meta property="article:modified_time" content="2020-03-23T21:41:47+08:00" />
+<meta itemprop="name" content="Mockjs">
+<meta itemprop="description" content="Mockjs 官方文档：http://mockjs.com/examples.html RAP2 官方文档：http://rap2.taobao.org/
+ 常见用法：@ctitle(3, 10)、@cparagraph、@cword、@cname、@integer(10, 100)、@float(20, 30, 2, 3)、 @color、@date、@time、@now、@id、@url、@email、@image(&lsquo;200x100&rsquo;)
+{ &#39;statusCode|1&#39; : [1, 3, 2, 8], &#39;msg&#39;: &#39;@cword(4, 10)&#39;, &#39;data|4&#39;: [ { id: &#39;@id&#39;, title: &#39;@ctitle&#39;, author: &#39;@cname&#39;, createdAt: &#39;@datetime&#39; } ] }  String
+&#39;name|min-max&#39;: string Mock.mock({ &quot;string|1-10&quot;: &quot;★&quot; // 重复 1-10 次 }) Mock.mock({ &quot;string|3&quot;: &quot;★&quot; // 重复三次 })  Number
+&#39;name|&#43;1&#39;: number Mock.mock({ &quot;number|1-100&quot;: 56 // 1-100 }) Mock.mock({ &quot;number|&#43;1&quot;: 45 // &#43;1 }) Mock.">
+
+
+<meta itemprop="datePublished" content="2020-03-23T21:41:47&#43;08:00" />
+<meta itemprop="dateModified" content="2020-03-23T21:41:47&#43;08:00" />
+<meta itemprop="wordCount" content="328">
+
+
+
+<meta itemprop="keywords" content="" />
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Mockjs"/>
+<meta name="twitter:description" content="Mockjs 官方文档：http://mockjs.com/examples.html RAP2 官方文档：http://rap2.taobao.org/
+ 常见用法：@ctitle(3, 10)、@cparagraph、@cword、@cname、@integer(10, 100)、@float(20, 30, 2, 3)、 @color、@date、@time、@now、@id、@url、@email、@image(&lsquo;200x100&rsquo;)
+{ &#39;statusCode|1&#39; : [1, 3, 2, 8], &#39;msg&#39;: &#39;@cword(4, 10)&#39;, &#39;data|4&#39;: [ { id: &#39;@id&#39;, title: &#39;@ctitle&#39;, author: &#39;@cname&#39;, createdAt: &#39;@datetime&#39; } ] }  String
+&#39;name|min-max&#39;: string Mock.mock({ &quot;string|1-10&quot;: &quot;★&quot; // 重复 1-10 次 }) Mock.mock({ &quot;string|3&quot;: &quot;★&quot; // 重复三次 })  Number
+&#39;name|&#43;1&#39;: number Mock.mock({ &quot;number|1-100&quot;: 56 // 1-100 }) Mock.mock({ &quot;number|&#43;1&quot;: 45 // &#43;1 }) Mock."/>
+
+  </head>
+
+  <body class="ma0 avenir bg-near-white">
+
+    
+   
+  
+
+  <header>
+    <div class="bg-black">
+      <nav class="pv3 ph3 ph4-ns" role="navigation">
+  <div class="flex-l justify-between items-center center">
+    <a href="https://mambaneverout.github.io/" class="f3 fw2 hover-white no-underline white-90 dib">
+      Irelia的博客
+    </a>
+    <div class="flex-l items-center">
+      
+
+      
+      
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+  </div>
+</nav>
+
+    </div>
+  </header>
+
+
+
+    <main class="pb7" role="main">
+      
+  
+  <article class="flex-l flex-wrap justify-between mw8 center ph3">
+
+    <header class="mt4 w-100">
+      <p class="f6 b helvetica tracked">
+          
+        POSTS
+      </p>
+      <h1 class="f1 athelas mb1">Mockjs</h1>
+      
+      
+      <time class="f6 mv4 dib tracked" datetime="2020-03-23T21:41:47&#43;08:00">March 23, 2020</time>
+      
+      
+    </header>
+
+    <section class="nested-copy-line-height lh-copy serif f4 nested-links nested-img mid-gray pr4-l w-two-thirds-l">
+
+<ul>
+<li>Mockjs 官方文档：<a href="http://mockjs.com/examples.html">http://mockjs.com/examples.html</a></li>
+
+<li><p>RAP2 官方文档：<a href="http://rap2.taobao.org/">http://rap2.taobao.org/</a></p></li>
+
+<li><p>常见用法：@ctitle(3, 10)、@cparagraph、@cword、@cname、@integer(10, 100)、@float(20, 30, 2, 3)、
+@color、@date、@time、@now、@id、@url、@email、@image(&lsquo;200x100&rsquo;)</p>
+
+<pre><code>{
+  'statusCode|1' : [1, 3, 2, 8],
+  'msg': '@cword(4, 10)',
+  'data|4': [
+      {
+        id: '@id',
+        title: '@ctitle', author: '@cname', createdAt: '@datetime'
+      }
+  ]
+}
+</code></pre></li>
+
+<li><p>String</p>
+
+<pre><code>'name|min-max': string
+
+Mock.mock({
+  &quot;string|1-10&quot;: &quot;★&quot; // 重复 1-10 次
+})
+
+Mock.mock({
+  &quot;string|3&quot;: &quot;★&quot; // 重复三次
+})
+</code></pre></li>
+
+<li><p>Number</p>
+
+<pre><code>'name|+1': number
+
+Mock.mock({
+  &quot;number|1-100&quot;: 56 // 1-100
+})
+
+Mock.mock({
+  &quot;number|+1&quot;: 45 // +1
+})
+
+Mock.mock({
+  &quot;number|1-100.1-10&quot;: 45 // 1-100 中的随机数，并且小数点后有 1-10 位
+})
+</code></pre></li>
+
+<li><p>Boolean</p>
+
+<pre><code>'name|1': boolean
+
+Mock.mock({
+  &quot;boolean|1&quot;: true // true 或 false
+})
+</code></pre></li>
+
+<li><p>Object</p>
+
+<pre><code>'name|count': object
+
+Mock.mock({
+  &quot;object|2&quot;: { // 从属性中任选 2 个
+    &quot;310000&quot;: &quot;上海市&quot;,
+    &quot;320000&quot;: &quot;江苏省&quot;,
+    &quot;330000&quot;: &quot;浙江省&quot;,
+    &quot;340000&quot;: &quot;安徽省&quot;
+  }
+})
+
+Mock.mock({
+  &quot;object|2-4&quot;: { // 从属性中选 2-4 个
+    &quot;110000&quot;: &quot;北京市&quot;,
+    &quot;120000&quot;: &quot;天津市&quot;,
+    &quot;130000&quot;: &quot;河北省&quot;,
+    &quot;140000&quot;: &quot;山西省&quot;
+  }
+})
+</code></pre></li>
+
+<li><p>Array</p>
+
+<pre><code>'name|1': array
+Mock.mock({
+  &quot;array|1&quot;: [
+  &quot;AMD&quot;,
+  &quot;CMD&quot;,
+  &quot;UMD&quot;
+  ]
+})
+
+Mock.mock({
+  &quot;array|+1&quot;: [
+  &quot;AMD&quot;,
+  &quot;CMD&quot;,
+  &quot;UMD&quot;
+  ]
+})
+
+Mock.mock({
+  &quot;array|1-10&quot;: [
+    {
+      &quot;name|+1&quot;: [ // +1 依次
+        &quot;Hello&quot;,
+        &quot;Mock.js&quot;,
+        &quot;!&quot;
+      ]
+    }
+  ]
+})
+结果：{
+  &quot;array&quot;: [
+    {
+      &quot;name&quot;: &quot;Hello&quot;
+    },
+    {
+      &quot;name&quot;: &quot;Mock.js&quot;
+    },
+    {
+      &quot;name&quot;: &quot;!&quot;
+    },
+    {
+      &quot;name&quot;: &quot;Hello&quot;
+    }
+  ]
+}
+</code></pre></li>
+
+<li><p>Function</p>
+
+<pre><code>'name': function
+
+Mock.mock({
+  'foo': 'Syntax Demo',
+  'name': function() {
+    return this.foo
+  }
+})
+</code></pre></li>
+
+<li><p>RegExp</p>
+
+<pre><code>  name': regexp
+
+  Mock.mock({
+    'regexp': /[a-z][A-Z][0-9]/
+  })
+</code></pre></li>
+</ul>
+
+<h4 id="数据占位符">数据占位符</h4>
+
+<ul>
+<li><p>Basic</p>
+
+<pre><code>Mock.mock('@integer(60, 100)')
+Mock.mock({
+  age: '@integer(60, 100)岁'
+})
+</code></pre></li>
+
+<li><p>Date</p>
+
+<pre><code>Mock.mock({
+  createdAt: '@data'
+})
+Mock.mock({
+  createdAt: '@time'
+})
+Mock.mock({
+  createdAt: '@datetime'
+})
+Mock.mock({
+  createdAt: '@now'
+})
+</code></pre></li>
+
+<li><p>Image</p>
+
+<pre><code>Random.image( size?, background?, foreground?, format?, text? )
+
+Mock.mock({
+  imgUrl: @img('200x100', '#894FC4', '#FFF', 'png', '!')
+})
+</code></pre></li>
+
+<li><p>Text</p>
+
+<pre><code>Mock.mock({
+  detail: '@paragraph' // 段落
+  title: '@cword(8)' // word 英文 cword 汉字
+})
+</code></pre></li>
+</ul>
+
+<h4 id="接口约定">接口约定</h4>
+
+<ul>
+<li>当前接口的路径是什么？ 如 /auth/register</li>
+
+<li><p>当前接口的提交数据的类型是什么？</p>
+
+<ul>
+<li>GET 获取数据</li>
+<li>POST 提交或者创建</li>
+<li>PATCH 修改数据，部分修改</li>
+<li>DELETE 删除数据</li>
+<li>PUT 修改数据，整体替换原有数据</li>
+</ul></li>
+
+<li><p>参数类型/格式，比如</p>
+
+<ul>
+<li>fromdata，或者 application/x-www-form-urlencoded</li>
+</ul></li>
+
+<li><p>参数字段，及限制条件</p></li>
+
+<li><p>返回成功的数据格式</p></li>
+
+<li><p>返回失败的数据格式</p></li>
+
+<li><p>接口范例：<a href="https://www.yuque.com/docs/share/08fd7cfb-6716-4409-9b15-fd9e9d491f34">https://www.yuque.com/docs/share/08fd7cfb-6716-4409-9b15-fd9e9d491f34</a></p></li>
+</ul>
+
+<h4 id="接口测试">接口测试</h4>
+
+<ul>
+<li><p>GET 请求
+curl &ldquo;<a href="http://rap2api.taobao.org/app/mock/244238/getWeather?city=beijing&quot;">http://rap2api.taobao.org/app/mock/244238/getWeather?city=beijing&quot;</a></p></li>
+
+<li><p>-d 提交的参数，默认是 POST 请求
+curl -d &ldquo;username=aaaa&amp;password=bbb&rdquo; &ldquo;<a href="http://rap2api.taobao.org/app/mock/244238/login&quot;">http://rap2api.taobao.org/app/mock/244238/login&quot;</a></p></li>
+
+<li><p>-i 展示响应头
+curl -d &ldquo;username=hunger1&amp;password=123456&rdquo; &ldquo;<a href="http://blog-server.hunger-">http://blog-server.hunger-</a> valley.com/auth/login&rdquo; -i</p></li>
+
+<li><p>-H 设置请求头
+curl -H &ldquo;Content-Type:application/json&rdquo; -X POST -d &lsquo;{&ldquo;user&rdquo;: &ldquo;admin&rdquo;, &ldquo;passwd&rdquo;:&ldquo;12345678&rdquo;}&rsquo; <a href="http://127.0.0.1:8000/login">http://127.0.0.1:8000/login</a></p></li>
+
+<li><p>-X 设置请求类型
+curl -d &ldquo;username=aaaa&amp;password=bbb&rdquo; -X POST
+&ldquo;<a href="http://rap2api.taobao.org/app/mock/244238/login&quot;">http://rap2api.taobao.org/app/mock/244238/login&quot;</a></p></li>
+
+<li><p>-b 请求带上 cookie
+curl &ldquo;<a href="http://blog-server.hunger-valley.com/auth&quot;">http://blog-server.hunger-valley.com/auth&quot;</a> -b
+&ldquo;connect.sid=s%3AmeDbrn03UtTM8fqChaPQ20wmWlnKeHiu.e3uMtu7j1zQ1iNeaajCmxkYYG
+Q%2FyHV1ZsozMvZYWC6s&rdquo;</p></li>
+</ul>
+<ul class="pa0">
+  
+</ul>
+<div class="mt6">
+      
+      
+      </div>
+    </section>
+
+    <aside class="w-30-l mt6-l">
+
+
+
+
+</aside>
+
+  </article>
+
+    </main>
+    <footer class="bg-black bottom-0 w-100 pa3" role="contentinfo">
+  <div class="flex justify-between">
+  <a class="f4 fw4 hover-white no-underline white-70 dn dib-ns pv2 ph3" href="https://mambaneverout.github.io/" >
+    &copy; 2020 Irelia的博客
+  </a>
+    <div>
+
+
+
+
+
+
+
+
+
+
+</div>
+  </div>
+</footer>
+
+    
+
+  <script src="/dist/js/app.3fc0f988d21662902933.js"></script>
+
+
+  </body>
+</html>
