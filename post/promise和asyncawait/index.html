@@ -49,7 +49,7 @@ function resolved(result) { console.">
 
 <meta itemprop="datePublished" content="2020-03-27T19:24:13&#43;08:00" />
 <meta itemprop="dateModified" content="2020-03-27T19:24:13&#43;08:00" />
-<meta itemprop="wordCount" content="205">
+<meta itemprop="wordCount" content="318">
 
 
 
@@ -275,6 +275,57 @@ start().catch(err=&gt;console.log(err))
   }
 }
 </code></pre>
+
+<h4 id="封装-jsonp">封装 JSONP</h4>
+
+<pre><code>function jsonp(url,data={}){
+  return new Promise((resolve,reject) =&gt; {
+    window._fn_ = data =&gt; resolve(data)
+    let script = document,createElement('script')
+    let query = Object.entries(data).map(a =&gt; `${a[0]} = ${a[1]}`).join('&amp;')
+    script.src = url + '?callback = _fn_&amp;' + query
+    script.onerror = () =&gt;reject('加载失败')
+    document.head.appendChild(script)
+    document.head.removeChild(script)
+  })
+}
+jsonp('').then(data=&gt;{},err=&gt;{})
+</code></pre>
+
+<h4 id="服务器中转实现跨域">服务器中转实现跨域</h4>
+
+<ul>
+<li><p>中转服务器</p>
+
+<pre><code class="language-js">const http = require('http')
+const url = require('url')
+http.createServer((req, res) =&gt; {
+  let urlObj = url.parse(req.url, true)
+  if(urlObj.pathname === '/bridge') {
+    http.get(urlObj.query.url, req =&gt; {
+        let text = '' req.on('data', data =&gt; text += data)
+        req.on('end',() =&gt; {
+        res.setHeader('Access-Control-Allow-Origin','*')
+        res.end(text)
+      })
+    })
+  } else {
+    res.writeHead(404, 'Not Found')
+    res.end('not found')
+  }
+}).listen(8888)
+</code></pre></li>
+
+<li><p>浏览器端</p>
+
+<pre><code class="language-js">//当前代码在 http://js.jirengu.com 下运行
+fetch(
+&quot;http://localhost:8888/bridge?url=&quot; + encodeURIComponent(&quot;http://baidu.com&quot;)
+)
+.then(res =&gt; res.text())
+.then(data =&gt; console.log(data));
+</code></pre></li>
+</ul>
 <ul class="pa0">
   
 </ul>
