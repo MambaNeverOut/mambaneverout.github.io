@@ -35,7 +35,7 @@
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://mambaneverout.github.io/post/" />
 
-<meta property="og:updated_time" content="2020-03-23T21:41:47+08:00" />
+<meta property="og:updated_time" content="2020-03-27T19:24:13+08:00" />
 <meta itemprop="name" content="Posts">
 <meta itemprop="description" content="">
 
@@ -94,6 +94,32 @@
       
     </section>
     <aside class="flex-ns flex-wrap justify-around mt5">
+      
+        <div class="relative w-100 w-30-l mb4 bg-white">
+          
+            <div class="mb3 pa4 mid-gray overflow-hidden">
+    
+      <div class="f6">
+        March 27, 2020
+      </div>
+    
+    <h1 class="f3 near-black">
+      <a href="/post/promise%E5%92%8Casyncawait/" class="link black dim">
+        Promise和async、await
+      </a>
+    </h1>
+    <div class="nested-links f5 lh-copy nested-copy-line-height">
+      Promise  Promise 是一个类   Promise.all()
+ 返回一个 Promise 实例， 所有 promise 都成功才会成功，有一个 promise 失败则为失败。
+Promise.all([promise1, promise2,promise3).then(function(values) { console.log(values); });   Promise.race()
+ 返回一个 promise，一旦 Promise 中的某个 promise 解决或拒绝，返回的 promise 就会解决或拒绝。
+const promise1 = new Promise(function(resolve, reject) { setTimeout(resolve, 500, 'one'); }); const promise2 = new Promise(function(resolve, reject) { setTimeout(resolve, 100, 'two'); }); Promise.race([promise1, promise2]).then(function(value) { console.log(value); });   Promise.reject
+ 返回一个带有拒绝原因的 Promise 对象
+function resolved(result) { console.
+    </div>
+  </div>
+
+        </div>
       
         <div class="relative w-100 w-30-l mb4 bg-white">
           
@@ -298,30 +324,6 @@ function print(x:any):void { // 没有返回值 console.log(x) }  undefined
 // 判断是横屏还是竖屏 screen.orientation.onchange = function(){ console.log(screen.orientation.type) // &quot;landscape-primary&quot; 水平宽度大于垂直宽度 // &quot;portrait-primary&quot; 垂直宽度大于水平宽度 }   尺寸  页面文档高度: document.documentElement.offset Height
  屏幕高度: screen.height
  浏览器视窗高度: document.
-    </div>
-  </div>
-
-        </div>
-      
-        <div class="relative w-100 w-30-l mb4 bg-white">
-          
-            <div class="mb3 pa4 mid-gray overflow-hidden">
-    
-      <div class="f6">
-        January 8, 2020
-      </div>
-    
-    <h1 class="f3 near-black">
-      <a href="/post/vue%E8%BF%9B%E9%98%B6%E5%B1%9E%E6%80%A7/" class="link black dim">
-        Vue进阶属性
-      </a>
-    </h1>
-    <div class="nested-links f5 lh-copy nested-copy-line-height">
-      directives(指令)  全局指令
-Vue.directives('my-directive',{ inserted: function(el){ el.addEventListener('click', ()=&gt;{console.log('directive')})} })  局部指令
-directives:{ on2:{ // 模仿简单版v-on inserted(el, info){ el.addEventListener(info.arg, info.value) } }, unbind(el, info){ // 移除事件监听 el.removeEventListener(info.arg, info.value) } }  directive 函数属性
- bind(el, info, vnode, oldVnode) 与 created 类似 inserted(el, info, vnode, oldVnode) 与 mounted 类似 update(el, info, vnode, oldVnode) 与 updated 类似 componentUpdated(el, info, vnode, oldVnode) unbind(el, info, vnode, oldVnode) 与 destoryed 类似  指令的作用
- 减少重复的 DOM 操作（数据绑定，事件监听，DOM 更新）   mixins(混入)  mixins 的作用: 减少 data、methods、钩子的重复
     </div>
   </div>
 

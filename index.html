@@ -35,7 +35,7 @@
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://mambaneverout.github.io/" />
 
-<meta property="og:updated_time" content="2020-03-23T21:41:47+08:00" />
+<meta property="og:updated_time" content="2020-03-27T19:24:13+08:00" />
 <meta itemprop="name" content="Irelia的博客">
 <meta itemprop="description" content="">
 
@@ -122,6 +122,36 @@
       
       <div class="blah w-100">
         <h1 class="f3 fw1 athelas mt0 lh-title">
+          <a href="/post/promise%E5%92%8Casyncawait/" class="color-inherit dim link">
+            Promise和async、await
+            </a>
+        </h1>
+        <div class="f6 f5-l lh-copy nested-copy-line-height nested-links">
+          Promise  Promise 是一个类   Promise.all()
+ 返回一个 Promise 实例， 所有 promise 都成功才会成功，有一个 promise 失败则为失败。
+Promise.all([promise1, promise2,promise3).then(function(values) { console.log(values); });   Promise.race()
+ 返回一个 promise，一旦 Promise 中的某个 promise 解决或拒绝，返回的 promise 就会解决或拒绝。
+const promise1 = new Promise(function(resolve, reject) { setTimeout(resolve, 500, 'one'); }); const promise2 = new Promise(function(resolve, reject) { setTimeout(resolve, 100, 'two'); }); Promise.race([promise1, promise2]).then(function(value) { console.log(value); });   Promise.reject
+ 返回一个带有拒绝原因的 Promise 对象
+function resolved(result) { console.
+        </div>
+          <a href="/post/promise%E5%92%8Casyncawait/" class="ba b--moon-gray bg-light-gray br2 color-inherit dib f7 hover-bg-moon-gray link mt2 ph2 pv1">read more</a>
+        
+      </div>
+    </div>
+  </div>
+</article>
+
+          </div>
+        
+          <div class="relative w-100 mb4">
+            
+<article class="bb b--black-10">
+  <div class="db pv4 ph3 ph0-l no-underline dark-gray">
+    <div class="flex flex-column flex-row-ns">
+      
+      <div class="blah w-100">
+        <h1 class="f3 fw1 athelas mt0 lh-title">
           <a href="/post/mockjs/" class="color-inherit dim link">
             Mockjs
             </a>
@@ -169,39 +199,18 @@
 
           </div>
         
-          <div class="relative w-100 mb4">
-            
-<article class="bb b--black-10">
-  <div class="db pv4 ph3 ph0-l no-underline dark-gray">
-    <div class="flex flex-column flex-row-ns">
-      
-      <div class="blah w-100">
-        <h1 class="f3 fw1 athelas mt0 lh-title">
-          <a href="/post/react-hooks%E7%9A%84api/" class="color-inherit dim link">
-            React Hooks的API
-            </a>
-        </h1>
-        <div class="f6 f5-l lh-copy nested-copy-line-height nested-links">
-          useState  使用方法：
-const [n,setN] = React.useState(0) const [user,setUser] = React.useState({name:'F}) const [state,setState] = React.useState(()=&gt;({name:'F})) // 可以接收函数，该函数返回初始state，且只执行一次  注意：
- 不可以局部更新（需要自己合并属性，useReducer 也需要自己合并） 不能写到 if 中 对象的地址不变，内部改变，React 认为没有变化（要使用 setUser({})） setState(i =&gt; i + 1)，需要对 state 进行多次 setState 的操作时，使用函数   useReducer  复杂版的 useState(用来践行 Flux/Redux 的思想)
- const initial = { n: 0 }; const reducer = (state, action) =&gt; { if (action.type === &quot;add&quot;) { return { n: state.n + action.
-        </div>
-          <a href="/post/react-hooks%E7%9A%84api/" class="ba b--moon-gray bg-light-gray br2 color-inherit dib f7 hover-bg-moon-gray link mt2 ph2 pv1">read more</a>
-        
-      </div>
-    </div>
-  </div>
-</article>
-
-          </div>
-        
       </section>
 
       
       <section class="w-100">
         <h1 class="f3">More</h1>
         
+        
+          <h2 class="f5 fw4 mb4 dib mr3">
+            <a href="/post/react-hooks%E7%9A%84api/" class="link black dim">
+              React Hooks的API
+            </a>
+          </h2>
         
           <h2 class="f5 fw4 mb4 dib mr3">
             <a href="/post/%E6%8E%A2%E7%B4%A2react-hooks%E5%8E%9F%E7%90%86/" class="link black dim">
@@ -218,12 +227,6 @@ const [n,setN] = React.useState(0) const [user,setUser] = React.useState({name:'
           <h2 class="f5 fw4 mb4 dib mr3">
             <a href="/post/react%E7%BB%84%E4%BB%B6/" class="link black dim">
               React组件
-            </a>
-          </h2>
-        
-          <h2 class="f5 fw4 mb4 dib mr3">
-            <a href="/post/typescript%E7%89%B9%E6%80%A7%E6%8E%A5%E5%8F%A3/" class="link black dim">
-              TypeScript特性（接口）
             </a>
           </h2>
         

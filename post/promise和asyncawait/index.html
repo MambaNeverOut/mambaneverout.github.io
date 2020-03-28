@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    
+    <title>Irelia的博客  | Promise和async、await</title>
+    <meta name="viewport" content="width=device-width,minimum-scale=1">
+    <meta name="generator" content="Hugo 0.58.3" />
+    
+    
+      <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
+    
+
+    
+    
+      <link href="/dist/css/app.d98f2eb6bcd1eaedb7edf166bd16af26.css" rel="stylesheet">
+    
+
+    
+
+    
+      
+    
+
+    
+    
+    <meta property="og:title" content="Promise和async、await" />
+<meta property="og:description" content="Promise  Promise 是一个类   Promise.all()
+ 返回一个 Promise 实例， 所有 promise 都成功才会成功，有一个 promise 失败则为失败。
+Promise.all([promise1, promise2,promise3).then(function(values) { console.log(values); });   Promise.race()
+ 返回一个 promise，一旦 Promise 中的某个 promise 解决或拒绝，返回的 promise 就会解决或拒绝。
+const promise1 = new Promise(function(resolve, reject) { setTimeout(resolve, 500, &#39;one&#39;); }); const promise2 = new Promise(function(resolve, reject) { setTimeout(resolve, 100, &#39;two&#39;); }); Promise.race([promise1, promise2]).then(function(value) { console.log(value); });   Promise.reject
+ 返回一个带有拒绝原因的 Promise 对象
+function resolved(result) { console." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://mambaneverout.github.io/post/promise%E5%92%8Casyncawait/" />
+<meta property="article:published_time" content="2020-03-27T19:24:13+08:00" />
+<meta property="article:modified_time" content="2020-03-27T19:24:13+08:00" />
+<meta itemprop="name" content="Promise和async、await">
+<meta itemprop="description" content="Promise  Promise 是一个类   Promise.all()
+ 返回一个 Promise 实例， 所有 promise 都成功才会成功，有一个 promise 失败则为失败。
+Promise.all([promise1, promise2,promise3).then(function(values) { console.log(values); });   Promise.race()
+ 返回一个 promise，一旦 Promise 中的某个 promise 解决或拒绝，返回的 promise 就会解决或拒绝。
+const promise1 = new Promise(function(resolve, reject) { setTimeout(resolve, 500, &#39;one&#39;); }); const promise2 = new Promise(function(resolve, reject) { setTimeout(resolve, 100, &#39;two&#39;); }); Promise.race([promise1, promise2]).then(function(value) { console.log(value); });   Promise.reject
+ 返回一个带有拒绝原因的 Promise 对象
+function resolved(result) { console.">
+
+
+<meta itemprop="datePublished" content="2020-03-27T19:24:13&#43;08:00" />
+<meta itemprop="dateModified" content="2020-03-27T19:24:13&#43;08:00" />
+<meta itemprop="wordCount" content="205">
+
+
+
+<meta itemprop="keywords" content="" />
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Promise和async、await"/>
+<meta name="twitter:description" content="Promise  Promise 是一个类   Promise.all()
+ 返回一个 Promise 实例， 所有 promise 都成功才会成功，有一个 promise 失败则为失败。
+Promise.all([promise1, promise2,promise3).then(function(values) { console.log(values); });   Promise.race()
+ 返回一个 promise，一旦 Promise 中的某个 promise 解决或拒绝，返回的 promise 就会解决或拒绝。
+const promise1 = new Promise(function(resolve, reject) { setTimeout(resolve, 500, &#39;one&#39;); }); const promise2 = new Promise(function(resolve, reject) { setTimeout(resolve, 100, &#39;two&#39;); }); Promise.race([promise1, promise2]).then(function(value) { console.log(value); });   Promise.reject
+ 返回一个带有拒绝原因的 Promise 对象
+function resolved(result) { console."/>
+
+  </head>
+
+  <body class="ma0 avenir bg-near-white">
+
+    
+   
+  
+
+  <header>
+    <div class="bg-black">
+      <nav class="pv3 ph3 ph4-ns" role="navigation">
+  <div class="flex-l justify-between items-center center">
+    <a href="https://mambaneverout.github.io/" class="f3 fw2 hover-white no-underline white-90 dib">
+      Irelia的博客
+    </a>
+    <div class="flex-l items-center">
+      
+
+      
+      
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+  </div>
+</nav>
+
+    </div>
+  </header>
+
+
+
+    <main class="pb7" role="main">
+      
+  
+  <article class="flex-l flex-wrap justify-between mw8 center ph3">
+
+    <header class="mt4 w-100">
+      <p class="f6 b helvetica tracked">
+          
+        POSTS
+      </p>
+      <h1 class="f1 athelas mb1">Promise和async、await</h1>
+      
+      
+      <time class="f6 mv4 dib tracked" datetime="2020-03-27T19:24:13&#43;08:00">March 27, 2020</time>
+      
+      
+    </header>
+
+    <section class="nested-copy-line-height lh-copy serif f4 nested-links nested-img mid-gray pr4-l w-two-thirds-l">
+
+<h4 id="promise">Promise</h4>
+
+<ul>
+<li>Promise 是一个类</li>
+</ul>
+
+<ol>
+<li><p>Promise.all()</p>
+
+<ul>
+<li><p>返回一个 <strong>Promise 实例</strong>， 所有 promise 都成功才会成功，有一个 promise 失败则为失败。</p>
+
+<pre><code>Promise.all([promise1, promise2,promise3).then(function(values) {
+   console.log(values);
+});
+</code></pre></li>
+</ul></li>
+
+<li><p>Promise.race()</p>
+
+<ul>
+<li><p>返回一个 <strong>promise</strong>，一旦 Promise 中的某个 promise 解决或拒绝，返回的 promise 就会解决或拒绝。</p>
+
+<pre><code>const promise1 = new Promise(function(resolve, reject) {
+   setTimeout(resolve, 500, 'one');
+});
+
+const promise2 = new Promise(function(resolve, reject) {
+   setTimeout(resolve, 100, 'two');
+});
+
+Promise.race([promise1, promise2]).then(function(value) {
+   console.log(value);
+});
+</code></pre></li>
+</ul></li>
+
+<li><p>Promise.reject</p>
+
+<ul>
+<li><p>返回一个带有拒绝原因的 <strong>Promise 对象</strong></p>
+
+<pre><code>function resolved(result) {
+   console.log('Resolved');
+}
+
+function rejected(result) {
+   console.error(result);
+}
+
+Promise.reject(new Error('fail')).then(resolved, rejected);
+</code></pre></li>
+</ul></li>
+
+<li><p>Promise.resolve</p>
+
+<ul>
+<li><p>返回一个以给定值解析后的 <strong>Promise 对象</strong></p>
+
+<pre><code>Promise.resolve(&quot;Success&quot;).then(function(value) {
+   console.log(value); // &quot;Success&quot;
+}, function(value) {
+   // 不会被调用
+});
+</code></pre></li>
+</ul></li>
+</ol>
+
+<ul>
+<li><p>Promise.prototype.then</p>
+
+<ul>
+<li><p>返回一个 <strong>Promise</strong></p>
+
+<pre><code>const promise1 = new Promise(function(resolve, reject) {
+  resolve('Success!');
+});
+
+promise1.then(function(value) {
+  console.log(value);
+  // expected output: &quot;Success!&quot;
+});
+</code></pre></li>
+</ul></li>
+
+<li><p>Promise.prototype.finally</p>
+
+<ul>
+<li>返回一个 <strong>Promise</strong>。在 promise 结束时，无论成功还是失败都会执行指定的回调函数。避免了同样的语句需要在 then()和 catch()中各写一次的情况。</li>
+</ul></li>
+
+<li><p>Promise.prototype.catch</p>
+
+<ul>
+<li>返回一个 <strong>Promise</strong>。用来捕获错误</li>
+</ul></li>
+</ul>
+
+<h4 id="async-await">async、await</h4>
+
+<ul>
+<li><p>看起来更像同步，是否需要优先渲染</p>
+
+<pre><code>function start() {
+ getWeather('北京').then(weather1 =&gt; {
+    console.log('北京:' + weather1.weather)
+ })
+ .then(() =&gt; getWeather('杭州'))
+ .then(weather2 =&gt; {
+    console.log('杭州:' + weather2.weather)
+ })
+}.catch(err=&gt;console.log(err))
+
+async function start() {
+  let weather1 = await getWeather('北京')
+  console.log('北京:' + weather1.weather)
+  let weather2 = await getWeather('杭州')
+  console.log('杭州:' + weather2.weather)
+}
+start().catch(err=&gt;console.log(err))
+</code></pre></li>
+</ul>
+
+<h4 id="手写简易-promise">手写简易 Promise</h4>
+
+<pre><code>class Promise2 = {
+  state = 'pending'
+  succeed = null
+  fail = null
+
+  resolve(result){
+    setTimeout(()=&gt;{
+      this.state = 'fulfilled
+      this.succeed(result)
+    })
+  }
+  reject(err){
+    setTimeout(()=&gt;{
+      this.state = 'rejected
+      this.succeed(err)
+    })
+  }
+  constructor(fn){
+    fn(this.resolve.bind(this), this.reject.bind(this))
+  }
+  then(succeed, fail){
+    this.succeed = succeed
+    this.fail = fail
+  }
+}
+</code></pre>
+<ul class="pa0">
+  
+</ul>
+<div class="mt6">
+      
+      
+      </div>
+    </section>
+
+    <aside class="w-30-l mt6-l">
+
+
+
+
+</aside>
+
+  </article>
+
+    </main>
+    <footer class="bg-black bottom-0 w-100 pa3" role="contentinfo">
+  <div class="flex justify-between">
+  <a class="f4 fw4 hover-white no-underline white-70 dn dib-ns pv2 ph3" href="https://mambaneverout.github.io/" >
+    &copy; 2020 Irelia的博客
+  </a>
+    <div>
+
+
+
+
+
+
+
+
+
+
+</div>
+  </div>
+</footer>
+
+    
+
+  <script src="/dist/js/app.3fc0f988d21662902933.js"></script>
+
+
+  </body>
+</html>
