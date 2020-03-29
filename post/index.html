@@ -35,7 +35,7 @@
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://mambaneverout.github.io/post/" />
 
-<meta property="og:updated_time" content="2020-03-27T19:24:13+08:00" />
+<meta property="og:updated_time" content="2020-03-28T21:53:31+08:00" />
 <meta itemprop="name" content="Posts">
 <meta itemprop="description" content="">
 
@@ -94,6 +94,30 @@
       
     </section>
     <aside class="flex-ns flex-wrap justify-around mt5">
+      
+        <div class="relative w-100 w-30-l mb4 bg-white">
+          
+            <div class="mb3 pa4 mid-gray overflow-hidden">
+    
+      <div class="f6">
+        March 28, 2020
+      </div>
+    
+    <h1 class="f3 near-black">
+      <a href="/post/node.jsnpmyarncommonjs%E8%A7%84%E8%8C%83/" class="link black dim">
+        Node
+      </a>
+    </h1>
+    <div class="nested-links f5 lh-copy nested-copy-line-height">
+      Node.js  计算密集型  ⼤量的计算，消耗 CPU 资源，⽐如计算圆周 率、对视频进⾏⾼清解码 C 语⾔  IO 密集型
+ ⽹络、磁盘读写 Node.js  使用内置模块 fs
+const fs = require(&quot;fs&quot;); fs.readFile(&quot;./test.txt&quot;, &quot;utf-8&quot;, function(err, str) { console.log(str); str = str.toUpperCase(); fs.writeFile(&quot;./test-after.txt&quot;, str, function(err) { console.log(&quot;操作完成&quot;); }); });  http.createServer
+const http = require(&quot;http&quot;); http.createServer((req, res) =&gt; { res.end(&quot;hello world&quot;); }).listen(8080);  使用本地模块
+const util = require(&quot;./util&quot;); let result = util.fact(5); console.log(result);  function fact(n) { if (n === 1) return 1; return n * fact(n - 1); } module.
+    </div>
+  </div>
+
+        </div>
       
         <div class="relative w-100 w-30-l mb4 bg-white">
           
@@ -297,33 +321,6 @@ function print(x:any):void { // 没有返回值 console.log(x) }  undefined
     <div class="nested-links f5 lh-copy nested-copy-line-height">
       安装  配置 npm 淘宝源：npm config set registry https://registry.npm.taobao.org/ npm install typescript@版本号 -g npm install ts-node@版本号 -g // 使 ts 可以在 node 上运行  把 ts-node 安装后的可执行文件路径记录下来   调试  Windows 用户需要运行命令  npm init -y npm i -D ts-node typescript  创建.vscode/launch.json 文件，内容如下
 { &quot;configurations&quot;: [ { &quot;name&quot;: &quot;ts-node&quot;, &quot;type&quot;: &quot;node&quot;, &quot;request&quot;: &quot;launch&quot;, &quot;program&quot;: &quot;注意看这里，要写成ts-node对应的可执行文件，Windows 用户注意了，你应该写成 ${workspaceRoot}/node_modules/ts-node/dist/bin.js&quot;, &quot;args&quot;: [&quot;${relativeFile}&quot;], &quot;cwd&quot;: &quot;${workspaceRoot}&quot;, &quot;protocol&quot;: &quot;inspector&quot; } ] }  找到调试选项，选择 ts-node，然后点击调试，就会在下方控制台输出结果
-    </div>
-  </div>
-
-        </div>
-      
-        <div class="relative w-100 w-30-l mb4 bg-white">
-          
-            <div class="mb3 pa4 mid-gray overflow-hidden">
-    
-      <div class="f6">
-        January 10, 2020
-      </div>
-    
-    <h1 class="f3 near-black">
-      <a href="/post/bom/" class="link black dim">
-        BOM
-      </a>
-    </h1>
-    <div class="nested-links f5 lh-copy nested-copy-line-height">
-      BOM  BOM(Browser Object Model)浏览器对象模型，提供了独立于内容的、可以与浏览器窗口进行互动的对象结构
- var 声明的全局变量和 function 声明的函数是 window 的属性
- let、const 声明的变量不是
-  navigator 浏览器相关信息  navigator.userAgent
-// 判断用户设备 const isIPhone = /iphone/i.test(navigator.userAgent) const isIOS = /iphone|ipad/i.test(navigator.userAgent) const isAndroid = /android/i.test(navigator.userAgent)   screen 屏幕信息  screen.availWidth 可用宽度 screen.availHeight 可用高度
-// 判断是横屏还是竖屏 screen.orientation.onchange = function(){ console.log(screen.orientation.type) // &quot;landscape-primary&quot; 水平宽度大于垂直宽度 // &quot;portrait-primary&quot; 垂直宽度大于水平宽度 }   尺寸  页面文档高度: document.documentElement.offset Height
- 屏幕高度: screen.height
- 浏览器视窗高度: document.
     </div>
   </div>
 

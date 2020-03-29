@@ -6,10 +6,23 @@
     <description>Recent content on Irelia的博客</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-Hans</language>
-    <lastBuildDate>Fri, 27 Mar 2020 19:24:13 +0800</lastBuildDate>
+    <lastBuildDate>Sat, 28 Mar 2020 21:53:31 +0800</lastBuildDate>
     
 	<atom:link href="https://mambaneverout.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Node</title>
+      <link>https://mambaneverout.github.io/post/node.jsnpmyarncommonjs%E8%A7%84%E8%8C%83/</link>
+      <pubDate>Sat, 28 Mar 2020 21:53:31 +0800</pubDate>
+      
+      <guid>https://mambaneverout.github.io/post/node.jsnpmyarncommonjs%E8%A7%84%E8%8C%83/</guid>
+      <description>Node.js  计算密集型  ⼤量的计算，消耗 CPU 资源，⽐如计算圆周 率、对视频进⾏⾼清解码 C 语⾔  IO 密集型
+ ⽹络、磁盘读写 Node.js  使用内置模块 fs
+const fs = require(&amp;quot;fs&amp;quot;); fs.readFile(&amp;quot;./test.txt&amp;quot;, &amp;quot;utf-8&amp;quot;, function(err, str) { console.log(str); str = str.toUpperCase(); fs.writeFile(&amp;quot;./test-after.txt&amp;quot;, str, function(err) { console.log(&amp;quot;操作完成&amp;quot;); }); });  http.createServer
+const http = require(&amp;quot;http&amp;quot;); http.createServer((req, res) =&amp;gt; { res.end(&amp;quot;hello world&amp;quot;); }).listen(8080);  使用本地模块
+const util = require(&amp;quot;./util&amp;quot;); let result = util.fact(5); console.log(result);  function fact(n) { if (n === 1) return 1; return n * fact(n - 1); } module.</description>
+    </item>
     
     <item>
       <title>Promise和async、await</title>

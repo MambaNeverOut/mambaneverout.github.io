@@ -35,7 +35,7 @@
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://mambaneverout.github.io/" />
 
-<meta property="og:updated_time" content="2020-03-27T19:24:13+08:00" />
+<meta property="og:updated_time" content="2020-03-28T21:53:31+08:00" />
 <meta itemprop="name" content="Irelia的博客">
 <meta itemprop="description" content="">
 
@@ -122,6 +122,34 @@
       
       <div class="blah w-100">
         <h1 class="f3 fw1 athelas mt0 lh-title">
+          <a href="/post/node.jsnpmyarncommonjs%E8%A7%84%E8%8C%83/" class="color-inherit dim link">
+            Node
+            </a>
+        </h1>
+        <div class="f6 f5-l lh-copy nested-copy-line-height nested-links">
+          Node.js  计算密集型  ⼤量的计算，消耗 CPU 资源，⽐如计算圆周 率、对视频进⾏⾼清解码 C 语⾔  IO 密集型
+ ⽹络、磁盘读写 Node.js  使用内置模块 fs
+const fs = require(&quot;fs&quot;); fs.readFile(&quot;./test.txt&quot;, &quot;utf-8&quot;, function(err, str) { console.log(str); str = str.toUpperCase(); fs.writeFile(&quot;./test-after.txt&quot;, str, function(err) { console.log(&quot;操作完成&quot;); }); });  http.createServer
+const http = require(&quot;http&quot;); http.createServer((req, res) =&gt; { res.end(&quot;hello world&quot;); }).listen(8080);  使用本地模块
+const util = require(&quot;./util&quot;); let result = util.fact(5); console.log(result);  function fact(n) { if (n === 1) return 1; return n * fact(n - 1); } module.
+        </div>
+          <a href="/post/node.jsnpmyarncommonjs%E8%A7%84%E8%8C%83/" class="ba b--moon-gray bg-light-gray br2 color-inherit dib f7 hover-bg-moon-gray link mt2 ph2 pv1">read more</a>
+        
+      </div>
+    </div>
+  </div>
+</article>
+
+          </div>
+        
+          <div class="relative w-100 mb4">
+            
+<article class="bb b--black-10">
+  <div class="db pv4 ph3 ph0-l no-underline dark-gray">
+    <div class="flex flex-column flex-row-ns">
+      
+      <div class="blah w-100">
+        <h1 class="f3 fw1 athelas mt0 lh-title">
           <a href="/post/promise%E5%92%8Casyncawait/" class="color-inherit dim link">
             Promise和async、await
             </a>
@@ -172,39 +200,18 @@ function resolved(result) { console.
 
           </div>
         
-          <div class="relative w-100 mb4">
-            
-<article class="bb b--black-10">
-  <div class="db pv4 ph3 ph0-l no-underline dark-gray">
-    <div class="flex flex-column flex-row-ns">
-      
-      <div class="blah w-100">
-        <h1 class="f3 fw1 athelas mt0 lh-title">
-          <a href="/post/vue%E5%8A%A8%E7%94%BB/" class="color-inherit dim link">
-            Vue动画
-            </a>
-        </h1>
-        <div class="f6 f5-l lh-copy nested-copy-line-height nested-links">
-          transition  需要初始值 fade-enter 进入过渡的开始状态* fade-enter-active 进入过渡时生效的状态* fade-enter-to 进入过渡的结束状态 fade-leave 离开过渡的开始状态 fade-leave-active 离开过渡时生效的状态* fade-leave-to 离开过渡的结束状态*  animation  bounce-enter-active bounce-leave-active 第三方动画库 Animate.css
- &lt;link href=&quot;https://cdn.jsdelivr.net/npm/animate.css@3.5.1&quot; rel=&quot;stylesheet&quot; type=&quot;text/css&quot;&gt; &lt;transition name=&quot;custom-classes-transition&quot; enter-active-class=&quot;animated tada&quot; leave-active-class=&quot;animated bounceOutRight&quot; &gt; &lt;/transition&gt;   JS 操作动画  注意：当只用 JS 过渡的时候，在 enter 和 leave 中必须使用 done 进行回调。否则，它们将被同步调用，过渡会立即完成。
- 推荐对于仅使用 JavaScript 过渡的元素添加 v-bind:css=&ldquo;false&rdquo;，Vue 会跳过 CSS 的检测。这也可以避免过渡过程中 CSS 的影响。
- &lt;transition v-on:before-enter=&quot;beforeEnter&quot; v-on:enter=&quot;enter&quot; v-on:after-enter=&quot;afterEnter&quot; v-on:enter-cancelled=&quot;enterCancelled&quot; v-on:before-leave=&quot;beforeLeave&quot; v-on:leave=&quot;leave&quot; v-on:after-leave=&quot;afterLeave&quot; v-on:leave-cancelled=&quot;leaveCancelled&quot; &gt;&lt;/transition&gt;   methods: { beforeEnter: function (el) {}, // 当与 CSS 结合使用时 // 回调函数 done 是可选的 enter: function (el, done) { // .
-        </div>
-          <a href="/post/vue%E5%8A%A8%E7%94%BB/" class="ba b--moon-gray bg-light-gray br2 color-inherit dib f7 hover-bg-moon-gray link mt2 ph2 pv1">read more</a>
-        
-      </div>
-    </div>
-  </div>
-</article>
-
-          </div>
-        
       </section>
 
       
       <section class="w-100">
         <h1 class="f3">More</h1>
         
+        
+          <h2 class="f5 fw4 mb4 dib mr3">
+            <a href="/post/vue%E5%8A%A8%E7%94%BB/" class="link black dim">
+              Vue动画
+            </a>
+          </h2>
         
           <h2 class="f5 fw4 mb4 dib mr3">
             <a href="/post/react-hooks%E7%9A%84api/" class="link black dim">
@@ -221,12 +228,6 @@ function resolved(result) { console.
           <h2 class="f5 fw4 mb4 dib mr3">
             <a href="/post/typescript%E7%BB%93%E5%90%88vue/" class="link black dim">
               TypeScript结合Vue
-            </a>
-          </h2>
-        
-          <h2 class="f5 fw4 mb4 dib mr3">
-            <a href="/post/react%E7%BB%84%E4%BB%B6/" class="link black dim">
-              React组件
             </a>
           </h2>
         
