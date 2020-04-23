@@ -6,10 +6,33 @@
     <description>Recent content on Irelia的博客</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-Hans</language>
-    <lastBuildDate>Sat, 28 Mar 2020 21:53:31 +0800</lastBuildDate>
+    <lastBuildDate>Wed, 08 Apr 2020 21:50:32 +0800</lastBuildDate>
     
 	<atom:link href="https://mambaneverout.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>面试押题</title>
+      <link>https://mambaneverout.github.io/post/%E9%9D%A2%E8%AF%95%E6%8A%BC%E9%A2%98/</link>
+      <pubDate>Wed, 08 Apr 2020 21:50:32 +0800</pubDate>
+      
+      <guid>https://mambaneverout.github.io/post/%E9%9D%A2%E8%AF%95%E6%8A%BC%E9%A2%98/</guid>
+      <description>HTML  必考：你是如何理解 HTML 语义化的？
+ 举例法：
+HTML 语义化就是使用正确的标签（总结）段落就写 p 标签，标题就写 h1 标签，文章就写 article 标签，视频就写 video 标签，等等。
+ 阐述法：
+首先讲以前的后台开发人员使用 table 布局，然后讲美工人员使用 div+css 布局，最后讲专业的前端会使用正确的标签进行页面开发。
+  meta viewport 是做什么用的，怎么写？
+ 举例法，然后逐个解释每个单词的意思。
+&amp;lt;meta name=&amp;quot;viewport&amp;quot; content=&amp;quot;width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1&amp;quot; /&amp;gt;   你用过哪些 HTML 5 标签？
+ 举例法
+平时如果只用 div 写页面你就完了，把你平时用到的 html5 标签列举出来即可，但是要注意如果这个标签的用法比较复杂，你要先看一下 MDN 的文档再说这个标签；如果你说出一个标签，却不知道它有哪些 API，那么你就会被扣分
+ 内容相关：header、main、footer、article
+ 功能相关：canvas、video、audio（处理后续问题）
+  H5 是什么？
+ 阐述法：
+搜一下知乎就知道了，H5 表示移动端页面，反正不是 HTML5。   CSS  必考：两种盒模型分别说一下。</description>
+    </item>
     
     <item>
       <title>Node</title>

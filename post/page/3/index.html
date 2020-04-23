@@ -35,7 +35,7 @@
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://mambaneverout.github.io/post/" />
 
-<meta property="og:updated_time" content="2020-03-28T21:53:31+08:00" />
+<meta property="og:updated_time" content="2020-04-08T21:50:32+08:00" />
 <meta itemprop="name" content="Posts">
 <meta itemprop="description" content="">
 
@@ -94,6 +94,30 @@
       
     </section>
     <aside class="flex-ns flex-wrap justify-around mt5">
+      
+        <div class="relative w-100 w-30-l mb4 bg-white">
+          
+            <div class="mb3 pa4 mid-gray overflow-hidden">
+    
+      <div class="f6">
+        December 20, 2019
+      </div>
+    
+    <h1 class="f3 near-black">
+      <a href="/post/vue%E6%95%B0%E6%8D%AE%E5%93%8D%E5%BA%94%E5%BC%8F/" class="link black dim">
+        Vue数据响应式
+      </a>
+    </h1>
+    <div class="nested-links f5 lh-copy nested-copy-line-height">
+      “Vue 是一套用于构建用户界面的渐进式框架，Vue 的核心库只关注视图层。” Vue 文档已经把 Vue 的特点说的很清楚了，Vue 是专注于 UI 界面的框架，数据的修改会实时的反馈到界面中。这就是数据响应式了，通过数据来驱动视图。 在 Vue 文档深入响应式原理中，Vue 是这样说的：“ 当你把一个对象传入 Vue 实例作为 data 选项，Vue 将遍历此对象所有的属性，并使用 Object.defineProperty 把这些属性全部转为 getter/setter。 ”那么 Vue 具体是怎么做的呢？
+Vue 响应式原理: https://cn.vuejs.org/v2/guide/reactivity.html
+1.先来了解一下 getter, setter 和 Object.defineProperty  getter: 不要括号就可以调用的函数
+let obj2 = { 姓: &quot;高&quot;, 名: &quot;圆圆&quot;, get name() { return this.姓 + this.名; }, }; console.log(&quot;需求二：&quot; + obj2.name);  setter: 传入一个值并把这个值赋值给其他变量
+let obj3 = { 姓: &quot;高&quot;, 名: &quot;圆圆&quot;, get name() { return this.
+    </div>
+  </div>
+
+        </div>
       
         <div class="relative w-100 w-30-l mb4 bg-white">
           
@@ -320,32 +344,6 @@ if (表达式) { 语句 } else if (表达式) { 语句 } else { 语句 }  可以
  1997 年 6 月，第一版 ECMAScript 发布
  1999 年 12 月，ES3 发布，这是目前使用最广泛的版本
  2009 年 12 月，ES5 发布，增加了一些功能
-    </div>
-  </div>
-
-        </div>
-      
-        <div class="relative w-100 w-30-l mb4 bg-white">
-          
-            <div class="mb3 pa4 mid-gray overflow-hidden">
-    
-      <div class="f6">
-        October 29, 2019
-      </div>
-    
-    <h1 class="f3 near-black">
-      <a href="/post/%E6%B5%85%E6%9E%90url/" class="link black dim">
-        浅析URL
-      </a>
-    </h1>
-    <div class="nested-links f5 lh-copy nested-copy-line-height">
-      URL
- URL 的内容：协议 + 域名或 IP + 端口号 + 路径 + 查询参数字符串 + 锚点 https + www.baidu.com + /s + ?wd=hello&amp;rsv_spt=1 + #5  协议：使用 http 还是 https 域名：baidu.com 端口号：默认不写（http 为 80，https 为 443) 路径：请求不同的页面 查询参数字符串：查询的内容 锚点：访问不同位置的内容（不支持中文，不会传给服务器）   DNS ，nslookup 命令
- 域名系统（Domain Name System）是将域名和 IP 地址相互映射的一个分布式数据库。
- DNS 的作用是让域名和 IP 对应起来
- nslookup baidu.com
-  IP ，ping 命令
- Internet Protocal  如何让定位一台设备 如何封装数据报文，以跟其他设备交流  内网 IP(路由器) 外网 IP(ipconfig) 特殊的 IP  127.
     </div>
   </div>
 
