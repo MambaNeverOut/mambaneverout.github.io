@@ -256,14 +256,14 @@ start().catch(err=&gt;console.log(err))
 
   resolve(result){
     setTimeout(()=&gt;{
-      this.state = 'fulfilled
+      this.state = 'fulfilled'
       this.succeed(result)
     })
   }
   reject(err){
     setTimeout(()=&gt;{
-      this.state = 'rejected
-      this.succeed(err)
+      this.state = 'rejected'
+      this.fail(err)
     })
   }
   constructor(fn){
@@ -322,8 +322,8 @@ http.createServer((req, res) =&gt; {
 fetch(
 &quot;http://localhost:8888/bridge?url=&quot; + encodeURIComponent(&quot;http://baidu.com&quot;)
 )
-.then(res =&gt; res.text())
-.then(data =&gt; console.log(data));
+.then((res) =&gt; res.text())
+.then((data) =&gt; console.log(data));
 </code></pre></li>
 </ul>
 <ul class="pa0">
